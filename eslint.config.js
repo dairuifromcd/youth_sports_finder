@@ -8,6 +8,7 @@ export default tseslint.config(
   { ignores: ['dist/**', 'output/**', '.playwright-cli/**'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
+  { files: ['tests/**/*.mjs', 'scripts/**/*.mjs'], languageOptions: { globals: globals.node } },
   {
     files: ['src/**/*.{ts,tsx}'],
     languageOptions: { globals: globals.browser },

@@ -1,0 +1,1065 @@
+{
+  "version": 1,
+  "endpoint": "https://nominatim.openstreetmap.org/search",
+  "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright",
+  "entries": {
+    "7fe9db8d4d0c103096cf985fffcb7bbe6ae24e002919fe8c95935963c4b2052d": {
+      "normalizedAddress": "31 endiandra street algester queensland 4115",
+      "sourceLastChecked": "2026-09-12T03:27:24.548Z",
+      "candidates": [
+        {
+          "latitude": -27.6161789,
+          "longitude": 153.0321813,
+          "matchedAddress": "Endiandra Street, Algester, Logan City, Brisbane, Queensland, 4115, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4115",
+            "suburb": "Algester",
+            "city": "Logan City",
+            "road": "Endiandra Street"
+          }
+        }
+      ]
+    },
+    "4b1c15ae482d6fb99db925f10f3ca2f2f3594bf1a042badd56d72ee81934ca0d": {
+      "normalizedAddress": "15 algester road algester queensland 4115",
+      "sourceLastChecked": "2026-09-12T03:27:26.925Z",
+      "candidates": [
+        {
+          "latitude": -27.6050099,
+          "longitude": 153.0423976,
+          "matchedAddress": "DAC Constructions, 15, Algester Road, Algester, Logan City, Brisbane, Queensland, 4115, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4115",
+            "suburb": "Algester",
+            "city": "Logan City",
+            "road": "Algester Road",
+            "house_number": "15"
+          }
+        }
+      ]
+    },
+    "72f87fa47d094bcb306a6222121f54960290982d0c7956ee5cfaf4140487dd1b": {
+      "normalizedAddress": "2533 beaudesert road calamvale queensland 4116",
+      "sourceLastChecked": "2026-09-12T03:27:29.096Z",
+      "candidates": [
+        {
+          "latitude": -27.6276498,
+          "longitude": 153.04554,
+          "matchedAddress": "2533, Beaudesert Road, Calamvale, Logan City, Brisbane, Queensland, 4116, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4116",
+            "suburb": "Calamvale",
+            "city": "Logan City",
+            "road": "Beaudesert Road",
+            "house_number": "2533"
+          }
+        }
+      ]
+    },
+    "8e1ce9acab327b580c001e480660716f6da5d7e600abcf4dbd029c89e968cd41": {
+      "normalizedAddress": "132 hill road runcorn queensland 4113",
+      "sourceLastChecked": "2026-09-12T03:27:31.451Z",
+      "candidates": [
+        {
+          "latitude": -27.5938177,
+          "longitude": 153.0763239,
+          "matchedAddress": "Runcorn State High School, 132, Hill Road, Runcorn, Brisbane, Queensland, 4113, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4113",
+            "suburb": "Runcorn",
+            "city_district": "Runcorn",
+            "city": "Brisbane",
+            "road": "Hill Road",
+            "house_number": "132"
+          }
+        }
+      ]
+    },
+    "399b904cc980baa8a6cc5f389947f12628ee27b4a1dd95d4ece2fa644c876327": {
+      "normalizedAddress": "90 klumpp road upper mount gravatt queensland 4122",
+      "sourceLastChecked": "2026-09-12T03:27:33.629Z",
+      "candidates": [
+        {
+          "latitude": -27.5516723,
+          "longitude": 153.0710526,
+          "matchedAddress": "Klumpp Road, Upper Mount Gravatt, Brisbane, Queensland, 4122, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4122",
+            "suburb": "Upper Mount Gravatt",
+            "city_district": "Upper Mount Gravatt",
+            "city": "Brisbane",
+            "road": "Klumpp Road"
+          }
+        }
+      ]
+    },
+    "2f7ca496f68a7042d399b66d22befe108891532398f2c58241da5b2a5db2e4d3": {
+      "normalizedAddress": "klumpp road upper mount gravatt queensland 4122",
+      "sourceLastChecked": "2026-09-12T03:27:35.710Z",
+      "candidates": [
+        {
+          "latitude": -27.5502175,
+          "longitude": 153.0662643,
+          "matchedAddress": "Klumpp Road, Upper Mount Gravatt, Brisbane, Queensland, 4122, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4122",
+            "suburb": "Upper Mount Gravatt",
+            "city_district": "Upper Mount Gravatt",
+            "city": "Brisbane",
+            "road": "Klumpp Road"
+          }
+        }
+      ]
+    },
+    "826248a307b64045d959b4fb10518ba27d04ee52ddbf3d187dafd8572bc84f89": {
+      "normalizedAddress": "16 lorikeet way crestmead queensland 4132",
+      "sourceLastChecked": "2026-09-12T03:27:37.210Z",
+      "candidates": [
+        {
+          "latitude": -27.693164,
+          "longitude": 153.0938083,
+          "matchedAddress": "Lorikeet Way, Crestmead, Logan City, Brisbane, Queensland, 4132, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4132",
+            "suburb": "Crestmead",
+            "city": "Logan City",
+            "road": "Lorikeet Way"
+          }
+        }
+      ]
+    },
+    "d5b3eb09fa02807c396fe4c633e78b9ea469db9167b85d9d6ec9aa3e7ed7d179": {
+      "normalizedAddress": "3 acacia close holland park west queensland 4121",
+      "sourceLastChecked": "2026-09-12T03:27:39.579Z",
+      "candidates": [
+        {
+          "latitude": -27.5278547,
+          "longitude": 153.062297,
+          "matchedAddress": "3, Acacia Close, Holland Park West, Brisbane, Queensland, 4121, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4121",
+            "suburb": "Holland Park West",
+            "city_district": "Holland Park West",
+            "city": "Brisbane",
+            "road": "Acacia Close",
+            "house_number": "3"
+          }
+        }
+      ]
+    },
+    "9ee9948c393a5793a08ed74178d4643d0595bfa1bcbb7c2ed09c814cbce2ef99": {
+      "normalizedAddress": "12 monaco street holland park west queensland 4121",
+      "sourceLastChecked": "2026-09-12T03:27:41.118Z",
+      "candidates": [
+        {
+          "latitude": -27.5275354,
+          "longitude": 153.0576594,
+          "matchedAddress": "Boys Brigade Australia Queensland, 12, Monaco Street, Holland Park West, Brisbane, Queensland, 4121, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4121",
+            "suburb": "Holland Park West",
+            "city_district": "Holland Park West",
+            "city": "Brisbane",
+            "road": "Monaco Street",
+            "house_number": "12"
+          }
+        },
+        {
+          "latitude": -27.5278655,
+          "longitude": 153.0578302,
+          "matchedAddress": "12, Monaco Street, Holland Park West, Brisbane, Queensland, 4121, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4121",
+            "suburb": "Holland Park West",
+            "city_district": "Holland Park West",
+            "city": "Brisbane",
+            "road": "Monaco Street",
+            "house_number": "12"
+          }
+        }
+      ]
+    },
+    "8f6e9fc57512183c2bd0db541051205b545ba130b2beffb6d6a70483549e766a": {
+      "normalizedAddress": "156 hubner road park ridge queensland 4125",
+      "sourceLastChecked": "2026-09-12T03:27:42.882Z",
+      "candidates": [
+        {
+          "latitude": -27.7098606,
+          "longitude": 153.0585976,
+          "matchedAddress": "Hubner Road, Park Ridge, Logan City, Brisbane, Queensland, 4125, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4125",
+            "suburb": "Park Ridge",
+            "city": "Logan City",
+            "road": "Hubner Road"
+          }
+        }
+      ]
+    },
+    "2aeda52e90ede5aa70707126a969b56e80cd7f690f0227556c1dd39cacc06ca6": {
+      "normalizedAddress": "61 koplick road park ridge queensland 4125",
+      "sourceLastChecked": "2026-09-12T03:27:45.043Z",
+      "candidates": [
+        {
+          "latitude": -27.7190269,
+          "longitude": 153.0841338,
+          "matchedAddress": "Saint Philomena School, 61, Koplick Road, Park Ridge, Logan City, Brisbane, Queensland, 4125, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4125",
+            "suburb": "Park Ridge",
+            "city": "Logan City",
+            "road": "Koplick Road",
+            "house_number": "61"
+          }
+        }
+      ]
+    },
+    "c93a1db8067c9fa620ae094158b0b4237d6d874e43bd86c69309cf2780766c69": {
+      "normalizedAddress": "328 broadwater road mansfield queensland 4122",
+      "sourceLastChecked": "2026-09-12T03:27:47.218Z",
+      "candidates": [
+        {
+          "latitude": -27.5442935,
+          "longitude": 153.1070604,
+          "matchedAddress": "328, Broadwater Road, Mansfield, Brisbane, Queensland, 4122, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4122",
+            "suburb": "Mansfield",
+            "city_district": "Mansfield",
+            "city": "Brisbane",
+            "road": "Broadwater Road",
+            "house_number": "328"
+          }
+        }
+      ]
+    },
+    "d3d4104d6e9ecb1def3ecf28f18739453fe54596b94887e19eec994a00550d57": {
+      "normalizedAddress": "unit 1/74 sunbeam street annerley queensland 4103",
+      "sourceLastChecked": "2026-09-12T03:27:49.178Z",
+      "candidates": []
+    },
+    "5e376cdcb2bad030e9d1fbda2109770f0ab7e43ddb37a0109b292b6c1ee0c5f4": {
+      "normalizedAddress": "695 cavendish road coorparoo queensland 4151",
+      "sourceLastChecked": "2026-09-12T03:27:50.733Z",
+      "candidates": [
+        {
+          "latitude": -27.4901092,
+          "longitude": 153.0563144,
+          "matchedAddress": "Cavendish Road, Coorparoo, Brisbane, Queensland, 4151, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4151",
+            "suburb": "Coorparoo",
+            "city": "Brisbane",
+            "road": "Cavendish Road"
+          }
+        },
+        {
+          "latitude": -27.4866408,
+          "longitude": 153.0539972,
+          "matchedAddress": "Cavendish Road, Coorparoo, Brisbane, Queensland, 4151, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4151",
+            "suburb": "Coorparoo",
+            "city": "Brisbane",
+            "road": "Cavendish Road"
+          }
+        },
+        {
+          "latitude": -27.5145465,
+          "longitude": 153.0726802,
+          "matchedAddress": "Cavendish Road, Coorparoo, Logan City, Brisbane, Queensland, 4151, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4151",
+            "suburb": "Coorparoo",
+            "city": "Logan City",
+            "road": "Cavendish Road"
+          }
+        }
+      ]
+    },
+    "d80eb92e172b9eec03b1afa1c514aea55912643b2aca06e956e59cf328a886cf": {
+      "normalizedAddress": "415 cavendish road coorparoo queensland 4151",
+      "sourceLastChecked": "2026-09-12T03:27:52.804Z",
+      "candidates": [
+        {
+          "latitude": -27.5094523,
+          "longitude": 153.063145,
+          "matchedAddress": "Loreto College, 415, Cavendish Road, Coorparoo, Logan City, Brisbane, Queensland, 4151, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4151",
+            "suburb": "Coorparoo",
+            "city": "Logan City",
+            "road": "Cavendish Road",
+            "house_number": "415"
+          }
+        }
+      ]
+    },
+    "dc138f9d183881eb82aaed6d1c91a98e969e247d14acd4f278a86ac345104a40": {
+      "normalizedAddress": "322 wecker road carindale queensland 4152",
+      "sourceLastChecked": "2026-09-12T03:27:54.968Z",
+      "candidates": [
+        {
+          "latitude": -27.5326242,
+          "longitude": 153.1144463,
+          "matchedAddress": "Citipointe Christian College, 322, Wecker Road, Carindale, Logan City, Brisbane, Queensland, 4152, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4152",
+            "suburb": "Carindale",
+            "city": "Logan City",
+            "road": "Wecker Road",
+            "house_number": "322"
+          }
+        }
+      ]
+    },
+    "ea40d38425cc776db3b3edc1595e3f90f02e6d78b7f400a692f7b553582ea899": {
+      "normalizedAddress": "134 parkland drive springfield central queensland 4300",
+      "sourceLastChecked": "2026-09-12T03:27:57.324Z",
+      "candidates": [
+        {
+          "latitude": -27.690194,
+          "longitude": 152.9095449,
+          "matchedAddress": "Parkland Drive, Springfield Central, Brisbane, Queensland, 4300, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4300",
+            "suburb": "Springfield Central",
+            "city_district": "Springfield Central",
+            "city": "Brisbane",
+            "road": "Parkland Drive"
+          }
+        },
+        {
+          "latitude": -27.6904353,
+          "longitude": 152.906074,
+          "matchedAddress": "Parkland Drive, Springfield Central, Brisbane, Queensland, 4300, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4300",
+            "suburb": "Springfield Central",
+            "city_district": "Springfield Central",
+            "city": "Brisbane",
+            "road": "Parkland Drive"
+          }
+        },
+        {
+          "latitude": -27.6903323,
+          "longitude": 152.9102206,
+          "matchedAddress": "Parkland Drive, Springfield Lakes, Brisbane, Queensland, 4300, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4300",
+            "city_district": "Springfield Lakes",
+            "city": "Brisbane",
+            "road": "Parkland Drive"
+          }
+        }
+      ]
+    },
+    "d8f0c0c4ceba856ee1e6fb1565aa3fd2e7be94ec186c64dd4de4a7f9e1fc5dd8": {
+      "normalizedAddress": "146-170 bryants road shailer park queensland 4128",
+      "sourceLastChecked": "2026-09-12T03:27:58.928Z",
+      "candidates": [
+        {
+          "latitude": -27.6671912,
+          "longitude": 153.1886601,
+          "matchedAddress": "Bryants Road, Shailer Park, Logan City, Brisbane, Redland City, Queensland, 4128, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4128",
+            "suburb": "Shailer Park",
+            "city": "Logan City",
+            "road": "Bryants Road"
+          }
+        }
+      ]
+    },
+    "2ed5686b76e004a9c01d769317074c95c9a7d24c45cc873fe7f3ef10a4b4cd28": {
+      "normalizedAddress": "56 zahel street carina queensland 4152",
+      "sourceLastChecked": "2026-09-12T03:28:00.584Z",
+      "candidates": [
+        {
+          "latitude": -27.4912536,
+          "longitude": 153.0987434,
+          "matchedAddress": "Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4152",
+            "suburb": "Carina",
+            "city_district": "Carina",
+            "city": "Brisbane",
+            "road": "Zahel Street",
+            "house_number": "56"
+          }
+        },
+        {
+          "latitude": -27.489907,
+          "longitude": 153.0984157,
+          "matchedAddress": "56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4152",
+            "suburb": "Carina",
+            "city_district": "Carina",
+            "city": "Brisbane",
+            "road": "Zahel Street",
+            "house_number": "56"
+          }
+        },
+        {
+          "latitude": -27.4921843,
+          "longitude": 153.096757,
+          "matchedAddress": "The Practice at Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4152",
+            "suburb": "Carina",
+            "city_district": "Carina",
+            "city": "Brisbane",
+            "road": "Zahel Street",
+            "house_number": "56"
+          }
+        }
+      ]
+    },
+    "5092e2aacf33a07fcb78a9ad7e8e1c46e7fb39ebc8525686012fa918686056b1": {
+      "normalizedAddress": "3077 moggill road bellbowrie queensland 4070",
+      "sourceLastChecked": "2026-09-12T03:28:02.478Z",
+      "candidates": [
+        {
+          "latitude": -27.550096,
+          "longitude": 152.8881127,
+          "matchedAddress": "3077, Moggill Road, Bellbowrie, Brisbane, Queensland, 4070, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4070",
+            "suburb": "Bellbowrie",
+            "city_district": "Bellbowrie",
+            "city": "Brisbane",
+            "road": "Moggill Road",
+            "house_number": "3077"
+          }
+        }
+      ]
+    },
+    "40967315e3a1ec19ef4e649b3e9ebd9efc6ca9c423a3f9cfbde536fa2b3426f0": {
+      "normalizedAddress": "16 dixon street auchenflower queensland 4066",
+      "sourceLastChecked": "2026-09-12T03:28:04.260Z",
+      "candidates": [
+        {
+          "latitude": -27.4769195,
+          "longitude": 152.9948094,
+          "matchedAddress": "Dixon Street, Auchenflower, Brisbane, Queensland, 4066, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4066",
+            "suburb": "Auchenflower",
+            "city_district": "Auchenflower",
+            "city": "Brisbane",
+            "road": "Dixon Street"
+          }
+        },
+        {
+          "latitude": -27.4784453,
+          "longitude": 152.9962216,
+          "matchedAddress": "Dixon Street, Toowong, Brisbane, Queensland, 4066, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4066",
+            "suburb": "Toowong",
+            "city_district": "Toowong",
+            "city": "Brisbane",
+            "road": "Dixon Street"
+          }
+        }
+      ]
+    },
+    "90640a07f777ad218a5e467c4942bb0363a3388e61c1a5af8166d6285608c36e": {
+      "normalizedAddress": "dixon street auchenflower queensland 4066",
+      "sourceLastChecked": "2026-09-12T03:28:06.018Z",
+      "candidates": [
+        {
+          "latitude": -27.4769195,
+          "longitude": 152.9948094,
+          "matchedAddress": "Dixon Street, Auchenflower, Brisbane, Queensland, 4066, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4066",
+            "suburb": "Auchenflower",
+            "city_district": "Auchenflower",
+            "city": "Brisbane",
+            "road": "Dixon Street"
+          }
+        },
+        {
+          "latitude": -27.4784453,
+          "longitude": 152.9962216,
+          "matchedAddress": "Dixon Street, Toowong, Brisbane, Queensland, 4066, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4066",
+            "suburb": "Toowong",
+            "city_district": "Toowong",
+            "city": "Brisbane",
+            "road": "Dixon Street"
+          }
+        }
+      ]
+    },
+    "463b68ad42cde2463675fdc0a1698bbe01b65003d07f8449155d58bd525fee24": {
+      "normalizedAddress": "40 castlemaine street milton queensland 4064",
+      "sourceLastChecked": "2026-09-12T03:28:07.505Z",
+      "candidates": [
+        {
+          "latitude": -27.4648602,
+          "longitude": 153.0096055,
+          "matchedAddress": "Suncorp Stadium, 40, Castlemaine Street, Milton, Brisbane, Queensland, 4064, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4064",
+            "suburb": "Milton",
+            "city_district": "Milton",
+            "city": "Brisbane",
+            "road": "Castlemaine Street",
+            "house_number": "40"
+          }
+        }
+      ]
+    },
+    "dec17de8ab0924e28e5e28821fb447310ff9c47bc2dcdef18a83400505f4abf1": {
+      "normalizedAddress": "86 hawthorne road hawthorne queensland 4171",
+      "sourceLastChecked": "2026-09-12T03:28:09.749Z",
+      "candidates": [
+        {
+          "latitude": -27.4692858,
+          "longitude": 153.0582215,
+          "matchedAddress": "Lourdes Hill College, 86, Hawthorne Road, Hawthorne, Brisbane, Queensland, 4171, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4171",
+            "suburb": "Hawthorne",
+            "city": "Brisbane",
+            "road": "Hawthorne Road",
+            "house_number": "86"
+          }
+        }
+      ]
+    },
+    "73f0e6f9423e339cfce63fcc17659cafa91898d88352ff46553cac7d5932847b": {
+      "normalizedAddress": "244 new cleveland road tingalpa queensland 4173",
+      "sourceLastChecked": "2026-09-12T03:28:11.557Z",
+      "candidates": [
+        {
+          "latitude": -27.4778619,
+          "longitude": 153.142241,
+          "matchedAddress": "244, New Cleveland Road, Tingalpa, Brisbane, Queensland, 4173, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4173",
+            "suburb": "Tingalpa",
+            "city_district": "Tingalpa",
+            "city": "Brisbane",
+            "road": "New Cleveland Road",
+            "house_number": "244"
+          }
+        }
+      ]
+    },
+    "801d6c393561fc7a4ea24ed57b9dbe60d1d15f1772947d1dfbf5266159717061": {
+      "normalizedAddress": "degen road capalaba queensland 4157",
+      "sourceLastChecked": "2026-09-12T03:28:13.333Z",
+      "candidates": [
+        {
+          "latitude": -27.5487104,
+          "longitude": 153.1907667,
+          "matchedAddress": "Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4157",
+            "suburb": "Capalaba",
+            "city": "Logan City",
+            "road": "Degen Road"
+          }
+        },
+        {
+          "latitude": -27.5496014,
+          "longitude": 153.1974003,
+          "matchedAddress": "Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4157",
+            "suburb": "Capalaba",
+            "city": "Logan City",
+            "road": "Degen Road"
+          }
+        }
+      ]
+    },
+    "8e710048777f13b1df8feb27b16a2fd22260ede5f848a535d30b13e5d238dbbd": {
+      "normalizedAddress": "school road capalaba queensland 4157",
+      "sourceLastChecked": "2026-09-12T03:28:15.396Z",
+      "candidates": [
+        {
+          "latitude": -27.5352403,
+          "longitude": 153.1953293,
+          "matchedAddress": "School Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4157",
+            "suburb": "Capalaba",
+            "city": "Logan City",
+            "road": "School Road"
+          }
+        }
+      ]
+    },
+    "cb0fa4e582127df1fe6af24dbe761cee0b7cdf2efb7a5128ba6a990a21ad0649": {
+      "normalizedAddress": "45 degen road capalaba queensland 4157",
+      "sourceLastChecked": "2026-09-12T03:28:17.596Z",
+      "candidates": [
+        {
+          "latitude": -27.5479378,
+          "longitude": 153.1966813,
+          "matchedAddress": "St. Luke's Catholic Parish School, 45, Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4157",
+            "suburb": "Capalaba",
+            "city": "Logan City",
+            "road": "Degen Road",
+            "house_number": "45"
+          }
+        }
+      ]
+    },
+    "edc553d62ae4284f97bf1820746dc3b57d54f753987542f5f7028326f00f41ad": {
+      "normalizedAddress": "63-65 degen road capalaba queensland 4157",
+      "sourceLastChecked": "2026-09-12T03:28:18.998Z",
+      "candidates": [
+        {
+          "latitude": -27.5487104,
+          "longitude": 153.1907667,
+          "matchedAddress": "Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4157",
+            "suburb": "Capalaba",
+            "city": "Logan City",
+            "road": "Degen Road"
+          }
+        },
+        {
+          "latitude": -27.5496014,
+          "longitude": 153.1974003,
+          "matchedAddress": "Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4157",
+            "suburb": "Capalaba",
+            "city": "Logan City",
+            "road": "Degen Road"
+          }
+        }
+      ]
+    },
+    "d657a8d2513a0c85793f4d1f4b0f0378d917218527d7c3eb4176271a5a1a5874": {
+      "normalizedAddress": "300 mount cotton road capalaba queensland 4157",
+      "sourceLastChecked": "2026-09-12T03:28:21.362Z",
+      "candidates": [
+        {
+          "latitude": -27.5479304,
+          "longitude": 153.1951705,
+          "matchedAddress": "Degen Road BMX Park, 278-300, Mount Cotton Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4157",
+            "suburb": "Capalaba",
+            "city": "Logan City",
+            "road": "Mount Cotton Road",
+            "house_number": "278-300"
+          }
+        },
+        {
+          "latitude": -27.5476612,
+          "longitude": 153.1946716,
+          "matchedAddress": "Redlands BMX Club, 278-300, Mount Cotton Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4157",
+            "suburb": "Capalaba",
+            "city": "Logan City",
+            "road": "Mount Cotton Road",
+            "house_number": "278-300"
+          }
+        },
+        {
+          "latitude": -27.5444413,
+          "longitude": 153.192953,
+          "matchedAddress": "Mount Cotton Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4157",
+            "suburb": "Capalaba",
+            "city": "Logan City",
+            "road": "Mount Cotton Road"
+          }
+        }
+      ]
+    },
+    "2be1791a1933d4c97f15abcb5af1f4594a8e366296cccaef0d8ff27a0e1109d6": {
+      "normalizedAddress": "corner of mt cotton rd and degen rd capalaba queensland 4157",
+      "sourceLastChecked": "2026-09-12T03:28:23.212Z",
+      "candidates": []
+    },
+    "1497a01fb04693a9626e002a1dd37a4ebeef6d298b3abfe7095026444da30fce": {
+      "normalizedAddress": "60 kinnaird street ashgrove queensland 4060",
+      "sourceLastChecked": "2026-09-12T03:28:25.439Z",
+      "candidates": [
+        {
+          "latitude": -27.4393466,
+          "longitude": 152.9933508,
+          "matchedAddress": "60, Kinnaird Street, Ashgrove, Brisbane, Queensland, 4060, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4060",
+            "suburb": "Ashgrove",
+            "city_district": "Ashgrove",
+            "city": "Brisbane",
+            "road": "Kinnaird Street",
+            "house_number": "60"
+          }
+        }
+      ]
+    },
+    "9febc13a9af46bb3403b84193d12814a4095da9d6bcbefd2fc7c836283222dc9": {
+      "normalizedAddress": "1 beveridge road thornlands queensland 4164",
+      "sourceLastChecked": "2026-09-12T03:28:27.654Z",
+      "candidates": [
+        {
+          "latitude": -27.5776863,
+          "longitude": 153.2814796,
+          "matchedAddress": "Faith Lutheran College, 1-15, Beveridge Road, Thornlands, Brisbane, Redland City, Queensland, 4164, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4164",
+            "suburb": "Thornlands",
+            "city": "Brisbane",
+            "road": "Beveridge Road",
+            "house_number": "1-15"
+          }
+        },
+        {
+          "latitude": -27.5763617,
+          "longitude": 153.2809982,
+          "matchedAddress": "ANC - Training Ship Diamantina, 1-15, Beveridge Road, Thornlands, Brisbane, Redland City, Queensland, 4164, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4164",
+            "suburb": "Thornlands",
+            "city": "Brisbane",
+            "road": "Beveridge Road",
+            "house_number": "1-15"
+          }
+        },
+        {
+          "latitude": -27.5744995,
+          "longitude": 153.2849374,
+          "matchedAddress": "Beveridge Road, Thornlands, Brisbane, Redland City, Queensland, 4164, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4164",
+            "suburb": "Thornlands",
+            "city": "Brisbane",
+            "road": "Beveridge Road"
+          }
+        }
+      ]
+    },
+    "dc55834ace24243649be34ef808b284db54316410849ae1d3b9b8c71b60bb0ec": {
+      "normalizedAddress": "89 ernest street manly queensland 4179",
+      "sourceLastChecked": "2026-09-12T03:28:30.022Z",
+      "candidates": [
+        {
+          "latitude": -27.4585359,
+          "longitude": 153.1818439,
+          "matchedAddress": "89, Ernest Street, Manly, Brisbane, Queensland, 4179, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4179",
+            "suburb": "Manly",
+            "city_district": "Manly",
+            "city": "Brisbane",
+            "road": "Ernest Street",
+            "house_number": "89"
+          }
+        }
+      ]
+    },
+    "6a62cb7fa0d7a646f015b3c4a4c67ad56a6aca9508d9aa1d6cf0131095a49ac4": {
+      "normalizedAddress": "81 moreton avenue wynnum queensland 4178",
+      "sourceLastChecked": "2026-09-12T03:28:31.620Z",
+      "candidates": [
+        {
+          "latitude": -27.4433678,
+          "longitude": 153.1605329,
+          "matchedAddress": "81, Moreton Avenue, Wynnum, Brisbane, Queensland, 4178, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4178",
+            "suburb": "Wynnum",
+            "city_district": "Wynnum",
+            "city": "Brisbane",
+            "road": "Moreton Avenue",
+            "house_number": "81"
+          }
+        }
+      ]
+    },
+    "15a87fdc7d63cb74fa2dd346794ae87ead7ab1a654a049765e7e82fdae4501bb": {
+      "normalizedAddress": "81 boxgrove avenue wynnum queensland 4178",
+      "sourceLastChecked": "2026-09-12T03:28:33.669Z",
+      "candidates": [
+        {
+          "latitude": -27.4419371,
+          "longitude": 153.1614753,
+          "matchedAddress": "Boxgrove Avenue, Wynnum, Brisbane, Queensland, 4178, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4178",
+            "suburb": "Wynnum",
+            "city_district": "Wynnum",
+            "city": "Brisbane",
+            "road": "Boxgrove Avenue"
+          }
+        }
+      ]
+    },
+    "742ae3bf861725dc62691038fd1a121dd18732edcf1309aa7f49a98f8db05e72": {
+      "normalizedAddress": "2a ross llewellyn drive booval queensland 4304",
+      "sourceLastChecked": "2026-09-12T03:28:35.080Z",
+      "candidates": [
+        {
+          "latitude": -27.6113607,
+          "longitude": 152.7999535,
+          "matchedAddress": "Ross Llewellyn Drive, Booval, Brisbane, Queensland, 4304, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4304",
+            "suburb": "Booval",
+            "city_district": "Booval",
+            "city": "Brisbane",
+            "road": "Ross Llewellyn Drive"
+          }
+        }
+      ]
+    },
+    "984044aa30030a558adf820f356b1e2a06f06a9d7965483e98c1ba6fd831a13c": {
+      "normalizedAddress": "151 flockton street everton park queensland 4053",
+      "sourceLastChecked": "2026-09-12T03:28:37.473Z",
+      "candidates": [
+        {
+          "latitude": -27.3932128,
+          "longitude": 152.9906672,
+          "matchedAddress": "Northside Christian College, 151, Flockton Street, Everton Park, Brisbane, Queensland, 4053, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4053",
+            "suburb": "Everton Park",
+            "city": "Brisbane",
+            "road": "Flockton Street",
+            "house_number": "151"
+          }
+        },
+        {
+          "latitude": -27.3930227,
+          "longitude": 152.9904549,
+          "matchedAddress": "Nexus Church, 151, Flockton Street, Everton Park, Brisbane, Queensland, 4053, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4053",
+            "suburb": "Everton Park",
+            "city": "Brisbane",
+            "road": "Flockton Street",
+            "house_number": "151"
+          }
+        }
+      ]
+    },
+    "aad4c74794c3ee38ac5564e05cccb54fb3fabc90cbdd1779f71db8e5073198c2": {
+      "normalizedAddress": "17 south street jimboomba queensland 4280",
+      "sourceLastChecked": "2026-09-12T03:28:39.445Z",
+      "candidates": [
+        {
+          "latitude": -27.8349197,
+          "longitude": 153.0291586,
+          "matchedAddress": "South Street, Brisbane, Queensland, 4280, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4280",
+            "city": "Brisbane",
+            "road": "South Street"
+          }
+        },
+        {
+          "latitude": -27.8345649,
+          "longitude": 153.0272978,
+          "matchedAddress": "South Street, Brisbane, Queensland, 4280, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4280",
+            "city": "Brisbane",
+            "road": "South Street"
+          }
+        }
+      ]
+    },
+    "3ddbaa9457ed8ea71e6d1b22a6803b504c6a2a7237fad31fb54f394e0345a025": {
+      "normalizedAddress": "29 mccartney street ormiston queensland 4160",
+      "sourceLastChecked": "2026-09-12T03:28:40.934Z",
+      "candidates": [
+        {
+          "latitude": -27.4959593,
+          "longitude": 153.2559473,
+          "matchedAddress": "McCartney Street, Ormiston, Brisbane, Queensland, 4160, Australia",
+          "address": {
+            "country_code": "au",
+            "state": "Queensland",
+            "ISO3166-2-lvl4": "AU-QLD",
+            "postcode": "4160",
+            "suburb": "Ormiston",
+            "city_district": "Ormiston",
+            "city": "Brisbane",
+            "road": "McCartney Street"
+          }
+        }
+      ]
+    }
+  }
+}

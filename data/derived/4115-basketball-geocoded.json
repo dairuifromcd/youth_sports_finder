@@ -1,0 +1,1744 @@
+[
+  {
+    "id": "qld-play-on:055fd5732213fea8ef7a3129",
+    "name": "Algester Hawks Basketball Club Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "31 Endiandra Street, Algester Queensland 4115",
+    "suburb": "Algester",
+    "postcode": "4115",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Endiandra Street, Algester, Logan City, Brisbane, Queensland, 4115, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:27:24.548Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:99afea876882f817d8447472",
+    "name": "Cannons Southside Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "15 Algester Road, Algester Queensland 4115",
+    "suburb": "Algester",
+    "postcode": "4115",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.6050099,
+      "longitude": 153.0423976,
+      "matchedAddress": "DAC Constructions, 15, Algester Road, Algester, Logan City, Brisbane, Queensland, 4115, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:26.925Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:114e8ee3af3d9b79f08dd149",
+    "name": "BRISBANE PUNJABI COMMUNITY CLUB ASS. INC.",
+    "activities": [
+      "Basketball",
+      "Football"
+    ],
+    "address": "2533 Beaudesert Road, Calamvale Queensland 4116",
+    "suburb": "Calamvale",
+    "postcode": "4116",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.6276498,
+      "longitude": 153.04554,
+      "matchedAddress": "2533, Beaudesert Road, Calamvale, Logan City, Brisbane, Queensland, 4116, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:29.096Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:6bcfc2cea0bb64c3cb5e995f",
+    "name": "Runcorn Rockets Basketball Club Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "132 Hill Road, Runcorn Queensland 4113",
+    "suburb": "Runcorn",
+    "postcode": "4113",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.5938177,
+      "longitude": 153.0763239,
+      "matchedAddress": "Runcorn State High School, 132, Hill Road, Runcorn, Brisbane, Queensland, 4113, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:31.451Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:87f4d5c5a452b700ddbbb611",
+    "name": "Dunk Star Junior Basketball Club",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "90 Klumpp Road, Upper Mount Gravatt Queensland 4122",
+    "suburb": "Upper Mount Gravatt",
+    "postcode": "4122",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Klumpp Road, Upper Mount Gravatt, Brisbane, Queensland, 4122, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:27:33.629Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:d2317868aa256f2e68dffa58",
+    "name": "River City Hornets Basketball Club Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "90 Klumpp Road, Upper Mount Gravatt Queensland 4122",
+    "suburb": "Upper Mount Gravatt",
+    "postcode": "4122",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Klumpp Road, Upper Mount Gravatt, Brisbane, Queensland, 4122, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:27:33.629Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:285e1e6b5b26ad1a10b4b901",
+    "name": "Rochedale Wildcats Basketball Club INC",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "Klumpp Road, Upper Mount Gravatt Queensland 4122",
+    "suburb": "Upper Mount Gravatt",
+    "postcode": "4122",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.5502175,
+      "longitude": 153.0662643,
+      "matchedAddress": "Klumpp Road, Upper Mount Gravatt, Brisbane, Queensland, 4122, Australia",
+      "precision": "street",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:35.710Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:39ac6353072b8a0126af6dd1",
+    "name": "South Western Metro Basketball Inc.",
+    "activities": [
+      "Basketball",
+      "Wheelchair Basketball"
+    ],
+    "address": "90 Klumpp Road, Upper Mount Gravatt Queensland 4122",
+    "suburb": "Upper Mount Gravatt",
+    "postcode": "4122",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Klumpp Road, Upper Mount Gravatt, Brisbane, Queensland, 4122, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:27:33.629Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:2a3c8e3f2dbe3345b423b768",
+    "name": "Sunnybank Hills Hurricanes Basketball Club Incorporated",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "16 Lorikeet Way, Crestmead Queensland 4132",
+    "suburb": "Crestmead",
+    "postcode": "4132",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Lorikeet Way, Crestmead, Logan City, Brisbane, Queensland, 4132, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:27:37.210Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:08f5704322b3043fb4c564a2",
+    "name": "HORNETS BASKETBALL CLUB INC",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "3 Acacia Close, Holland Park West Queensland 4121",
+    "suburb": "Holland Park West",
+    "postcode": "4121",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.5278547,
+      "longitude": 153.062297,
+      "matchedAddress": "3, Acacia Close, Holland Park West, Brisbane, Queensland, 4121, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:39.579Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:e9e7839d0e7974d519fc9da7",
+    "name": "The Boys' Brigade Queensland Limited",
+    "activities": [
+      "Abseiling",
+      "Active Recreation",
+      "Archery",
+      "Basketball",
+      "Bocce",
+      "Bushwalking",
+      "Canoeing",
+      "Croquet"
+    ],
+    "address": "12 Monaco Street, Holland Park West Queensland 4121",
+    "suburb": "Holland Park West",
+    "postcode": "4121",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "ambiguous",
+      "reason": "multiple-plausible-results",
+      "plausibleResults": [
+        {
+          "latitude": -27.5275354,
+          "longitude": 153.0576594,
+          "matchedAddress": "Boys Brigade Australia Queensland, 12, Monaco Street, Holland Park West, Brisbane, Queensland, 4121, Australia"
+        },
+        {
+          "latitude": -27.5278655,
+          "longitude": 153.0578302,
+          "matchedAddress": "12, Monaco Street, Holland Park West, Brisbane, Queensland, 4121, Australia"
+        }
+      ],
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:41.118Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:3e7128767e042f8b69fcbcf8",
+    "name": "LOGAN PUNJABI COMMUNITY SPORTS CLUB INC",
+    "activities": [
+      "Badminton",
+      "Basketball",
+      "Dance",
+      "Football",
+      "Running",
+      "Volleyball"
+    ],
+    "address": "156 Hubner Road, Park Ridge Queensland 4125",
+    "suburb": "Park Ridge",
+    "postcode": "4125",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Hubner Road, Park Ridge, Logan City, Brisbane, Queensland, 4125, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:27:42.882Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:1a273a56c68b0b6e8659b06f",
+    "name": "St Philomena School",
+    "activities": [
+      "Basketball",
+      "Netball"
+    ],
+    "address": "61 Koplick Road, Park Ridge Queensland 4125",
+    "suburb": "Park Ridge",
+    "postcode": "4125",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.7190269,
+      "longitude": 153.0841338,
+      "matchedAddress": "Saint Philomena School, 61, Koplick Road, Park Ridge, Logan City, Brisbane, Queensland, 4125, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:45.043Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:a042eb69a8319a487b23758e",
+    "name": "SOUTH CITY REBELS BASKETBALL CLUB INC",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "328 Broadwater Road, Mansfield Queensland 4122",
+    "suburb": "Mansfield",
+    "postcode": "4122",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.5442935,
+      "longitude": 153.1070604,
+      "matchedAddress": "328, Broadwater Road, Mansfield, Brisbane, Queensland, 4122, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:47.218Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:f6edfd6c053814b935a49a2d",
+    "name": "SCALA Indigenous Corporation",
+    "activities": [
+      "Active Recreation",
+      "Basketball",
+      "Netball",
+      "Netball - Indoor",
+      "On Country activities",
+      "Tennis",
+      "Traditional Indigenous Dance",
+      "Traditional Indigenous Games"
+    ],
+    "address": "unit 1/74 Sunbeam Street, Annerley Queensland 4103",
+    "suburb": "Annerley",
+    "postcode": "4103",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-results",
+      "plausibleResults": [],
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:49.178Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:9d99cade9d94e90b9a093a51",
+    "name": "Eastside Basketball Limited",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "695 Cavendish Road, Coorparoo Queensland 4151",
+    "suburb": "Coorparoo",
+    "postcode": "4151",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Cavendish Road, Coorparoo, Brisbane, Queensland, 4151, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "Cavendish Road, Coorparoo, Brisbane, Queensland, 4151, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "Cavendish Road, Coorparoo, Logan City, Brisbane, Queensland, 4151, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:27:50.733Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:f4bd08cc4251413c78d6cb85",
+    "name": "Loreto Coorparoo Limited",
+    "activities": [
+      "Australian Football",
+      "Basketball",
+      "Netball",
+      "Touch",
+      "Volleyball",
+      "Water Polo"
+    ],
+    "address": "415 Cavendish Road, Coorparoo Queensland 4151",
+    "suburb": "Coorparoo",
+    "postcode": "4151",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.5094523,
+      "longitude": 153.063145,
+      "matchedAddress": "Loreto College, 415, Cavendish Road, Coorparoo, Logan City, Brisbane, Queensland, 4151, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:52.804Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:113d2dae14a74868bef23945",
+    "name": "Citipointe Christian College",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "322 Wecker Road, Carindale Queensland 4152",
+    "suburb": "Carindale",
+    "postcode": "4152",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.5326242,
+      "longitude": 153.1144463,
+      "matchedAddress": "Citipointe Christian College, 322, Wecker Road, Carindale, Logan City, Brisbane, Queensland, 4152, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:27:54.968Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:9a15f45e97b1748634389911",
+    "name": "Greater Springfield Basketball Association Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "134 Parkland Drive, Springfield Central Queensland 4300",
+    "suburb": "Springfield Central",
+    "postcode": "4300",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Parkland Drive, Springfield Central, Brisbane, Queensland, 4300, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "Parkland Drive, Springfield Central, Brisbane, Queensland, 4300, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "Parkland Drive, Springfield Lakes, Brisbane, Queensland, 4300, Australia",
+          "reasons": [
+            "locality missing or conflicting",
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:27:57.324Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:d846b47218c5f975edeab5ee",
+    "name": "Jazz Basketball Club Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "146-170 Bryants Road, Shailer Park Queensland 4128",
+    "suburb": "Shailer Park",
+    "postcode": "4128",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?name=&activity=Basketball&locality=ALGESTER&location=4115&latitude=-27.61273&longitude=153.03255&distance=25",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Bryants Road, Shailer Park, Logan City, Brisbane, Redland City, Queensland, 4128, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:27:58.928Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:85eeb0b828e07330a9a50fd1",
+    "name": "Logan Basketball Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "146-170 Bryants Road, Shailer Park Queensland 4128",
+    "suburb": "Shailer Park",
+    "postcode": "4128",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Bryants Road, Shailer Park, Logan City, Brisbane, Redland City, Queensland, 4128, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:27:58.928Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:87277650ff43e143b8aa7ce9",
+    "name": "BK Owls Basketball Club Incorporated",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "56 Zahel Street, Carina Queensland 4152",
+    "suburb": "Carina",
+    "postcode": "4152",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "ambiguous",
+      "reason": "multiple-plausible-results",
+      "plausibleResults": [
+        {
+          "latitude": -27.4912536,
+          "longitude": 153.0987434,
+          "matchedAddress": "Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        },
+        {
+          "latitude": -27.489907,
+          "longitude": 153.0984157,
+          "matchedAddress": "56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        },
+        {
+          "latitude": -27.4921843,
+          "longitude": 153.096757,
+          "matchedAddress": "The Practice at Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        }
+      ],
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:00.584Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:1cb03407b6a7747214a67c10",
+    "name": "Belmont Saints Basketball Club Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "56 Zahel Street, Carina Queensland 4152",
+    "suburb": "Carina",
+    "postcode": "4152",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "ambiguous",
+      "reason": "multiple-plausible-results",
+      "plausibleResults": [
+        {
+          "latitude": -27.4912536,
+          "longitude": 153.0987434,
+          "matchedAddress": "Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        },
+        {
+          "latitude": -27.489907,
+          "longitude": 153.0984157,
+          "matchedAddress": "56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        },
+        {
+          "latitude": -27.4921843,
+          "longitude": 153.096757,
+          "matchedAddress": "The Practice at Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        }
+      ],
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:00.584Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:044787ab85089f18f957b89f",
+    "name": "Cyclones Basketball Club Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "56 Zahel Street, Carina Queensland 4152",
+    "suburb": "Carina",
+    "postcode": "4152",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "ambiguous",
+      "reason": "multiple-plausible-results",
+      "plausibleResults": [
+        {
+          "latitude": -27.4912536,
+          "longitude": 153.0987434,
+          "matchedAddress": "Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        },
+        {
+          "latitude": -27.489907,
+          "longitude": 153.0984157,
+          "matchedAddress": "56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        },
+        {
+          "latitude": -27.4921843,
+          "longitude": 153.096757,
+          "matchedAddress": "The Practice at Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        }
+      ],
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:00.584Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:fbce3712196ba46e38a9eda3",
+    "name": "Hoopstars Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "56 Zahel Street, Carina Queensland 4152",
+    "suburb": "Carina",
+    "postcode": "4152",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "ambiguous",
+      "reason": "multiple-plausible-results",
+      "plausibleResults": [
+        {
+          "latitude": -27.4912536,
+          "longitude": 153.0987434,
+          "matchedAddress": "Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        },
+        {
+          "latitude": -27.489907,
+          "longitude": 153.0984157,
+          "matchedAddress": "56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        },
+        {
+          "latitude": -27.4921843,
+          "longitude": 153.096757,
+          "matchedAddress": "The Practice at Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        }
+      ],
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:00.584Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:4ee19c3cb80361576779cb27",
+    "name": "Southern Districts Basketball Association Ltd",
+    "activities": [
+      "Basketball",
+      "Wheelchair Basketball"
+    ],
+    "address": "56 Zahel Street, Carina Queensland 4152",
+    "suburb": "Carina",
+    "postcode": "4152",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "ambiguous",
+      "reason": "multiple-plausible-results",
+      "plausibleResults": [
+        {
+          "latitude": -27.4912536,
+          "longitude": 153.0987434,
+          "matchedAddress": "Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        },
+        {
+          "latitude": -27.489907,
+          "longitude": 153.0984157,
+          "matchedAddress": "56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        },
+        {
+          "latitude": -27.4921843,
+          "longitude": 153.096757,
+          "matchedAddress": "The Practice at Clem Jones Centre, 56, Zahel Street, Carina, Brisbane, Queensland, 4152, Australia"
+        }
+      ],
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:00.584Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:137cfcdc7170a0e26b1a6fd5",
+    "name": "Boys Brigade - 50th Brisbane",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "3077 Moggill Road, Bellbowrie Queensland 4070",
+    "suburb": "Bellbowrie",
+    "postcode": "4070",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.550096,
+      "longitude": 152.8881127,
+      "matchedAddress": "3077, Moggill Road, Bellbowrie, Brisbane, Queensland, 4070, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:02.478Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:c00dfac3d61e4bfe437311bc",
+    "name": "Brisbane Basketball Incorporated",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "16 Dixon Street, Auchenflower Queensland 4066",
+    "suburb": "Auchenflower",
+    "postcode": "4066",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Dixon Street, Auchenflower, Brisbane, Queensland, 4066, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "Dixon Street, Toowong, Brisbane, Queensland, 4066, Australia",
+          "reasons": [
+            "locality missing or conflicting",
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:04.260Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:b0c347a6a163337339bbedcf",
+    "name": "West Brisbane Falcons Basketball Club Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "Dixon Street, Auchenflower Queensland 4066",
+    "suburb": "Auchenflower",
+    "postcode": "4066",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.4769195,
+      "longitude": 152.9948094,
+      "matchedAddress": "Dixon Street, Auchenflower, Brisbane, Queensland, 4066, Australia",
+      "precision": "street",
+      "rejected": [
+        {
+          "matchedAddress": "Dixon Street, Toowong, Brisbane, Queensland, 4066, Australia",
+          "reasons": [
+            "locality missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:06.018Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:d2987658afc911ca2d5c7a3a",
+    "name": "West City Titans Basketball Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "16 Dixon Street, Auchenflower Queensland 4066",
+    "suburb": "Auchenflower",
+    "postcode": "4066",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Dixon Street, Auchenflower, Brisbane, Queensland, 4066, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "Dixon Street, Toowong, Brisbane, Queensland, 4066, Australia",
+          "reasons": [
+            "locality missing or conflicting",
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:04.260Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:bb3fd73dd068102737f32d7a",
+    "name": "Lang Park Basketball Club Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "40 Castlemaine Street, Milton Queensland 4064",
+    "suburb": "Milton",
+    "postcode": "4064",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.4648602,
+      "longitude": 153.0096055,
+      "matchedAddress": "Suncorp Stadium, 40, Castlemaine Street, Milton, Brisbane, Queensland, 4064, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:07.505Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:68e6937ad7c54f0ac333330e",
+    "name": "Lourdes Hill College",
+    "activities": [
+      "Australian Football",
+      "Basketball",
+      "Netball",
+      "Rowing",
+      "Touch"
+    ],
+    "address": "86 Hawthorne Road, Hawthorne Queensland 4171",
+    "suburb": "Hawthorne",
+    "postcode": "4171",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.4692858,
+      "longitude": 153.0582215,
+      "matchedAddress": "Lourdes Hill College, 86, Hawthorne Road, Hawthorne, Brisbane, Queensland, 4171, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:09.749Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:7ed09facbed390dfc458a607",
+    "name": "Brisbane City 3x3 Pty Ltd",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "244 New Cleveland Road, Tingalpa Queensland 4173",
+    "suburb": "Tingalpa",
+    "postcode": "4173",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.4778619,
+      "longitude": 153.142241,
+      "matchedAddress": "244, New Cleveland Road, Tingalpa, Brisbane, Queensland, 4173, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:11.557Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:88fdcb97a20c3de4a73e24a8",
+    "name": "Alexandra Hills Raiders Basketball Club Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "Degen Road, Capalaba Queensland 4157",
+    "suburb": "Capalaba",
+    "postcode": "4157",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "ambiguous",
+      "reason": "multiple-plausible-results",
+      "plausibleResults": [
+        {
+          "latitude": -27.5487104,
+          "longitude": 153.1907667,
+          "matchedAddress": "Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia"
+        },
+        {
+          "latitude": -27.5496014,
+          "longitude": 153.1974003,
+          "matchedAddress": "Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia"
+        }
+      ],
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:13.333Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:f7b7cc08a94f80e6f9a98fef",
+    "name": "Capalaba State College",
+    "activities": [
+      "Basketball",
+      "Volleyball"
+    ],
+    "address": "School Road, Capalaba Queensland 4157",
+    "suburb": "Capalaba",
+    "postcode": "4157",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.5352403,
+      "longitude": 153.1953293,
+      "matchedAddress": "School Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+      "precision": "street",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:15.396Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:b61ce6ebe77e06ecfc0affcd",
+    "name": "Capalaba Wildcats Basketball Club",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "45 Degen Road, Capalaba Queensland 4157",
+    "suburb": "Capalaba",
+    "postcode": "4157",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.5479378,
+      "longitude": 153.1966813,
+      "matchedAddress": "St. Luke's Catholic Parish School, 45, Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:17.596Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:040d4c5eb2742c309ac3576f",
+    "name": "Crusaders Basketball Association Incorporated",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "63-65 Degen Road, Capalaba Queensland 4157",
+    "suburb": "Capalaba",
+    "postcode": "4157",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:18.998Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:2722683d08ff6996cd4743d7",
+    "name": "Redcity Roar Basketball Association Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "300 Mount Cotton Road, Capalaba Queensland 4157",
+    "suburb": "Capalaba",
+    "postcode": "4157",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Degen Road BMX Park, 278-300, Mount Cotton Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "Redlands BMX Club, 278-300, Mount Cotton Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "Mount Cotton Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:21.362Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:607a904c2cd76c2e2a1d1d59",
+    "name": "Wellington Point Kings Basketball Club Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "Corner Of Mt Cotton Rd and Degen Rd, Capalaba Queensland 4157",
+    "suburb": "Capalaba",
+    "postcode": "4157",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-results",
+      "plausibleResults": [],
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:23.212Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:385f4fbac9f3e47d4e6a8a18",
+    "name": "Oakleigh Basketball Club",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "60 Kinnaird Street, Ashgrove Queensland 4060",
+    "suburb": "Ashgrove",
+    "postcode": "4060",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=2",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.4393466,
+      "longitude": 152.9933508,
+      "matchedAddress": "60, Kinnaird Street, Ashgrove, Brisbane, Queensland, 4060, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:25.439Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:6acd514d65db47cb3a433911",
+    "name": "Faith Lutheran College Redlands",
+    "activities": [
+      "Basketball",
+      "Netball",
+      "Touch",
+      "Volleyball"
+    ],
+    "address": "1 Beveridge Road, Thornlands Queensland 4164",
+    "suburb": "Thornlands",
+    "postcode": "4164",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Faith Lutheran College, 1-15, Beveridge Road, Thornlands, Brisbane, Redland City, Queensland, 4164, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "ANC - Training Ship Diamantina, 1-15, Beveridge Road, Thornlands, Brisbane, Redland City, Queensland, 4164, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "Beveridge Road, Thornlands, Brisbane, Redland City, Queensland, 4164, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:27.654Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:6476bfbb1f7c733f37b5e76f",
+    "name": "Wynnum Manly Hawks Basketball Club Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "89 Ernest Street, Manly Queensland 4179",
+    "suburb": "Manly",
+    "postcode": "4179",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.4585359,
+      "longitude": 153.1818439,
+      "matchedAddress": "89, Ernest Street, Manly, Brisbane, Queensland, 4179, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:30.022Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:ef3fcdab13a2deced098f1e4",
+    "name": "Carina Cobras Basketball Club Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "81 Moreton Avenue, Wynnum Queensland 4178",
+    "suburb": "Wynnum",
+    "postcode": "4178",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "matched",
+      "latitude": -27.4433678,
+      "longitude": 153.1605329,
+      "matchedAddress": "81, Moreton Avenue, Wynnum, Brisbane, Queensland, 4178, Australia",
+      "precision": "house-number",
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:31.620Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:54fc4884d14832c813ca6289",
+    "name": "Junior Bayside Jets Basketball Club Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "81 Boxgrove Avenue, Wynnum Queensland 4178",
+    "suburb": "Wynnum",
+    "postcode": "4178",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Boxgrove Avenue, Wynnum, Brisbane, Queensland, 4178, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:33.669Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:4cae607f5adebea8ea316581",
+    "name": "Brothers Basketball Club Ipswich Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+    "suburb": "Booval",
+    "postcode": "4304",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Ross Llewellyn Drive, Booval, Brisbane, Queensland, 4304, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:35.080Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:1fc29fc13091ada8f7b0be45",
+    "name": "Central Bulldogs Basketball Club Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+    "suburb": "Booval",
+    "postcode": "4304",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Ross Llewellyn Drive, Booval, Brisbane, Queensland, 4304, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:35.080Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:e1e2a1c649e2ddaf4406e285",
+    "name": "Easts Basketball Club Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+    "suburb": "Booval",
+    "postcode": "4304",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Ross Llewellyn Drive, Booval, Brisbane, Queensland, 4304, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:35.080Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:49275e447ba4ebb9ba7db228",
+    "name": "Mt Crosby Basketball Club Incorporated",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+    "suburb": "Booval",
+    "postcode": "4304",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Ross Llewellyn Drive, Booval, Brisbane, Queensland, 4304, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:35.080Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:ab52b8a65ff9dd3e5660aeda",
+    "name": "Ripley Valley Basketball Club Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+    "suburb": "Booval",
+    "postcode": "4304",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Ross Llewellyn Drive, Booval, Brisbane, Queensland, 4304, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:35.080Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:a9e9938f68991cf0fb997438",
+    "name": "Springfield Brumbies Basketball Incorporated",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+    "suburb": "Booval",
+    "postcode": "4304",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Ross Llewellyn Drive, Booval, Brisbane, Queensland, 4304, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:35.080Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:07ada48dd3106366f08e58d6",
+    "name": "Swifts Comets Basketball Club Inc.",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+    "suburb": "Booval",
+    "postcode": "4304",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "Ross Llewellyn Drive, Booval, Brisbane, Queensland, 4304, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:35.080Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:339d09057eaf3b9f0818d6a9",
+    "name": "Northern Districts Amateur Basketball Association Incorporated",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "151 Flockton Street, Everton Park Queensland 4053",
+    "suburb": "Everton Park",
+    "postcode": "4053",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "ambiguous",
+      "reason": "multiple-plausible-results",
+      "plausibleResults": [
+        {
+          "latitude": -27.3932128,
+          "longitude": 152.9906672,
+          "matchedAddress": "Northside Christian College, 151, Flockton Street, Everton Park, Brisbane, Queensland, 4053, Australia"
+        },
+        {
+          "latitude": -27.3930227,
+          "longitude": 152.9904549,
+          "matchedAddress": "Nexus Church, 151, Flockton Street, Everton Park, Brisbane, Queensland, 4053, Australia"
+        }
+      ],
+      "rejected": [],
+      "sourceLastChecked": "2026-09-12T03:28:37.473Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:c651438eb1759278f4511c42",
+    "name": "Jimboomba Amateur basketball Assoc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "17 South Street, Jimboomba Queensland 4280",
+    "suburb": "Jimboomba",
+    "postcode": "4280",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "South Street, Brisbane, Queensland, 4280, Australia",
+          "reasons": [
+            "locality missing or conflicting",
+            "house number missing or conflicting"
+          ]
+        },
+        {
+          "matchedAddress": "South Street, Brisbane, Queensland, 4280, Australia",
+          "reasons": [
+            "locality missing or conflicting",
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:39.445Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  },
+  {
+    "id": "qld-play-on:09d436254cf47b7568e70a75",
+    "name": "Ormiston Crushers basketball club Inc",
+    "activities": [
+      "Basketball"
+    ],
+    "address": "29 McCartney Street, Ormiston Queensland 4160",
+    "suburb": "Ormiston",
+    "postcode": "4160",
+    "source": "qld-play-on",
+    "sourceUrl": "https://www.qld.gov.au/recreation/sports/funding/playon/find-provider?activity=Basketball&distance=25&latitude=-27.61273&locality=ALGESTER&location=4115&longitude=153.03255&name=&page=3",
+    "sourceLastChecked": "2026-09-11T13:24:05.538Z",
+    "geocode": {
+      "status": "unmatched",
+      "reason": "no-consistent-result",
+      "plausibleResults": [],
+      "rejected": [
+        {
+          "matchedAddress": "McCartney Street, Ormiston, Brisbane, Queensland, 4160, Australia",
+          "reasons": [
+            "house number missing or conflicting"
+          ]
+        }
+      ],
+      "sourceLastChecked": "2026-09-12T03:28:40.934Z",
+      "source": "osm-nominatim",
+      "endpoint": "https://nominatim.openstreetmap.org/search",
+      "addressRole": "provider-address",
+      "attribution": "© OpenStreetMap contributors; ODbL https://www.openstreetmap.org/copyright"
+    }
+  }
+]
