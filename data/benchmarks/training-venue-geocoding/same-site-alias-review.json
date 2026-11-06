@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "status": "Internal verified PS079 same-campus alias; exact genuine row only, publication not approved",
+  "asOfDate": "2026-11-06",
+  "verifiedBindings": [
+    {
+      "bindingId": "PS079-OFFICIAL-CHAIN-20261106",
+      "schema": "official-address-parcel-chain-v1",
+      "physicalSiteId": "PS079",
+      "venueId": "V079",
+      "bindingFile": "scripts/training-venues/ps079-alias-binding.mjs",
+      "bindingFileSha256": "4695420098002f118d03f38b68fe604947e7735b36c771166fa52d502dcf52fd",
+      "evidenceChain": "output/workflow/2026-11-06/training-venue-same-site-aliases/main/PS079-evidence-chain.json",
+      "officialInputRegistration": "25 Peel Street Wynnum QLD",
+      "officialAliasRegistration": "77 Buderim Street Wynnum QLD",
+      "rawAddressStatusCodes": {
+        "input": "A",
+        "alias": "P",
+        "interpretation": "Raw codes retained; no undocumented Active/Primary meaning inferred."
+      },
+      "parcel": {
+        "lotNumber": "378",
+        "planNumber": "SL6111"
+      },
+      "precision": "campus-level",
+      "reportedConfidence": "97",
+      "confidenceResolutionScope": "Exact raw row SHA-256 824da9c04f30d18935119a2fa50a879994257d4ad144c23bb007d56e10a45bd9; sole confidence-not-100 diagnostic after all independent chain and strict checks.",
+      "limitations": [
+        "School page publishes Peel Street, Manly 4179 with no number; number 25 comes only from official Queensland address registration.",
+        "Council page identifies the school at 77 Buderim Street, Wynnum 4178 and parcel; it does not list both numbered addresses.",
+        "Cadastre feat_name is null; school identity comes from the independent school/Council chain.",
+        "No basketball hall/entrance or surveyed coordinate precision is asserted."
+      ]
+    }
+  ],
+  "proposedAliases": [
+    {
+      "reviewId": "PS079-same-site-review-2026-11-06",
+      "physicalSiteId": "PS079",
+      "venueId": "V079",
+      "venueName": "Wynnum State High School",
+      "status": "Historical proposed lead — resolved only through the separate reviewed exact-row binding",
+      "inputAddress": {
+        "streetAddress": "25 Peel Street",
+        "suburb": "Manly",
+        "postcode": "4179"
+      },
+      "reportedReturnAddress": {
+        "streetAddress": "77 Buderim Street",
+        "suburb": "Wynnum",
+        "postcode": "4178"
+      },
+      "reportedParcelLead": {
+        "lotNumber": "378",
+        "planNumber": "SL6111",
+        "status": "Owner-reported lead only; no authenticated CSV or cadastral confirmation"
+      },
+      "source": "Owner's same-site-alias supplement; not an official geocoder return",
+      "existingOfficialSource": "https://wynnumshs.eq.edu.au/our-school/contact-us",
+      "existingEvidenceId": "P2-E029",
+      "existingLimitation": "Research supports Peel Street, Manly QLD 4179; the official school page did not verify number 25.",
+      "requiredChecks": [
+        "Obtain the unchanged genuine training-batch government CSV and matching hash/provenance sidecar.",
+        "Verify the current official school address and target campus identity.",
+        "Verify Council's school and Buderim address registration from independently reviewed official evidence.",
+        "Verify the actual returned LotNumber, PlanNumber and complex/building metadata.",
+        "Verify same-site identity for both addresses and the relevant school/campus/parcel.",
+        "Verify returned coordinates lie within an authoritative, identity-bound campus/parcel footprint."
+      ],
+      "candidateCoordinates": null,
+      "acceptedCoordinates": null,
+      "publicDisplayApproved": false
+    }
+  ]
+}

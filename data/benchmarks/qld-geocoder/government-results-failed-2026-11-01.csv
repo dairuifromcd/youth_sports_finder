@@ -1,0 +1,40 @@
+InputIndex,Address to Validate,LOCALITY,Primary Address,Locality,Postcode,Local Government Name,LotNumber,PlanNumber,Longitude,Latitude,GeocodeType,Confidence,FullAddress,Complex-Building Name,Comment
+1,"2A Ross Llewellyn Drive" "Booval 4304",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+2,"15 Algester Road" "Algester 4115",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+3,"1 Beveridge Road" "Thornlands 4164",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+4,"695 Cavendish Road" "Coorparoo 4151",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+5,"63-65 Degen Road" "Capalaba 4157",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+6,"17 South Street" "Jimboomba 4280",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+7,"151 Flockton Street" "Everton Park 4053",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+8,"Dixon Street" "Auchenflower 4066",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+9,"56 Zahel Street" "Carina 4152",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+10,"81 Boxgrove Avenue" "Wynnum 4178",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+11,"415 Cavendish Road" "Coorparoo 4151",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+12,"300 Mount Cotton Road" "Capalaba 4157",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+13,"29 McCartney Street" "Ormiston 4160",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+14,"90 Klumpp Road" "Upper Mount Gravatt 4122",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+15,"45 Degen Road" "Capalaba 4157",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+16,"81 Moreton Avenue" "Wynnum 4178",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+17,"unit 1/74 Sunbeam Street" "Annerley 4103",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+18,"2533 Beaudesert Road" "Calamvale 4116",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+19,"86 Hawthorne Road" "Hawthorne 4171",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+20,"156 Hubner Road" "Park Ridge 4125",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+21,"244 New Cleveland Road" "Tingalpa 4173",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+22,"328 Broadwater Road" "Mansfield 4122",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+23,"School Road" "Capalaba 4157",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+24,"40 Castlemaine Street" "Milton 4064",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+25,"Degen Road" "Capalaba 4157",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+26,"31 Endiandra Street" "Algester 4115",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+27,"12 Monaco Street" "Holland Park West 4121",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+28,"89 Ernest Street" "Manly 4179",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+29,"Klumpp Road" "Upper Mount Gravatt 4122",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+30,"134 Parkland Drive" "Springfield Central 4300",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+31,"132 Hill Road" "Runcorn 4113",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+32,"16 Lorikeet Way" "Crestmead 4132",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+33,"60 Kinnaird Street" "Ashgrove 4060",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+34,"16 Dixon Street" "Auchenflower 4066",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+35,"322 Wecker Road" "Carindale 4152",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+36,"3 Acacia Close" "Holland Park West 4121",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+37,"3077 Moggill Road" "Bellbowrie 4070",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+38,"61 Koplick Road" "Park Ridge 4125",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 
+39,"146-170 Bryants Road" "Shailer Park 4128",,,,,,,,,,,,,,Invalid String containing illegal characters for current record 

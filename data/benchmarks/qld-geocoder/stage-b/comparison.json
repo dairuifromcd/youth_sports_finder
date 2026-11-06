@@ -1,0 +1,1361 @@
+{
+  "version": 1,
+  "provenance": {
+    "source": "qld-government-geocoder",
+    "sourceUrl": "https://geocode.information.qld.gov.au/",
+    "attribution": "© The State of Queensland (Queensland Government), Property Location Service",
+    "sourceLastChecked": null,
+    "sourceLastCheckedNote": "Government CSV contains no check/upload timestamp; not inferred from file modification time.",
+    "validatedOn": "2026-11-01",
+    "addressRole": "provider-address",
+    "inputs": {
+      "source": {
+        "sha256": "4807c3edef5ecff78ace40891a922f0afc100c446a58b5d84b3e0d0b97d5c6b5"
+      },
+      "nominatim": {
+        "sha256": "744cfd47da788c261fe16b500b4e163463674a783c07bcb6b64403b1f47f7916"
+      },
+      "upload": {
+        "sha256": "059910473ecc46b83f262527c4d3461c2ea293e36b73f3e650aa32543c41dee1"
+      },
+      "mapping": {
+        "sha256": "cb48f8e22aa97db3805e5ac40c8f6e5a1c760f171a02a9d4f594026103c9eae6"
+      },
+      "government": {
+        "sha256": "d34d29a77196bdc04ea8c21f9d2cb7c2c261e70a865b9964162ef130db008a01"
+      }
+    }
+  },
+  "disagreementPolicy": {
+    "thresholdMetres": 250,
+    "method": "Haversine on selected Nominatim vs raw government coordinates; alert, not ground truth"
+  },
+  "summary": {
+    "sourceProviders": 54,
+    "uniqueAddresses": 40,
+    "submittedAddresses": 39,
+    "rawCoordinateAddresses": 27,
+    "rawCoordinateProviders": 34,
+    "addressOutcomes": {
+      "accepted": 19,
+      "unmatched": 0,
+      "ambiguous": 12,
+      "rejected": 1,
+      "needs-review": 8
+    },
+    "providerOutcomes": {
+      "accepted": 25,
+      "unmatched": 0,
+      "ambiguous": 19,
+      "rejected": 1,
+      "needs-review": 9
+    },
+    "baseline": {
+      "matched": 19,
+      "unmatched": 27,
+      "ambiguous": 8,
+      "error": 0,
+      "pending": 0
+    },
+    "additionalTrustworthyMatches": 11,
+    "previousMatchesNotAccepted": 5,
+    "materialDisagreementProviders": 0,
+    "materialDisagreementAddresses": 0,
+    "acceptedProviderCoveragePercent": 46.3,
+    "acceptedAddressCoveragePercent": 47.5
+  },
+  "providers": [
+    {
+      "id": "qld-play-on:055fd5732213fea8ef7a3129",
+      "name": "Algester Hawks Basketball Club Inc.",
+      "address": "31 Endiandra Street, Algester Queensland 4115",
+      "addressKey": "bbc7da96f9fa7c605395071328edca868c06f21db939c3b0eccc6e8e059d9932",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:24.548Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:99afea876882f817d8447472",
+      "name": "Cannons Southside Inc",
+      "address": "15 Algester Road, Algester Queensland 4115",
+      "addressKey": "09c9996ac0368563bcfc0dff619fdd99060feb8cd34ade91804eb4b8e8004be5",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:27:26.925Z",
+        "latitude": -27.6050099,
+        "longitude": 153.0423976,
+        "precision": "house-number",
+        "matchedAddress": "DAC Constructions, 15, Algester Road, Algester, Logan City, Brisbane, Queensland, 4115, Australia"
+      },
+      "separationMetres": 12,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.60509882,
+        "longitude": 153.04246953,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:114e8ee3af3d9b79f08dd149",
+      "name": "BRISBANE PUNJABI COMMUNITY CLUB ASS. INC.",
+      "address": "2533 Beaudesert Road, Calamvale Queensland 4116",
+      "addressKey": "80d96c920930aedbdab3c05cd61eded8c96e181a88ad8670ffb43c7fa2fb5461",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:27:29.096Z",
+        "latitude": -27.6276498,
+        "longitude": 153.04554,
+        "precision": "house-number",
+        "matchedAddress": "2533, Beaudesert Road, Calamvale, Logan City, Brisbane, Queensland, 4116, Australia"
+      },
+      "separationMetres": 2,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.62763716,
+        "longitude": 153.04554599,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:6bcfc2cea0bb64c3cb5e995f",
+      "name": "Runcorn Rockets Basketball Club Inc.",
+      "address": "132 Hill Road, Runcorn Queensland 4113",
+      "addressKey": "ccb2301120f8ea73644ee72d30729102c1a5a76cfba12a7bd6e8fd3c8cba58ee",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:27:31.451Z",
+        "latitude": -27.5938177,
+        "longitude": 153.0763239,
+        "precision": "house-number",
+        "matchedAddress": "Runcorn State High School, 132, Hill Road, Runcorn, Brisbane, Queensland, 4113, Australia"
+      },
+      "separationMetres": 85,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.5930671,
+        "longitude": 153.07649378,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:87f4d5c5a452b700ddbbb611",
+      "name": "Dunk Star Junior Basketball Club",
+      "address": "90 Klumpp Road, Upper Mount Gravatt Queensland 4122",
+      "addressKey": "5957a2cda26fe5e9908a70db14072ec0ca025d3d57df942d44e2b13ee563797f",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:33.629Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:d2317868aa256f2e68dffa58",
+      "name": "River City Hornets Basketball Club Inc.",
+      "address": "90 Klumpp Road, Upper Mount Gravatt Queensland 4122",
+      "addressKey": "5957a2cda26fe5e9908a70db14072ec0ca025d3d57df942d44e2b13ee563797f",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:33.629Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:285e1e6b5b26ad1a10b4b901",
+      "name": "Rochedale Wildcats Basketball Club INC",
+      "address": "Klumpp Road, Upper Mount Gravatt Queensland 4122",
+      "addressKey": "c825d7ddd557b2f0c97c9d6cfda9e00b6f9746ea2ded905daa6300664ef75b84",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:27:35.710Z",
+        "latitude": -27.5502175,
+        "longitude": 153.0662643,
+        "precision": "street",
+        "matchedAddress": "Klumpp Road, Upper Mount Gravatt, Brisbane, Queensland, 4122, Australia"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": true
+    },
+    {
+      "id": "qld-play-on:39ac6353072b8a0126af6dd1",
+      "name": "South Western Metro Basketball Inc.",
+      "address": "90 Klumpp Road, Upper Mount Gravatt Queensland 4122",
+      "addressKey": "5957a2cda26fe5e9908a70db14072ec0ca025d3d57df942d44e2b13ee563797f",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:33.629Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:2a3c8e3f2dbe3345b423b768",
+      "name": "Sunnybank Hills Hurricanes Basketball Club Incorporated",
+      "address": "16 Lorikeet Way, Crestmead Queensland 4132",
+      "addressKey": "d0e2e99e8eb6333e2b199eaf177637155d6fcb2ac79771b4fc3a3ab0cdd9950c",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:37.210Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.69314618,
+        "longitude": 153.09357227,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:08f5704322b3043fb4c564a2",
+      "name": "HORNETS BASKETBALL CLUB INC",
+      "address": "3 Acacia Close, Holland Park West Queensland 4121",
+      "addressKey": "e63ed963870a9f5c06f0add088d8c579f4ef147e787df4954519bb35eb69a259",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:27:39.579Z",
+        "latitude": -27.5278547,
+        "longitude": 153.062297,
+        "precision": "house-number",
+        "matchedAddress": "3, Acacia Close, Holland Park West, Brisbane, Queensland, 4121, Australia"
+      },
+      "separationMetres": 2,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.52783917,
+        "longitude": 153.06229281,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:e9e7839d0e7974d519fc9da7",
+      "name": "The Boys' Brigade Queensland Limited",
+      "address": "12 Monaco Street, Holland Park West Queensland 4121",
+      "addressKey": "be679c7cf9e9a6d80df03440a869a5233ffbfc0512ad43591b5ab34c96505954",
+      "nominatim": {
+        "status": "ambiguous",
+        "sourceLastChecked": "2026-09-12T03:27:41.118Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.52783203,
+        "longitude": 153.05780097,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:3e7128767e042f8b69fcbcf8",
+      "name": "LOGAN PUNJABI COMMUNITY SPORTS CLUB INC",
+      "address": "156 Hubner Road, Park Ridge Queensland 4125",
+      "addressKey": "93de656775e5e090f10baae74dd4c4b1653b152e36ddc448c88babc3ba63b118",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:42.882Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "needs-review",
+        "reasons": [
+          "confidence-not-100",
+          "house-number-range-requires-review"
+        ],
+        "rawCoordinateAvailable": true
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:1a273a56c68b0b6e8659b06f",
+      "name": "St Philomena School",
+      "address": "61 Koplick Road, Park Ridge Queensland 4125",
+      "addressKey": "f6b0d5181cd36294d36445badcdea59065e278346fd40588d8026d5b279e5535",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:27:45.043Z",
+        "latitude": -27.7190269,
+        "longitude": 153.0841338,
+        "precision": "house-number",
+        "matchedAddress": "Saint Philomena School, 61, Koplick Road, Park Ridge, Logan City, Brisbane, Queensland, 4125, Australia"
+      },
+      "separationMetres": 9,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "needs-review",
+        "reasons": [
+          "confidence-not-100",
+          "house-number-range-requires-review"
+        ],
+        "rawCoordinateAvailable": true
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": true
+    },
+    {
+      "id": "qld-play-on:a042eb69a8319a487b23758e",
+      "name": "SOUTH CITY REBELS BASKETBALL CLUB INC",
+      "address": "328 Broadwater Road, Mansfield Queensland 4122",
+      "addressKey": "966ea575bd29b82512ef030048d6c701d766a67de4d61db191832510c8346247",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:27:47.218Z",
+        "latitude": -27.5442935,
+        "longitude": 153.1070604,
+        "precision": "house-number",
+        "matchedAddress": "328, Broadwater Road, Mansfield, Brisbane, Queensland, 4122, Australia"
+      },
+      "separationMetres": 2,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.54428248,
+        "longitude": 153.10707708,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:f6edfd6c053814b935a49a2d",
+      "name": "SCALA Indigenous Corporation",
+      "address": "unit 1/74 Sunbeam Street, Annerley Queensland 4103",
+      "addressKey": "6d535c62f88652ea7d6738a349f6f6858622ac205607adf9122e6ffefc534284",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:49.178Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.51200826,
+        "longitude": 153.02618338,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:9d99cade9d94e90b9a093a51",
+      "name": "Eastside Basketball Limited",
+      "address": "695 Cavendish Road, Coorparoo Queensland 4151",
+      "addressKey": "0f004286256d56611b84eece53aada6c759c88bb0d06d76b4baede53481781f1",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:50.733Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "rejected",
+        "reasons": [
+          "locality-mismatch",
+          "postcode-mismatch",
+          "confidence-not-100"
+        ],
+        "rawCoordinateAvailable": true
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:f4bd08cc4251413c78d6cb85",
+      "name": "Loreto Coorparoo Limited",
+      "address": "415 Cavendish Road, Coorparoo Queensland 4151",
+      "addressKey": "4d5c703479c7feb4849c74f92ab83f0c9f363acbfc90ab45312b33eb400646c8",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:27:52.804Z",
+        "latitude": -27.5094523,
+        "longitude": 153.063145,
+        "precision": "house-number",
+        "matchedAddress": "Loreto College, 415, Cavendish Road, Coorparoo, Logan City, Brisbane, Queensland, 4151, Australia"
+      },
+      "separationMetres": 83,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.50885655,
+        "longitude": 153.06364992,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:113d2dae14a74868bef23945",
+      "name": "Citipointe Christian College",
+      "address": "322 Wecker Road, Carindale Queensland 4152",
+      "addressKey": "e62c316a97ba1a92c28e6bc84f34bca353fba3c56d83fb07736e9cc4e8c0cb29",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:27:54.968Z",
+        "latitude": -27.5326242,
+        "longitude": 153.1144463,
+        "precision": "house-number",
+        "matchedAddress": "Citipointe Christian College, 322, Wecker Road, Carindale, Logan City, Brisbane, Queensland, 4152, Australia"
+      },
+      "separationMetres": 167,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.53333109,
+        "longitude": 153.11294865,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:9a15f45e97b1748634389911",
+      "name": "Greater Springfield Basketball Association Inc",
+      "address": "134 Parkland Drive, Springfield Central Queensland 4300",
+      "addressKey": "caaded6b51c306335807cb02a81cc79fe754b4a88df392bf63c69daebea4ab38",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:57.324Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "needs-review",
+        "reasons": [
+          "confidence-not-100",
+          "house-number-suffix-changed"
+        ],
+        "rawCoordinateAvailable": true
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:d846b47218c5f975edeab5ee",
+      "name": "Jazz Basketball Club Inc",
+      "address": "146-170 Bryants Road, Shailer Park Queensland 4128",
+      "addressKey": "f93d279422cd83be08b59d39346061407fec6c6bb736e08e9c1df73c35047bab",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:58.928Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "needs-review",
+        "reasons": [
+          "house-number-range-requires-review"
+        ],
+        "rawCoordinateAvailable": true
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:85eeb0b828e07330a9a50fd1",
+      "name": "Logan Basketball Inc.",
+      "address": "146-170 Bryants Road, Shailer Park Queensland 4128",
+      "addressKey": "f93d279422cd83be08b59d39346061407fec6c6bb736e08e9c1df73c35047bab",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:27:58.928Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "needs-review",
+        "reasons": [
+          "house-number-range-requires-review"
+        ],
+        "rawCoordinateAvailable": true
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:87277650ff43e143b8aa7ce9",
+      "name": "BK Owls Basketball Club Incorporated",
+      "address": "56 Zahel Street, Carina Queensland 4152",
+      "addressKey": "3db0ca767611f166e97e40ffb6b03e1ec2f25aeafd5affed76671e769f823b30",
+      "nominatim": {
+        "status": "ambiguous",
+        "sourceLastChecked": "2026-09-12T03:28:00.584Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:1cb03407b6a7747214a67c10",
+      "name": "Belmont Saints Basketball Club Inc.",
+      "address": "56 Zahel Street, Carina Queensland 4152",
+      "addressKey": "3db0ca767611f166e97e40ffb6b03e1ec2f25aeafd5affed76671e769f823b30",
+      "nominatim": {
+        "status": "ambiguous",
+        "sourceLastChecked": "2026-09-12T03:28:00.584Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:044787ab85089f18f957b89f",
+      "name": "Cyclones Basketball Club Inc",
+      "address": "56 Zahel Street, Carina Queensland 4152",
+      "addressKey": "3db0ca767611f166e97e40ffb6b03e1ec2f25aeafd5affed76671e769f823b30",
+      "nominatim": {
+        "status": "ambiguous",
+        "sourceLastChecked": "2026-09-12T03:28:00.584Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:fbce3712196ba46e38a9eda3",
+      "name": "Hoopstars Inc.",
+      "address": "56 Zahel Street, Carina Queensland 4152",
+      "addressKey": "3db0ca767611f166e97e40ffb6b03e1ec2f25aeafd5affed76671e769f823b30",
+      "nominatim": {
+        "status": "ambiguous",
+        "sourceLastChecked": "2026-09-12T03:28:00.584Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:4ee19c3cb80361576779cb27",
+      "name": "Southern Districts Basketball Association Ltd",
+      "address": "56 Zahel Street, Carina Queensland 4152",
+      "addressKey": "3db0ca767611f166e97e40ffb6b03e1ec2f25aeafd5affed76671e769f823b30",
+      "nominatim": {
+        "status": "ambiguous",
+        "sourceLastChecked": "2026-09-12T03:28:00.584Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:137cfcdc7170a0e26b1a6fd5",
+      "name": "Boys Brigade - 50th Brisbane",
+      "address": "3077 Moggill Road, Bellbowrie Queensland 4070",
+      "addressKey": "efcbceabb3acda421d3c18363f2b89f03ca6e1890aacaf88f7ba3ab641c254ef",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:28:02.478Z",
+        "latitude": -27.550096,
+        "longitude": 152.8881127,
+        "precision": "house-number",
+        "matchedAddress": "3077, Moggill Road, Bellbowrie, Brisbane, Queensland, 4070, Australia"
+      },
+      "separationMetres": 2,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.55008332,
+        "longitude": 152.88811878,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:c00dfac3d61e4bfe437311bc",
+      "name": "Brisbane Basketball Incorporated",
+      "address": "16 Dixon Street, Auchenflower Queensland 4066",
+      "addressKey": "d73feeb9e2f12edde1e8a545278843edd5212874f0f22e0a5c1cb2285b0836d0",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:04.260Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:b0c347a6a163337339bbedcf",
+      "name": "West Brisbane Falcons Basketball Club Inc",
+      "address": "Dixon Street, Auchenflower Queensland 4066",
+      "addressKey": "3b845567dcb3832978e09fe3ef1b0d557e4a96ef535a628dec65948888a84060",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:28:06.018Z",
+        "latitude": -27.4769195,
+        "longitude": 152.9948094,
+        "precision": "street",
+        "matchedAddress": "Dixon Street, Auchenflower, Brisbane, Queensland, 4066, Australia"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": true
+    },
+    {
+      "id": "qld-play-on:d2987658afc911ca2d5c7a3a",
+      "name": "West City Titans Basketball Inc",
+      "address": "16 Dixon Street, Auchenflower Queensland 4066",
+      "addressKey": "d73feeb9e2f12edde1e8a545278843edd5212874f0f22e0a5c1cb2285b0836d0",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:04.260Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:bb3fd73dd068102737f32d7a",
+      "name": "Lang Park Basketball Club Inc",
+      "address": "40 Castlemaine Street, Milton Queensland 4064",
+      "addressKey": "a1e3e1c35944738acbef8991a77a188312dfd41cd7710b5d659d9e02af796cfe",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:28:07.505Z",
+        "latitude": -27.4648602,
+        "longitude": 153.0096055,
+        "precision": "house-number",
+        "matchedAddress": "Suncorp Stadium, 40, Castlemaine Street, Milton, Brisbane, Queensland, 4064, Australia"
+      },
+      "separationMetres": 2,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.46485448,
+        "longitude": 153.00962749,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:68e6937ad7c54f0ac333330e",
+      "name": "Lourdes Hill College",
+      "address": "86 Hawthorne Road, Hawthorne Queensland 4171",
+      "addressKey": "8fa38dc5bca494e7b09f76d81a0f61a39916073849234378501f4e2c014e90bf",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:28:09.749Z",
+        "latitude": -27.4692858,
+        "longitude": 153.0582215,
+        "precision": "house-number",
+        "matchedAddress": "Lourdes Hill College, 86, Hawthorne Road, Hawthorne, Brisbane, Queensland, 4171, Australia"
+      },
+      "separationMetres": 7,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.46924941,
+        "longitude": 153.05816899,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:7ed09facbed390dfc458a607",
+      "name": "Brisbane City 3x3 Pty Ltd",
+      "address": "244 New Cleveland Road, Tingalpa Queensland 4173",
+      "addressKey": "94a25208486fbc9b55aa994b09e9838aa57b78e512590dd7c956564271495ff8",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:28:11.557Z",
+        "latitude": -27.4778619,
+        "longitude": 153.142241,
+        "precision": "house-number",
+        "matchedAddress": "244, New Cleveland Road, Tingalpa, Brisbane, Queensland, 4173, Australia"
+      },
+      "separationMetres": 1,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.47785203,
+        "longitude": 153.14224178,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:88fdcb97a20c3de4a73e24a8",
+      "name": "Alexandra Hills Raiders Basketball Club Inc",
+      "address": "Degen Road, Capalaba Queensland 4157",
+      "addressKey": "a9bde246040cb853b46cc53f0aa5ab05d075964f1932826a30cd2fef2119197a",
+      "nominatim": {
+        "status": "ambiguous",
+        "sourceLastChecked": "2026-09-12T03:28:13.333Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:f7b7cc08a94f80e6f9a98fef",
+      "name": "Capalaba State College",
+      "address": "School Road, Capalaba Queensland 4157",
+      "addressKey": "9c56de97bbd2b05ef1952901b9d86c2d9705210a6358145a7efaf71dd2c6d3c1",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:28:15.396Z",
+        "latitude": -27.5352403,
+        "longitude": 153.1953293,
+        "precision": "street",
+        "matchedAddress": "School Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": true
+    },
+    {
+      "id": "qld-play-on:b61ce6ebe77e06ecfc0affcd",
+      "name": "Capalaba Wildcats Basketball Club",
+      "address": "45 Degen Road, Capalaba Queensland 4157",
+      "addressKey": "5b2a2cd89af46b6adf1bf0e4b26939ac7ddf25cf1d2c9edabc65d6d3095f2842",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:28:17.596Z",
+        "latitude": -27.5479378,
+        "longitude": 153.1966813,
+        "precision": "house-number",
+        "matchedAddress": "St. Luke's Catholic Parish School, 45, Degen Road, Capalaba, Logan City, Brisbane, Redland City, Queensland, 4157, Australia"
+      },
+      "separationMetres": 49,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.54831678,
+        "longitude": 153.19642132,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:040d4c5eb2742c309ac3576f",
+      "name": "Crusaders Basketball Association Incorporated",
+      "address": "63-65 Degen Road, Capalaba Queensland 4157",
+      "addressKey": "197f82d7db2040f06f901547ec4e39f2822ade1a4a63d8e60a05b699caa5b06a",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:18.998Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "needs-review",
+        "reasons": [
+          "house-number-range-requires-review"
+        ],
+        "rawCoordinateAvailable": true
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:2722683d08ff6996cd4743d7",
+      "name": "Redcity Roar Basketball Association Inc",
+      "address": "300 Mount Cotton Road, Capalaba Queensland 4157",
+      "addressKey": "4f8627558972849d74c11dc2a28379408178373614c19fc62606fa663ea29194",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:21.362Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:607a904c2cd76c2e2a1d1d59",
+      "name": "Wellington Point Kings Basketball Club Inc.",
+      "address": "Corner Of Mt Cotton Rd and Degen Rd, Capalaba Queensland 4157",
+      "addressKey": "7d5e15ba66ec07b5ade580b602a16a3864f16ef21031c2f0b6d984b656de9688",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:23.212Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "needs-review",
+        "reasons": [
+          "withheld-intersection-not-submitted"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:385f4fbac9f3e47d4e6a8a18",
+      "name": "Oakleigh Basketball Club",
+      "address": "60 Kinnaird Street, Ashgrove Queensland 4060",
+      "addressKey": "d670ee670e9c7eeebb2ce0a0902a9d19df93142b00068be69bbcce5f6a2f4503",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:28:25.439Z",
+        "latitude": -27.4393466,
+        "longitude": 152.9933508,
+        "precision": "house-number",
+        "matchedAddress": "60, Kinnaird Street, Ashgrove, Brisbane, Queensland, 4060, Australia"
+      },
+      "separationMetres": 2,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.43933402,
+        "longitude": 152.99335687,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:6acd514d65db47cb3a433911",
+      "name": "Faith Lutheran College Redlands",
+      "address": "1 Beveridge Road, Thornlands Queensland 4164",
+      "addressKey": "0b7962383a97f216fd35c78e1fedc1cc69ee0f8f775db7bd677caf9be47b66b8",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:27.654Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "needs-review",
+        "reasons": [
+          "confidence-not-100",
+          "house-number-range-requires-review"
+        ],
+        "rawCoordinateAvailable": true
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:6476bfbb1f7c733f37b5e76f",
+      "name": "Wynnum Manly Hawks Basketball Club Inc",
+      "address": "89 Ernest Street, Manly Queensland 4179",
+      "addressKey": "c6832e3e83103e76754084226c38ce9000769d8aa7080297115d1ad0169c33ee",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:28:30.022Z",
+        "latitude": -27.4585359,
+        "longitude": 153.1818439,
+        "precision": "house-number",
+        "matchedAddress": "89, Ernest Street, Manly, Brisbane, Queensland, 4179, Australia"
+      },
+      "separationMetres": 16,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.45849705,
+        "longitude": 153.18200261,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:ef3fcdab13a2deced098f1e4",
+      "name": "Carina Cobras Basketball Club Inc.",
+      "address": "81 Moreton Avenue, Wynnum Queensland 4178",
+      "addressKey": "67c495e4047f8eeb2ab598e0bbacb7ab2794f77a031205a6a2b85d43eb79fb7c",
+      "nominatim": {
+        "status": "matched",
+        "sourceLastChecked": "2026-09-12T03:28:31.620Z",
+        "latitude": -27.4433678,
+        "longitude": 153.1605329,
+        "precision": "house-number",
+        "matchedAddress": "81, Moreton Avenue, Wynnum, Brisbane, Queensland, 4178, Australia"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": true
+    },
+    {
+      "id": "qld-play-on:54fc4884d14832c813ca6289",
+      "name": "Junior Bayside Jets Basketball Club Inc.",
+      "address": "81 Boxgrove Avenue, Wynnum Queensland 4178",
+      "addressKey": "4160f3954967a017b19d6c7b6d9d188586fb4b4ba2052faadb27c00431eee010",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:33.669Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:4cae607f5adebea8ea316581",
+      "name": "Brothers Basketball Club Ipswich Inc",
+      "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+      "addressKey": "007f3cc424ce88e2aca7b72853734bfe4b8c513060b0c694b59a395df994da7e",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:35.080Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.6109996,
+        "longitude": 152.80035615,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:1fc29fc13091ada8f7b0be45",
+      "name": "Central Bulldogs Basketball Club Inc.",
+      "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+      "addressKey": "007f3cc424ce88e2aca7b72853734bfe4b8c513060b0c694b59a395df994da7e",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:35.080Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.6109996,
+        "longitude": 152.80035615,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:e1e2a1c649e2ddaf4406e285",
+      "name": "Easts Basketball Club Inc.",
+      "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+      "addressKey": "007f3cc424ce88e2aca7b72853734bfe4b8c513060b0c694b59a395df994da7e",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:35.080Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.6109996,
+        "longitude": 152.80035615,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:49275e447ba4ebb9ba7db228",
+      "name": "Mt Crosby Basketball Club Incorporated",
+      "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+      "addressKey": "007f3cc424ce88e2aca7b72853734bfe4b8c513060b0c694b59a395df994da7e",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:35.080Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.6109996,
+        "longitude": 152.80035615,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:ab52b8a65ff9dd3e5660aeda",
+      "name": "Ripley Valley Basketball Club Inc",
+      "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+      "addressKey": "007f3cc424ce88e2aca7b72853734bfe4b8c513060b0c694b59a395df994da7e",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:35.080Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.6109996,
+        "longitude": 152.80035615,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:a9e9938f68991cf0fb997438",
+      "name": "Springfield Brumbies Basketball Incorporated",
+      "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+      "addressKey": "007f3cc424ce88e2aca7b72853734bfe4b8c513060b0c694b59a395df994da7e",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:35.080Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.6109996,
+        "longitude": 152.80035615,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:07ada48dd3106366f08e58d6",
+      "name": "Swifts Comets Basketball Club Inc.",
+      "address": "2A Ross Llewellyn Drive, Booval Queensland 4304",
+      "addressKey": "007f3cc424ce88e2aca7b72853734bfe4b8c513060b0c694b59a395df994da7e",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:35.080Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.6109996,
+        "longitude": 152.80035615,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:339d09057eaf3b9f0818d6a9",
+      "name": "Northern Districts Amateur Basketball Association Incorporated",
+      "address": "151 Flockton Street, Everton Park Queensland 4053",
+      "addressKey": "2fdd15ae44f10e0dc807f3f2e4b5af2ac6bda25e463e76e064b552f3beb5eec0",
+      "nominatim": {
+        "status": "ambiguous",
+        "sourceLastChecked": "2026-09-12T03:28:37.473Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "ambiguous",
+        "reasons": [
+          "multiple-government-candidates"
+        ],
+        "rawCoordinateAvailable": false
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:c651438eb1759278f4511c42",
+      "name": "Jimboomba Amateur basketball Assoc",
+      "address": "17 South Street, Jimboomba Queensland 4280",
+      "addressKey": "253e4555d4193fe6a4463f5cf1b61b538edc2d653d256030c45e0142338e159a",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:39.445Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "needs-review",
+        "reasons": [
+          "confidence-not-100",
+          "house-number-range-requires-review"
+        ],
+        "rawCoordinateAvailable": true
+      },
+      "additionalTrustworthyMatch": false,
+      "previousMatchNotAccepted": false
+    },
+    {
+      "id": "qld-play-on:09d436254cf47b7568e70a75",
+      "name": "Ormiston Crushers basketball club Inc",
+      "address": "29 McCartney Street, Ormiston Queensland 4160",
+      "addressKey": "5112ab1dabbdda148f891aef917fbbb77be3c7bb5a63205279bcc9342518526b",
+      "nominatim": {
+        "status": "unmatched",
+        "sourceLastChecked": "2026-09-12T03:28:40.934Z"
+      },
+      "separationMetres": null,
+      "materialDisagreement": false,
+      "queensland": {
+        "status": "accepted",
+        "reasons": [
+          "exact-source-address-components-confidence-100-PC"
+        ],
+        "rawCoordinateAvailable": true,
+        "latitude": -27.49567244,
+        "longitude": 153.2552813,
+        "precision": "property-centroid"
+      },
+      "additionalTrustworthyMatch": true,
+      "previousMatchNotAccepted": false
+    }
+  ]
+}

@@ -11,6 +11,10 @@
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "ingest:playon": "node scripts/ingest-playon.mjs",
     "geocode:playon": "node scripts/geocode-playon.mjs",
+    "enrich:provider-links": "node --experimental-strip-types scripts/generate-provider-links.mjs",
+    "benchmark:qld-geocoder": "node scripts/benchmark-qld-geocoder.mjs",
+    "benchmark:qld-geocoder:compare": "node scripts/compare-qld-geocoder.mjs",
+    "prepare:training-venues": "node --experimental-strip-types scripts/prepare-training-venues.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

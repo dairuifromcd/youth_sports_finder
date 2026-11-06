@@ -6,3 +6,12 @@ dist/
 .env.*.local
 output/
 .playwright-cli/
+
+# Private research and unapproved training datasets remain local.
+data/enrichment/
+data/benchmarks/training-venue-geocoding/*.json
+!data/benchmarks/training-venue-geocoding/same-site-alias-review.json
+data/benchmarks/training-venue-geocoding/addresses.csv
+
+# Machine-specific Codex/MCP paths are not portable repository settings.
+.codex/config.toml

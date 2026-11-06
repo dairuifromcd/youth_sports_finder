@@ -1,0 +1,4 @@
+InputIndex,Address to Validate,LOCALITY,Primary Address,Locality,Postcode,Local Government Name,LotNumber,PlanNumber,Longitude,Latitude,GeocodeType,Confidence,FullAddress,Complex-Building Name,Comment
+2,132 Hill Road,Runcorn 4113,132 HILL RD,RUNCORN,4113,BRISBANE CITY,1215,SL806346,153.07649378,-27.5930671,PC,100,132 HILL RD  RUNCORN QLD 4113,, 
+3,2A Ross Llewellyn Drive,Booval 4304,2A ROSS LLEWELLYN DR,BOOVAL,4304,IPSWICH CITY,1,SP183032,152.80035615,-27.6109996,PC,100,2A ROSS LLEWELLYN DR  BOOVAL QLD 4304,, 
+1,31 Endiandra Street,Algester 4115,,,,,,,,,,,,,11 candidates address records found. 

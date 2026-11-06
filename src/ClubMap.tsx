@@ -1,52 +1,66 @@
 import { useEffect, useRef, useState } from 'react'
 import { Map, Marker, NavigationControl, Popup, setWorkerUrl } from 'maplibre-gl'
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
-import { initialZoom, mapStyle } from './config'
-import type { Club, ViewportBounds } from './types'
+import { initialZoom, mapStyle, pilotBounds } from './config'
+import { keepProviderPopupInView } from './providerPopup'
+import type { ProviderLocation } from './playOnProviders'
+import type { ViewportBounds } from './types'
 
 setWorkerUrl(workerUrl)
 
-function clubPopup(club: Club): HTMLElement {
+function providerPopup(group: ProviderLocation, onSelect: (id: string) => void): HTMLElement {
   const content = document.createElement('div')
+  content.className = 'provider-popup-body'
   const heading = document.createElement('h2')
-  heading.textContent = club.name
+  heading.textContent = group.providers.length === 1 ? group.providers[0].name : `${group.providers.length} providers at this address`
   content.append(heading)
-  if (club.address) {
-    const address = document.createElement('p')
-    address.textContent = club.address
-    content.append(address)
+  const meaning = document.createElement('p')
+  meaning.textContent = 'Listed provider address · property centroid. Not a verified training or game venue.'
+  content.append(meaning)
+  const list = document.createElement('ul')
+  for (const provider of group.providers) {
+    const entry = document.createElement('li')
+    const button = document.createElement('button')
+    button.type = 'button'
+    button.textContent = provider.name
+    button.addEventListener('click', () => onSelect(provider.id))
+    entry.append(button)
+    if (provider.address) {
+      const address = document.createElement('p')
+      address.textContent = provider.address
+      entry.append(address)
+    }
+    list.append(entry)
   }
-  const program = document.createElement('p')
-  program.textContent = `Junior program: ${club.juniorProgram === null ? 'Not verified' : club.juniorProgram ? 'Yes' : 'No'}`
-  content.append(program)
-  if (club.website) {
-    const link = document.createElement('a')
-    link.href = club.website
-    link.textContent = 'Website'
-    link.target = '_blank'
-    link.rel = 'noopener noreferrer'
-    content.append(link)
-  }
+  content.append(list)
   return content
 }
 
 interface ClubMapProps {
   /** Initial center only; subsequent renders preserve the user's viewport. */
   center: [number, number]
-  clubs: Club[]
+  groups: ProviderLocation[]
   onViewportChange?: (bounds: ViewportBounds) => void
+  onSelectProvider: (id: string) => void
+  focusRequest?: { providerId: string }
 }
 
-export default function ClubMap({ center, clubs, onViewportChange }: ClubMapProps) {
+export default function ClubMap({ center, groups, onViewportChange, onSelectProvider, focusRequest }: ClubMapProps) {
   const container = useRef<HTMLDivElement>(null)
   const mapRef = useRef<Map | null>(null)
   const initialCenter = useRef(center)
   const viewportCallback = useRef(onViewportChange)
+  const selectionCallback = useRef(onSelectProvider)
+  const providerMarkers = useRef<globalThis.Map<string, Marker>>(new globalThis.Map())
   const [status, setStatus] = useState('Loading map…')
 
   useEffect(() => {
     viewportCallback.current = onViewportChange
   }, [onViewportChange])
+
+  useEffect(() => {
+    selectionCallback.current = onSelectProvider
+  }, [onSelectProvider])
 
   useEffect(() => {
     if (!container.current) return
@@ -85,7 +99,7 @@ export default function ClubMap({ center, clubs, onViewportChange }: ClubMapProp
       })
     }
     map.on('moveend', reportViewport)
-    // Supply initial bounds too, so a future search can populate the first view.
+    // Report real initial and moveend bounds for the optional local list filter.
     reportViewport()
     return () => { map.off('moveend', reportViewport) }
   }, [])
@@ -95,26 +109,61 @@ export default function ClubMap({ center, clubs, onViewportChange }: ClubMapProp
     if (!map) return
 
     // MapLibre positions and clips these markers as the viewport changes.
-    const markers = clubs.map((club) => {
+    const markers = groups.map((group) => {
       const button = document.createElement('button')
       button.type = 'button'
       button.className = 'club-marker'
-      button.setAttribute('aria-label', `View ${club.name}`)
-      button.textContent = '●'
-      return new Marker({ element: button })
-        .setLngLat([club.longitude, club.latitude])
-        .setPopup(new Popup({ offset: 18, maxWidth: '280px' }).setDOMContent(clubPopup(club)))
+      button.setAttribute('aria-label', group.providers.length === 1
+        ? `View provider address: ${group.providers[0].name}`
+        : `View ${group.providers.length} providers at ${group.providers[0].address}`)
+      button.textContent = group.providers.length === 1 ? '●' : String(group.providers.length)
+      const popup = new Popup({ anchor: 'bottom', offset: 18, maxWidth: '320px',
+        className: 'provider-popup', focusAfterOpen: false })
+        .setDOMContent(providerPopup(group, id => selectionCallback.current(id)))
+      const marker = new Marker({ element: button })
+        .setLngLat([group.longitude, group.latitude])
+        .setPopup(popup)
         .addTo(map)
+      // Cancel native button activation/keypress replay after focus moves into the popup.
+      button.addEventListener('keydown', event => {
+        if (event.key !== 'Enter' && event.key !== ' ') return
+        event.preventDefault()
+        event.stopPropagation()
+        marker.togglePopup()
+      })
+      keepProviderPopupInView(map, popup, button)
+      group.providers.forEach(provider => providerMarkers.current.set(provider.id, marker))
+      return marker
     })
+    const registry = providerMarkers.current
     return () => {
       markers.forEach((marker) => marker.remove())
+      registry.clear()
     }
-  }, [clubs])
+  }, [groups])
+
+  useEffect(() => {
+    if (!focusRequest) return
+    const map = mapRef.current
+    const marker = providerMarkers.current.get(focusRequest.providerId)
+    if (!map || !marker) return
+    const { lng, lat } = marker.getLngLat()
+    // Focus the nearest world copy if the user has panned across the dateline.
+    const longitude = lng + 360 * Math.round((map.getCenter().lng - lng) / 360)
+    container.current?.closest('section')?.scrollIntoView({ block: 'nearest' })
+    map.easeTo({ center: [longitude, lat], zoom: Math.max(map.getZoom(), 13) })
+    marker.getPopup()?.setLngLat([longitude, lat]).addTo(map)
+  }, [focusRequest])
 
   return (
-    <section className="map-area" aria-label="Basketball club map">
-      <div className="map" ref={container} />
-      {status && <p className="map-status" role="status">{status}</p>}
+    <section className="map-area" aria-label="Basketball provider address map">
+      <div className="map-toolbar">
+        <button type="button" className="pilot-area-button" onClick={() => mapRef.current?.fitBounds(pilotBounds, { padding: 35 })}>View 4115 pilot area</button>
+      </div>
+      <div className="map-surface">
+        <div className="map" ref={container} />
+        {status && <p className="map-status" role="status">{status}</p>}
+      </div>
     </section>
   )
 }

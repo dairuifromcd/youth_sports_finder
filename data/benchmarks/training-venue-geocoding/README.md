@@ -1,0 +1,168 @@
+# Training venue batch — internal, publication not approved
+
+Stage A completed on 2026-11-06; its historical record is preserved in
+`docs/tasks/TRAINING-VENUE-DATA-GEOCODING.md`. The authorised Stage B/C supplement
+has imported the genuine 28-row government return downloaded on 2026-11-06
+(Brisbane date explicitly confirmed by the owner). Current result: **6 Accepted /
+21 Ambiguous / 1 Rejected / 30 Pending**, subject to independent QA recorded in
+`docs/tasks/TRAINING-VENUE-SAME-SITE-ALIASES.md`.
+These files describe training venues; they never replace existing provider addresses.
+Nothing here is imported by the application. Do not publish or commit raw research.
+
+## Reproduce offline
+
+The three exact 2026-11-06 research/decision snapshots are retained in the Git-ignored
+`output/workflow/2026-11-06/training-venue-geocoding/inputs/` directory. Their hashes
+are pinned by the adapter. Keep all three; the Markdown decisions are also hashed.
+No external request, installation, browser or server is performed by these commands:
+
+```sh
+npm run prepare:training-venues -- --results output/workflow/2026-11-06/training-venue-same-site-aliases/inputs/government-results.csv --result-provenance output/workflow/2026-11-06/training-venue-same-site-aliases/government-result-provenance.json --validated-on 2026-11-06 --check
+```
+
+`--check` compares all seven generated files byte for byte with the exact inputs.
+An input/hash/count/ID discrepancy fails before writing output. The TypeScript
+projection contract is `scripts/training-venues/contract.d.ts`; candidate fields
+are explicitly allowlisted. Detailed team scope and limitations remain in the
+internal `eligible-associations.json`, referenced by association ID; the slim
+projection deliberately requires scope review before use and contains no schedule.
+
+## Prepared batch and remaining addresses
+
+All 58 sites and all 70 eligible associations remain present. The original 54
+provider identities remain present even when no eligible training venue exists.
+28 sites are exported: 27 Tier A numbered addresses, followed by Tier B PS020's
+unaltered road intersection. An intersection is a candidate request, not evidence
+of an acceptable venue position. Each physicalSiteId appears once; co-located
+providers share the site's row and eventual result.
+
+30 sites are held: 13 Tier C partial addresses, 14 Tier D missing addresses,
+2 Tier E unresolved conflicts, and Tier B PS047. PS047's named stadium plus street
+contains an additional comma incompatible with the established government upload's
+safe unquoted two-column form. Its venue name/street are preserved in the inventory;
+neither a nearby numbered address nor a silently removed venue name is substituted.
+The 27 C/D sites' linked research evidence supplies no reliable missing components.
+Address completion improvement is therefore 0. Stage A performed no external lookup;
+the later supplement separately authorised Main's narrow official PS079 verification.
+
+PS059 retains Mount Crosby/Karana Downs locality claims. R2L-PS003 retains Badgen
+Road 2–34/2–36 claims. Neither can acquire Accepted coordinates while unresolved.
+PS044/PS076 retain their resolved historical conflicts and separate campus/access
+roles. The Stage A snapshot contained 58 Pending records. The genuine result now
+provides 20 candidate-coordinate pairs and eight rows without selected coordinates:
+seven multiple-candidate responses and PS020's explicit address-parsing failure.
+All 30 withheld sites remain Pending. Candidate and accepted coordinates stay
+separate; no position is invented for an unresolved/no-coordinate site.
+
+## Manual Queensland Government handoff
+
+1. Open the [official government guide](https://www.qld.gov.au/environment/land/title/addressing/geocoder)
+   and its [batch geocoder](https://geocode.information.qld.gov.au/).
+2. Upload **only `addresses.csv`** from this directory. The file is UTF-8 without
+   BOM, CRLF, unquoted, and has exactly `Address to Validate,LOCALITY` as its header,
+   matching the project's captured official input example. Retain the matching
+   `address-mapping.json`. Do not upload research JSON, associations or evidence.
+3. Download the genuine government result CSV unchanged. Store it in the project's
+   ignored task evidence directory (for example `government-results.csv`). Do not
+   substitute TASK-006's provider-address result file. Do not reorder or rewrite
+   result values to force matches.
+4. Retain the real source/date and SHA-256 hashes in a JSON sidecar with this exact
+   shape (values below are descriptive placeholders, not an actual receipt):
+
+```json
+{
+  "addressRole": "training-venue",
+  "source": "qld-government-batch-geocoder",
+  "sourceUrl": "https://geocode.information.qld.gov.au/",
+  "uploadCsvSha256": "SHA-256 of the unchanged uploaded addresses.csv",
+  "resultCsvSha256": "SHA-256 of the genuine downloaded result CSV",
+  "obtainedOn": "actual YYYY-MM-DD download date"
+}
+```
+
+5. Return the genuine CSV and sidecar for offline import. The supported command is:
+
+```sh
+npm run prepare:training-venues -- --results output/workflow/2026-11-06/training-venue-same-site-aliases/inputs/government-results.csv --result-provenance output/workflow/2026-11-06/training-venue-same-site-aliases/government-result-provenance.json --validated-on 2026-11-06
+```
+
+The validation date must be the actual date, at least the recorded download date.
+Use the same arguments plus `--check` to verify imported outputs. A plain Stage A
+rerun cannot silently discard previously imported results.
+
+The importer requires the real TASK-006 corrected full-result 16-column schema,
+checks every InputIndex and exact original address/locality echo, and checks the
+upload and result hashes. Result order is irrelevant. Duplicate/missing/unexpected
+indices, wrong batch echoes and schema changes fail closed without output changes.
+If the service changes schema, retain the real file and review the adapter rather
+than editing the government return. No undocumented REST endpoint is assumed.
+
+## Conservative result policy
+
+An address match and confidence 100 alone are insufficient. The importer independently
+derives site identity proof from a reviewed, site-specific official source/evidence
+binding in the frozen research, its canonical address and a hash of its evidence.
+Handwritten `reviewed: true`, unrelated official domains or applicant-supplied
+identity booleans have no effect. The initial binding registry covers ten sites;
+the others need additional independently reviewed evidence in a separately approved
+data revision. The Wynnum State High School number is intentionally not in that
+registry because the original official source supports the street/postcode but not
+number 25. Its separately verified exception is described below.
+
+Unknown/mismatching returned building names, wrong campuses, locality/postcode
+mismatches, invalid coordinates and low-precision locality/street positions cannot
+be accepted. Ranges, intersections, source conflicts or insufficient identity
+evidence remain reviewable without a pin. Candidate coordinates are retained
+separately; only Accepted coordinates reach the slim projection. Even an accepted
+school position is `campus-level`, never a basketball hall/entrance guarantee.
+
+Hash correspondence cannot independently prove government provenance. Authenticity
+still depends on the owner supplying the genuine government export; that declaration
+and date are retained, never fabricated or inferred from file modification time.
+Synthetic test coordinates verify rules only and are never written into this batch.
+
+Main's separately authorised read-only PS079 official-source verification is recorded
+in the supplement. Further lookup, automated submission/browser use, public release
+and UI integration require their own authorisation. Manual submission shares just the exported
+venue address/locality strings with the government service; their service may keep
+request logs. Retain local upload/result copies; do not submit any personal data.
+
+## Same-site address alias supplement
+
+`docs/tasks/TRAINING-VENUE-SAME-SITE-ALIASES.md` records a separately approved
+supplement. The independent `same-site-alias-review.json` retains the historical
+proposed lead and references the single reviewed production binding in
+`scripts/training-venues/ps079-alias-binding.mjs`. No other physical site receives
+an automatic alias exception.
+
+The truthful evidence chain separates what each source establishes. The school
+contact page gives Peel Street, Manly 4179 **without number 25**. Council identifies
+Wynnum State High School at 77 Buderim Street, Wynnum 4178 and Lot 378/SL6111.
+The Queensland address layer independently registers `25 Peel Street Wynnum QLD`
+and `77 Buderim Street Wynnum QLD` on that same parcel. Its A/P status codes are
+retained without inferring undocumented meanings. The original official parcel
+response and its lossless EPSG:4326 GeoJSON conversion match exactly; strict
+point-in-polygon and the independent official point-intersects response both place
+the actual government coordinate within the parcel. The parcel feature name is
+null; school identity comes from the independent school/Council chain.
+
+All six source artifacts and source URLs are pinned by SHA-256. Missing/tampered
+files, wrong campus/parcel, unsupported CRS, geometry holes/outside points and other
+contradictions cannot grant acceptance. The only confidence adjudication applies
+to the exact real PS079 row with SHA-256
+`824da9c04f30d18935119a2fa50a879994257d4ad144c23bb007d56e10a45bd9`, observed
+Confidence **97**, PC, and the sole remaining `confidence-not-100` review after all
+other strict validation. That 97 remains unchanged; independent campus/parcel
+evidence resolves its automatic review. A changed field cannot inherit this
+adjudication. No generic confidence threshold, distance rule or boolean approval
+was introduced.
+
+Training-only formatting handles a complete outer-parenthesis venue-name wrapper,
+terminal AV/Avenue, and W/West after a recognised street type. Original field
+strings are unchanged. PS009/PS066 still lack independent site identity and remain
+Ambiguous; PS044/PS046's unverified building labels and range qualifications remain
+Ambiguous. A known different school/campus is Rejected. InputIndex/echo/hash joins
+and the original government CSV remain unchanged. Raw return fields, Lot/Plan,
+building metadata, actual confidence and adjudication evidence stay internal.
+Accepted school aliases are campus-level, never gym entrances. Synthetic trusted
+test fixtures never enter the production binding or generated results.

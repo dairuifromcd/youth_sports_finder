@@ -1,36 +1,109 @@
-# Development Guide
+# Youth Sports Finder — 项目工作规范
 
-## Project
+## 1. 项目定位
 
-Youth Sports Finder is a web application for finding nearby youth sports clubs on an interactive map.
+Youth Sports Finder 是一个帮助澳大利亚家长通过搜索、列表和交互式地图发现附近青少年体育俱乐部的 Web 应用。
 
-## Tech Stack
+核心产品原则：
+- 优先展示真正提供青少年体育项目的组织，而非普通体育场馆。
+- 重视数据准确性、地理定位可靠性和用户体验。
+- 追求简洁、直观、美观、适合桌面与移动端的界面。
+- 优先交付有实际用户价值的功能，避免过度设计。
 
-* React
-* TypeScript
-* Vite
-* MapLibre GL JS
-* CSS
+技术栈：React、TypeScript、Vite、MapLibre GL JS、CSS。
 
-## Commands
+## 2. 项目开发规则
 
-Use the project's standard npm scripts for development, build, linting, and tests.
+- 开始任务前，阅读 `docs/tasks/` 中对应的任务文档及相关实现记录。
+- 以已批准的任务文档作为具体需求、范围和验收标准的依据。
+- 遵循现有架构、代码风格和项目约定。
+- 优先采用简单、可维护的实现，避免无关重构。
+- 未经明确授权，不得引入后端、数据库、身份认证或第三方数据 API。
+- 不得擅自修改产品需求、验收标准或启动下一阶段任务。
+- 使用项目现有 npm scripts 执行开发、构建、Lint 和测试。
 
-## Working Rules
+## 3. Agent 架构与职责
 
-* Read `docs/PROJECT.md` before making product-level decisions.
-* Read the relevant file under `docs/tasks/` before implementing a task.
-* Keep implementations simple unless the task explicitly requires additional architecture.
-* Follow existing project patterns before introducing abstractions.
-* Do not introduce a backend, database, authentication, or third-party data API unless explicitly requested.
-* Do not redesign product requirements while implementing a task.
-* Avoid unrelated refactoring.
+由 Codex Main Agent 担任 Orchestrator，按任务需要协调三个 Subagents。
 
-## Completion
+### Developer
+- 实现功能、修复缺陷及编写必要测试。
+- 遵循现有架构和数据约束。
+- 完成修改后执行相关自检。
 
-Before finishing a task:
+### QA
+- 独立检查代码逻辑、数据完整性、安全和回归风险。
+- 执行适当的自动化测试、构建及代码审查。
+- 不依赖 Developer 的自测结论判断通过。
+- 不修改产品代码或验收标准。
 
-* run relevant checks and tests;
-* update the task document with an Implementation Result;
-* record important implementation decisions;
-* record unresolved issues or suggested follow-up work.
+### UAT
+- 依据预先确定的验收标准，独立执行真实浏览器验收。
+- 实际操作页面，验证功能、交互、响应式布局、视觉品质及基本可访问性。
+- 必要时检查 Console、Network 和异常状态。
+- 保存必要的截图、操作记录及失败证据。
+- 不修改产品代码或验收标准。
+- 未实际验证的项目必须标记 Not Verified。
+
+Subagents 按需调用，简单、低风险任务不强制使用完整流程。
+
+本项目的持久化自定义角色位于 `.codex/agents/`，名称为 `developer`、`qa`、`uat`；
+具体调用与验证流程见 `.codex/WORKFLOW.md`。Main 必须使用实际加载的自定义角色，
+不得用普通子代理改名代替加载验证。项目配置被忽略或工具不支持时如实报告。
+三个角色继承父会话权限；QA/UAT 的不编辑指令不代表技术只读隔离。
+
+## 4. 自主开发与验收闭环
+
+对需要完整验收的任务，采用以下流程：
+
+1. Orchestrator 读取任务、确认范围及验收标准。
+2. Developer 完成开发与自检。
+3. QA 独立执行代码审查和自动化测试。
+4. UAT 独立执行真实浏览器验收。
+5. 发现缺陷则由 Developer 修复，再进行相关 QA 回归和 UAT 复验。
+6. Orchestrator 汇总最终验收结果及证据。
+
+执行规则：
+- 默认最多自动修复三轮，超过上限停止并报告。
+- QA、UAT 的独立判断不得被 Developer 的自评替代。
+- 不得跳过失败测试、降低验收要求或伪造验证结果。
+- 无法执行的检查标记 Not Verified，不得报告 Pass。
+- UAT 无法访问真实浏览器时，必须明确报告限制。
+- 只有必要验收全部通过，才能宣布任务最终 Pass。
+- 避免因低价值细节、重复审查或 Agent 协调造成不必要的延误。
+
+## 5. 数据与用户体验
+
+- 保持 Provider 原始数据、标识符及来源可追溯。
+- 严格遵循既定的地理编码、定位验证和数据质量规则。
+- 未通过定位验证的 Provider 不得作为有效 Marker 显示。
+- 正确处理共享地址、多 Provider Marker、搜索、筛选和地图列表联动。
+- 不得通过伪造数据或放宽验证标准使测试通过。
+- 确保桌面和移动端布局合理、操作方便、视觉一致。
+- 重点关注地图交互、弹窗裁切、元素遮挡、触控和键盘操作。
+- 具体数据基线及功能验收要求以相关任务文档为准。
+
+## 6. 安全与权限
+
+严格遵守全局 `~/.codex/AGENTS.md`，安全要求优先于自主执行效率。
+
+- 默认仅允许修改当前项目目录内、属于已授权任务范围的文件。
+- 任何可能影响项目目录以外文件、配置、应用、服务或资源的操作，必须提前说明具体操作、影响范围、风险、恢复方法和安全替代方案，并取得明确批准。
+- 优先使用项目本地依赖及隔离的测试环境。
+- 不得擅自修改全局配置、安装全局工具或影响其他项目。
+- 不得未经授权执行生产部署、对外发布或产生费用。
+- 不得访问或泄露与项目无关的个人、工作或敏感信息。
+
+## 7. 任务交付
+
+完成实质性开发任务时：
+
+- 执行相关检查和测试。
+- 更新任务文档中的 Implementation Result。
+- 记录重要实现决策、遗留问题和建议的后续工作。
+- 提供简洁的 QA、UAT 验收结果。
+- 保留必要的测试证据和被测代码版本。
+- 明确区分 Pass、Fail 和 Not Verified。
+- 未经授权，不得自动发布或启动后续任务。
+
+**最终目标：在严格的安全边界内，以最少的人工协调，自主完成开发、测试和验收，持续交付可靠、美观且具有真实用户价值的产品。**
