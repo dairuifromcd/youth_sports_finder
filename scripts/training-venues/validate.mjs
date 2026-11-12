@@ -1,7 +1,7 @@
 import { isDeepStrictEqual } from 'node:util'
 import { geocoderUrl, sha256 } from '../qld-geocoder/export.mjs'
 import { reconcileResults, validateResult } from '../qld-geocoder/compare.mjs'
-import { canonical, identityEvidence, json } from './prepare.mjs'
+import { canonical, identityEvidence, trainingAddressEvidence, json } from './prepare.mjs'
 import { createAliasVerifier } from './aliases.mjs'
 import { ps079AliasBinding } from './ps079-alias-binding.mjs'
 
@@ -130,10 +130,12 @@ function validateVenueResultWithPolicy(site, result, context, reviewAlias) {
       reasons: [...aliasReview.reasons, ...(resolveConfidence ? [approvedResolution.rationale] : []), 'Returned address passes the unchanged strict government-address validator against its independently proven alias, with any sole confidence review explicitly adjudicated.',
         'Official same-campus/parcel location only; basketball hall and gym entrance are not verified.'] }
   }
-  if (!site.originalVenueIdentityResolved || !base.identityEvidence.length) return { ...evidenceBase,
-    status: 'Ambiguous', reasons: ['address-match-does-not-independently-establish-venue-or-campus-identity'] }
+  const trainingAddress = trainingAddressEvidence(site, context)
+  if (!site.originalVenueIdentityResolved || !trainingAddress.length) return { ...evidenceBase,
+    status: 'Ambiguous', reasons: ['complete-reviewed-official-training-address-chain-required'] }
   return { ...evidenceBase, status: 'Accepted', acceptedCoordinates: coordinates, precision: site.precisionWhenValidated,
-    reasons: ['Exact address/locality/postcode plus confidence 100 and PC; independently bound official physical-site evidence.',
+    trainingAddressEvidence: trainingAddress,
+    reasons: ['Exact address/locality/postcode plus confidence 100 and PC; complete reviewed official training-address chain.',
       'Position is the official campus/venue property location; basketball hall and gym entrance are not verified.'] }
 }
 

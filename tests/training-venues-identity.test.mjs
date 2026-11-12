@@ -20,9 +20,9 @@ const governmentDirectory = join(root, 'output/workflow/2026-11-06/training-venu
 const external = hasInputs ? { receipt: JSON.parse(readFileSync(join(governmentDirectory, 'government-result-provenance.json'))),
   resultBytes: readFileSync(join(governmentDirectory, 'inputs/government-results.csv')), validatedOn: '2026-11-06' } : null
 
-privateTest('only the three reviewed official identity chains add genuine government Accepted positions', () => {
+privateTest('the three reviewed official identity chains remain valid alongside the approved training-address policy', () => {
   const prepared = prepare(), imported = geocodingFor(prepared, external)
-  assert.deepEqual(imported.summary, { Accepted: 9, Ambiguous: 18, Rejected: 1, Pending: 30 })
+  assert.deepEqual(imported.summary, { Accepted: 16, Ambiguous: 11, Rejected: 1, Pending: 30 })
   const expected = { PS027: [-27.69203784, 152.90831134, 'venue-level'], PS032: [-27.58734613, 153.11170009, 'campus-level'],
     'R2L-PS001': [-27.46989304, 153.08449395, 'campus-level'] }
   for (const [id, [latitude, longitude, precision]] of Object.entries(expected)) {
@@ -36,8 +36,9 @@ privateTest('only the three reviewed official identity chains add genuine govern
   }
   for (const id of ['PS003','PS009','PS066','PS070','PS071','PS072','PS075']) {
     const site = imported.sites.find(s => s.physicalSiteId === id)
-    assert.equal(site.status, 'Ambiguous'); assert.equal(site.acceptedCoordinates, null)
+    assert.equal(site.status, 'Accepted'); assert.deepEqual(site.acceptedCoordinates, site.candidateCoordinates)
     assert.deepEqual(site.identityEvidence, [])
+    assert.equal(site.trainingAddressEvidence[0].sourceRole, 'club-published-address')
   }
   assert.ok(Object.isFrozen(reviewedIdentityBindings))
 })

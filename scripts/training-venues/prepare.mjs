@@ -2,6 +2,8 @@ import { isDeepStrictEqual } from 'node:util'
 import { guideUrl, geocoderUrl, serializeAddressCsv, sha256 } from '../qld-geocoder/export.mjs'
 import { providerLinkLabels, safeProviderLinkUrl } from '../../src/providerLinks.ts'
 import { reviewedIdentityEvidence } from './reviewed-identity-bindings.mjs'
+import { reviewedTrainingAddressEvidence, reviewedGoverningTrainingBindings,
+  reviewedGoverningTrainingRelationship } from './reviewed-training-address-bindings.mjs'
 
 export const inputFiles = [
   ['youth_training_venues_phase2_revised_local.json', '29c8f7726466bcc72bfd5e5bba5cf657370f272e74b9a8dbea757823cb433dde'],
@@ -125,7 +127,15 @@ export function validateInputs(raw, decision, providerBaseline) {
   if (!isDeepStrictEqual(actualProviders, expectedProviders)) throw new Error('Original Play On provider identities changed')
   const observations = new Map((raw.browserObservations ?? []).map(record => [record.observationId ?? record.id, record]))
   const accessRecords = new Map((raw.localAccessRecords ?? []).map(record => [record.accessRecordId, record]))
-  return { providers, venues, sites, evidence, sources, observations, accessRecords, selected, candidateMap, inventoryMap, baseline }
+  const context = { providers, venues, sites, associations, evidence, sources, observations, accessRecords, selected, candidateMap, inventoryMap, baseline }
+  for (const association of selected) {
+    if ((association.regularTrainingAssessment.evidenceIds.includes('R2L-E036') ||
+        reviewedGoverningTrainingBindings.some(b => b.associationId === association.associationId)) &&
+        !reviewedGoverningTrainingRelationship(association, context)) {
+      throw new Error(`Missing reviewed governing-association direct training statement: ${association.associationId}`)
+    }
+  }
+  return context
 }
 
 function evidenceReference(evidence, sources) {
@@ -172,6 +182,17 @@ export function identityEvidence(site, context) {
       limitation: 'Official physical site/campus address; exact basketball hall or entrance is not verified.' })
   }
   return [...proofs, ...reviewedIdentityEvidence(site, context)]
+}
+
+export function trainingAddressEvidence(site, context) {
+  for (const binding of reviewedGoverningTrainingBindings.filter(b => b.physicalSiteId === site.physicalSiteId)) {
+    const association = context.selected?.find(a => a.associationId === binding.associationId)
+    if (!association || !reviewedGoverningTrainingRelationship(association, context)) return []
+  }
+  return [...reviewedTrainingAddressEvidence(site, context), ...identityEvidence(site, context).map(proof => ({
+    ...proof, sourceRole: 'official-site-supplement', originalSourceRole: proof.sourceRole,
+    limitation: 'Official address supplement for the existing reviewed training relationship. ' + proof.limitation,
+  }))]
 }
 
 export function reviewCodes(assessment, notes = []) {
@@ -244,6 +265,8 @@ export function prepareDataset(raw, decision, providerBaseline, inputs, provider
       precisionWhenValidated: /school|college|campus/i.test(candidate.venueName) ? 'campus-level' : 'venue-level',
       inputs }
     site.identityEvidence = identityEvidence(site, context)
+    const trainingAddress = trainingAddressEvidence(site, context)
+    if (trainingAddress.length) site.trainingAddressEvidence = trainingAddress
     return site
   })
   // A before B; shared sites generate one row each. Never merge different IDs by address/name.

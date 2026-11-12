@@ -398,7 +398,7 @@ test('formal result projection retains all 58 sites, exact government records an
   skip: existsSync(genuineResultPath) ? false : 'Private genuine export is not present.',
 }, () => {
   const actualResults = JSON.parse(readFileSync(new URL('../data/benchmarks/training-venue-geocoding/venue-geocoding-results.json', import.meta.url)))
-  assert.deepEqual(actualResults.summary, { Accepted: 9, Ambiguous: 18, Rejected: 1, Pending: 30 })
+  assert.deepEqual(actualResults.summary, { Accepted: 16, Ambiguous: 11, Rejected: 1, Pending: 30 })
   assert.equal(actualResults.governmentResultProvenance.obtainedOn, '2026-11-06')
   assert.equal(actualResults.governmentResultProvenance.resultCsvSha256, 'af93783481c4b2917abe63b98355776631bffd7d2beb376e11847983b481a8af')
   const mapping = JSON.parse(readFileSync(new URL('../data/benchmarks/training-venue-geocoding/address-mapping.json', import.meta.url)))
@@ -420,7 +420,7 @@ test('formal result projection retains all 58 sites, exact government records an
   assert.equal(slim.providers.length, 54)
   assert.equal(slim.associations.length, 70)
   assert.equal(slim.venues.length, 58)
-  assert.equal(slim.venues.filter(v => v.coordinates).length, 9)
+  assert.equal(slim.venues.filter(v => v.coordinates).length, 16)
   for (const venue of slim.venues) assert.deepEqual(venue.coordinates, actualResults.sites.find(s => s.physicalSiteId === venue.physicalSiteId).acceptedCoordinates)
   assert.doesNotMatch(slimBytes, /rawGovernmentRow|sameSiteAlias|confidenceReviewAdjudication|official-evidence|browserObservations|LotNumber|PlanNumber|"sessions"/)
 })

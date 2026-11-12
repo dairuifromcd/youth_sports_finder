@@ -6,10 +6,17 @@ has imported the genuine 28-row government return downloaded on 2026-11-06
 (Brisbane date explicitly confirmed by the owner). Historical Stage B/C result: **6 Accepted /
 21 Ambiguous / 1 Rejected / 30 Pending**, with independent QA recorded in
 `docs/tasks/TRAINING-VENUE-SAME-SITE-ALIASES.md`.
-The 2026-11-11 offline identity review adds PS027, PS032 and R2L-PS001 using
-their existing official facility/school research chains: **9 Accepted / 18 Ambiguous /
-1 Rejected / 30 Pending**. The new review and independent QA outcome are recorded in
+The 2026-11-11 offline identity review added PS027, PS032 and R2L-PS001 using
+their existing official facility/school research chains: historical **9 Accepted /
+18 Ambiguous / 1 Rejected / 30 Pending**, independently accepted in
 `docs/tasks/TRAINING-VENUE-IDENTITY-EVIDENCE-BINDING-REVIEW.md`.
+The Owner-approved 2026-11-12 acceptance policy implementation now produces
+**16 Accepted / 11 Ambiguous / 1 Rejected / 30 Pending** from the same genuine batch.
+Seven additional sites have reviewed club-published complete address chains;
+independent implementation QA passed (137 tests, 1,184 data assertions and 499
+independent positive/negative cases). Current implementation and acceptance are
+recorded separately in
+`docs/tasks/TRAINING-VENUE-GEOCODING-ACCEPTANCE-IMPLEMENTATION.md`.
 These files describe training venues; they never replace existing provider addresses.
 Nothing here is imported by the application. Do not publish or commit raw research.
 
@@ -21,7 +28,7 @@ are pinned by the adapter. Keep all three; the Markdown decisions are also hashe
 No external request, installation, browser or server is performed by these commands:
 
 ```sh
-npm run prepare:training-venues -- --results output/workflow/2026-11-06/training-venue-same-site-aliases/inputs/government-results.csv --result-provenance output/workflow/2026-11-06/training-venue-same-site-aliases/government-result-provenance.json --validated-on 2026-11-11 --check
+npm run prepare:training-venues -- --results output/workflow/2026-11-06/training-venue-same-site-aliases/inputs/government-results.csv --result-provenance output/workflow/2026-11-06/training-venue-same-site-aliases/government-result-provenance.json --validated-on 2026-11-12 --check
 ```
 
 `--check` compares all seven generated files byte for byte with the exact inputs.
@@ -87,7 +94,7 @@ separate; no position is invented for an unresolved/no-coordinate site.
 5. Return the genuine CSV and sidecar for offline import. The supported command is:
 
 ```sh
-npm run prepare:training-venues -- --results output/workflow/2026-11-06/training-venue-same-site-aliases/inputs/government-results.csv --result-provenance output/workflow/2026-11-06/training-venue-same-site-aliases/government-result-provenance.json --validated-on 2026-11-11
+npm run prepare:training-venues -- --results output/workflow/2026-11-06/training-venue-same-site-aliases/inputs/government-results.csv --result-provenance output/workflow/2026-11-06/training-venue-same-site-aliases/government-result-provenance.json --validated-on 2026-11-12
 ```
 
 The validation date must be the actual date, at least the recorded download date.
@@ -103,15 +110,32 @@ than editing the government return. No undocumented REST endpoint is assumed.
 
 ## Conservative result policy
 
-An address match and confidence 100 alone are insufficient. The importer independently
-derives site identity proof from a reviewed, site-specific official source/evidence
-binding in the frozen research, its canonical address and a hash of its evidence.
+An address match and confidence 100 alone are insufficient. Exact-address acceptance
+requires a complete reviewed official training/address chain and no substantive
+conflict, alongside every strict government check. A complete club-published venue
+address may suffice without a second owner source; partial club addresses still
+need the reviewed official school/operator supplement for the same specific site.
+Owner evidence remains conditional on actual identity, campus, building, address
+or alias questions. Missing owner evidence alone does not establish a conflict.
+
+The seven-site `reviewed-training-address-bindings.mjs` adapter pins the original
+site, venue, provider, eligible association, address components, official publisher
+chain, source/evidence/observation/access records and their hashes. Internal proof
+roles distinguish `club-published-address` and `official-site-supplement`; original
+`direct-official-site-address` identity proofs remain intact. Governing association
+sources must directly state ordinary team training; membership/competition/community
+directories do not suffice. Shared-site addresses may be reused across providers;
+address material never creates a training association. In particular, the Eagles
+poster does not add Dunk Star ordinary team training at Eagles.
+
 Handwritten `reviewed: true`, unrelated official domains or applicant-supplied
-identity booleans have no effect. The initial binding registry covers ten sites;
-the others need additional independently reviewed evidence in a separately approved
-data revision. The Wynnum State High School number is intentionally not in that
-registry because the original official source supports the street/postcode but not
-number 25. Its separately verified exception is described below.
+identity booleans have no effect. The original ten-entry identity registry, three
+reviewed identity bindings and PS079-only alias chain retain their protections.
+The Wynnum State High School number is intentionally not in the original registry
+because its school source supports the street/postcode but not number 25. Its
+separately verified exception is described below. Unknown source freshness, team
+scope, original checked/as-of dates, manual/disclosure review and access limits
+are not upgraded by coordinate acceptance.
 
 Unknown/mismatching returned building names, wrong campuses, locality/postcode
 mismatches, invalid coordinates and low-precision locality/street positions cannot
@@ -163,10 +187,12 @@ was introduced.
 
 Training-only formatting handles a complete outer-parenthesis venue-name wrapper,
 terminal AV/Avenue, and W/West after a recognised street type. Original field
-strings are unchanged. PS009/PS066 still lack independent site identity and remain
-Ambiguous; PS044/PS046's unverified building labels and range qualifications remain
-Ambiguous. A known different school/campus is Rejected. InputIndex/echo/hash joins
-and the original government CSV remain unchanged. Raw return fields, Lot/Plan,
+strings are unchanged. PS009/PS066 remained Ambiguous in that historical supplement
+because the owner identity gate was unresolved. The separately approved 2026-11-12 policy now accepts
+their complete reviewed club-address chains after all strict checks. PS044/PS046's
+unverified building labels and range qualifications remain Ambiguous. A known
+different school/campus is Rejected. InputIndex/echo/hash joins and the original
+government CSV remain unchanged. Raw return fields, Lot/Plan,
 building metadata, actual confidence and adjudication evidence stay internal.
 Accepted school aliases are campus-level, never gym entrances. Synthetic trusted
 test fixtures never enter the production binding or generated results.
@@ -185,13 +211,41 @@ PS027 is venue/property-level; both schools are campus-level. The retained offic
 research observations are reused offline, without a new source fetch or a claim
 that original HTML/PDF bytes are available. No basketball hall, court, public
 entrance, independent cadastral footprint or current training occurrence is newly
-verified. The other seven priority sites still need independent site-owner/school
-address evidence. All previous Pending, Rejected and Accepted site conclusions
+verified. At that historical review, the other seven priority sites were held by the
+then-mandatory independent site-owner/school gate. The separately approved policy
+implementation below replaces that universal gate with complete reviewed official
+training/address chains. All previous Pending, Rejected and Accepted site conclusions
 and all association scopes remain intact.
 
-The government download date remains 2026-11-06; the current offline validation
-date is 2026-11-11. The formal pipeline now leaves byte-identical outputs in place,
+The government download date remains 2026-11-06. That review used validation date
+2026-11-11; the current implementation below uses 2026-11-12. The formal pipeline
+leaves byte-identical outputs in place,
 including the uploaded `addresses.csv` and mapping. Full seven-file safety checks
 and deterministic `--check` still apply. The complete local review matrix, before/
 after comparison and logs remain in the separately ignored 2026-11-11 task evidence
 directory. Nothing is approved for publication or frontend use.
+
+## Approved acceptance policy implementation — 2026-11-12
+
+The approved policy review is the unchanged historical proposal in
+`docs/tasks/TRAINING-VENUE-GEOCODING-ACCEPTANCE-POLICY-REVIEW.md`; the Owner's later
+approval and actual execution are recorded in the new implementation task.
+Only PS003, PS009, PS066, PS070, PS071, PS072 and PS075 change from Ambiguous to
+Accepted. Eagles and Nissan Arena are venue-level; the five schools/colleges are
+campus-level. Exact government points are retained, without a hall/court/entrance
+or current-use claim. Private source/coordinate ledgers remain in the ignored
+implementation evidence directory, outside this documentation's public data scope.
+
+All 54 Providers / 70 eligible associations / 58 sites and the 32/38 temporal split
+remain. Accepted-location coverage is now 16 distinct Providers and 21 existing
+eligible associations, increases of 7 and 11 respectively. The original nine
+Accepted positions, PS079 PC/97 proof, eight no-coordinate returns and 30 Pending
+records are preserved. PS005, PS044, PS046 and R2L-PS002 gain no exemption.
+
+The same original uploaded CSV, mapping, genuine result, provenance and source
+snapshots are reused. Only the actual validation date advances to 2026-11-12;
+`obtainedOn` remains 2026-11-06 and original research dates are unchanged. Formal
+import, repeat import and full seven-file deterministic `--check` have executed;
+independent QA status is recorded in the implementation task. Nothing is approved
+for publication or frontend integration. No new lookup, upload, external request,
+Git commit/push, deployment or subsequent stage is part of this implementation.

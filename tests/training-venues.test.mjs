@@ -204,14 +204,14 @@ privateTest('no external results means 58 Pending records and zero candidate/acc
   assert.equal(slim.venues.every(v => v.coordinates === null), true)
 })
 
-privateTest('synthetic exact official campus matches require independent source-bound identity evidence', () => {
+privateTest('synthetic exact official campus matches require reviewed source-bound address evidence', () => {
   const school = prepared.inventory.find(s => s.physicalSiteId === 'PS005')
   const matched = validateVenueResult(school, syntheticResult(school, { 'Complex-Building Name': 'Iona College' }), prepared.context)
   assert.equal(matched.status, 'Accepted')
   assert.equal(matched.precision, 'campus-level')
   assert.deepEqual(matched.acceptedCoordinates, { latitude: -27.5, longitude: 153.05 })
   assert.ok(matched.identityEvidence.some(e => e.evidenceId === 'P2-E023' && e.sourceId === 'P2-S036' && e.evidenceSha256))
-  const unbound = prepared.inventory.find(s => s.physicalSiteId === 'PS003')
+  const unbound = prepared.inventory.find(s => s.physicalSiteId === 'PS004')
   const noIdentity = validateVenueResult({ ...unbound, identityEvidence: [{ reviewed: true, official: true }] }, syntheticResult(unbound), prepared.context)
   assert.equal(noIdentity.status, 'Ambiguous')
   assert.equal(noIdentity.acceptedCoordinates, null)
