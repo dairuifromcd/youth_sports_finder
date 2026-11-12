@@ -3,9 +3,13 @@
 Stage A completed on 2026-11-06; its historical record is preserved in
 `docs/tasks/TRAINING-VENUE-DATA-GEOCODING.md`. The authorised Stage B/C supplement
 has imported the genuine 28-row government return downloaded on 2026-11-06
-(Brisbane date explicitly confirmed by the owner). Current result: **6 Accepted /
-21 Ambiguous / 1 Rejected / 30 Pending**, subject to independent QA recorded in
+(Brisbane date explicitly confirmed by the owner). Historical Stage B/C result: **6 Accepted /
+21 Ambiguous / 1 Rejected / 30 Pending**, with independent QA recorded in
 `docs/tasks/TRAINING-VENUE-SAME-SITE-ALIASES.md`.
+The 2026-11-11 offline identity review adds PS027, PS032 and R2L-PS001 using
+their existing official facility/school research chains: **9 Accepted / 18 Ambiguous /
+1 Rejected / 30 Pending**. The new review and independent QA outcome are recorded in
+`docs/tasks/TRAINING-VENUE-IDENTITY-EVIDENCE-BINDING-REVIEW.md`.
 These files describe training venues; they never replace existing provider addresses.
 Nothing here is imported by the application. Do not publish or commit raw research.
 
@@ -17,7 +21,7 @@ are pinned by the adapter. Keep all three; the Markdown decisions are also hashe
 No external request, installation, browser or server is performed by these commands:
 
 ```sh
-npm run prepare:training-venues -- --results output/workflow/2026-11-06/training-venue-same-site-aliases/inputs/government-results.csv --result-provenance output/workflow/2026-11-06/training-venue-same-site-aliases/government-result-provenance.json --validated-on 2026-11-06 --check
+npm run prepare:training-venues -- --results output/workflow/2026-11-06/training-venue-same-site-aliases/inputs/government-results.csv --result-provenance output/workflow/2026-11-06/training-venue-same-site-aliases/government-result-provenance.json --validated-on 2026-11-11 --check
 ```
 
 `--check` compares all seven generated files byte for byte with the exact inputs.
@@ -83,7 +87,7 @@ separate; no position is invented for an unresolved/no-coordinate site.
 5. Return the genuine CSV and sidecar for offline import. The supported command is:
 
 ```sh
-npm run prepare:training-venues -- --results output/workflow/2026-11-06/training-venue-same-site-aliases/inputs/government-results.csv --result-provenance output/workflow/2026-11-06/training-venue-same-site-aliases/government-result-provenance.json --validated-on 2026-11-06
+npm run prepare:training-venues -- --results output/workflow/2026-11-06/training-venue-same-site-aliases/inputs/government-results.csv --result-provenance output/workflow/2026-11-06/training-venue-same-site-aliases/government-result-provenance.json --validated-on 2026-11-11
 ```
 
 The validation date must be the actual date, at least the recorded download date.
@@ -166,3 +170,28 @@ and the original government CSV remain unchanged. Raw return fields, Lot/Plan,
 building metadata, actual confidence and adjudication evidence stay internal.
 Accepted school aliases are campus-level, never gym entrances. Synthetic trusted
 test fixtures never enter the production binding or generated results.
+
+## Offline identity evidence review — 2026-11-11
+
+The original ten-entry registry and PS079 exception remain unchanged. A separate,
+frozen three-site adapter in `scripts/training-venues/reviewed-identity-bindings.mjs`
+recognizes PS027 / E178 / S065, PS032 / E184 / S171 and R2L-PS001 / R2L-E178 /
+R2L-S170. Each exact venue, evidence, source, observation and applicable access
+record is hash-bound; original research records are unchanged. This resolves the
+specific older research schemas' missing phase2 fields without a generic exemption.
+
+Only the three sites' original government PC/100 points gain Accepted status.
+PS027 is venue/property-level; both schools are campus-level. The retained official
+research observations are reused offline, without a new source fetch or a claim
+that original HTML/PDF bytes are available. No basketball hall, court, public
+entrance, independent cadastral footprint or current training occurrence is newly
+verified. The other seven priority sites still need independent site-owner/school
+address evidence. All previous Pending, Rejected and Accepted site conclusions
+and all association scopes remain intact.
+
+The government download date remains 2026-11-06; the current offline validation
+date is 2026-11-11. The formal pipeline now leaves byte-identical outputs in place,
+including the uploaded `addresses.csv` and mapping. Full seven-file safety checks
+and deterministic `--check` still apply. The complete local review matrix, before/
+after comparison and logs remain in the separately ignored 2026-11-11 task evidence
+directory. Nothing is approved for publication or frontend use.

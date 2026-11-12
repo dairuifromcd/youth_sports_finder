@@ -1,6 +1,7 @@
 import { isDeepStrictEqual } from 'node:util'
 import { guideUrl, geocoderUrl, serializeAddressCsv, sha256 } from '../qld-geocoder/export.mjs'
 import { providerLinkLabels, safeProviderLinkUrl } from '../../src/providerLinks.ts'
+import { reviewedIdentityEvidence } from './reviewed-identity-bindings.mjs'
 
 export const inputFiles = [
   ['youth_training_venues_phase2_revised_local.json', '29c8f7726466bcc72bfd5e5bba5cf657370f272e74b9a8dbea757823cb433dde'],
@@ -122,7 +123,9 @@ export function validateInputs(raw, decision, providerBaseline) {
   const actualProviders = [...providers.values()].map(p => [p.providerId, p.providerName]).sort(([a], [b]) => compare(a, b))
   const expectedProviders = providerBaseline.map(p => [p.id, p.name]).sort(([a], [b]) => compare(a, b))
   if (!isDeepStrictEqual(actualProviders, expectedProviders)) throw new Error('Original Play On provider identities changed')
-  return { providers, venues, sites, evidence, sources, selected, candidateMap, inventoryMap, baseline }
+  const observations = new Map((raw.browserObservations ?? []).map(record => [record.observationId ?? record.id, record]))
+  const accessRecords = new Map((raw.localAccessRecords ?? []).map(record => [record.accessRecordId, record]))
+  return { providers, venues, sites, evidence, sources, observations, accessRecords, selected, candidateMap, inventoryMap, baseline }
 }
 
 function evidenceReference(evidence, sources) {
@@ -168,7 +171,7 @@ export function identityEvidence(site, context) {
       evidenceSha256: sha256(json(evidence)), checkedOn: evidence.checkedOn,
       limitation: 'Official physical site/campus address; exact basketball hall or entrance is not verified.' })
   }
-  return proofs
+  return [...proofs, ...reviewedIdentityEvidence(site, context)]
 }
 
 export function reviewCodes(assessment, notes = []) {

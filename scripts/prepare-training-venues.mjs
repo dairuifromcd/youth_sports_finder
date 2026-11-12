@@ -46,7 +46,7 @@ export function resolveOutputPlan(requestedDirectory, root = projectRoot) {
   }
   const files = Object.fromEntries(generatedFiles.map(file => [file, { destination: resolve(directory, file),
     temporary: resolve(directory, `${file}.${process.pid}.tmp`) }]))
-  function assertSafe(temporaryState = 'absent') {
+  function assertSafe(stagedFiles = []) {
     assertDirectoryChain(trustedRoot, directory)
     for (const [file, paths] of Object.entries(files)) {
       if (file !== basename(file) || dirname(paths.destination) !== directory || dirname(paths.temporary) !== directory) {
@@ -56,7 +56,7 @@ export function resolveOutputPlan(requestedDirectory, root = projectRoot) {
       if (destination && (destination.isSymbolicLink() || !destination.isFile())) {
         throw new Error(`Unsafe output target; expected a regular direct file, never a symlink: ${file}`)
       }
-      if (temporaryState === 'absent' ? temporary !== null : !temporary?.isFile() || temporary.isSymbolicLink()) {
+      if (!stagedFiles.includes(file) ? temporary !== null : !temporary?.isFile() || temporary.isSymbolicLink()) {
         throw new Error(`Unsafe or unexpected output temporary file: ${file}`)
       }
     }
@@ -132,17 +132,21 @@ export function generate(options = {}) {
       if (readOutputFile(plan, file).toString('utf8') !== content) throw new Error(`Generated file stale: ${file}`)
     }
   } else {
+    // Preserve uploaded CSV/mapping and every other byte-identical artifact without
+    // rewriting it. The complete seven-file safety preflight remains mandatory.
+    const changedFiles = generatedFiles.filter(file => !existsSync(plan.files[file].destination) ||
+      readOutputFile(plan, file).toString('utf8') !== outputs[file])
     mkdirSync(outputDirectory, { recursive: true })
     const staged = []
     try {
-      for (const [file, content] of Object.entries(outputs)) {
+      for (const file of changedFiles) {
         plan.assertDirectory()
-        writeFileSync(plan.files[file].temporary, content, { flag: 'wx' })
+        writeFileSync(plan.files[file].temporary, outputs[file], { flag: 'wx' })
         staged.push(plan.files[file].temporary)
       }
       // Stage every file before replacing an existing output; reject any late unsafe target.
-      plan.assertSafe('staged')
-      for (const file of generatedFiles) {
+      plan.assertSafe(changedFiles)
+      for (const file of changedFiles) {
         plan.assertDirectory()
         renameSync(plan.files[file].temporary, plan.files[file].destination)
       }
