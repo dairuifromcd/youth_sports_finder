@@ -15,3 +15,45 @@ data/benchmarks/training-venue-geocoding/addresses.csv
 
 # Machine-specific Codex/MCP paths are not portable repository settings.
 .codex/config.toml
+
+# V2 Python environments and bytecode (local only).
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and machine-local environment; allow sanitized example templates.
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+secrets/
+
+# G-NAF source data and local processing indexes; never a public feed.
+data/gnaf/
+data/g-naf/
+data/raw/
+**/GNAF*/
+**/G-NAF*/
+*.duckdb
+*.duckdb.*
+*.parquet
+
+# Raw collection caches and private research (retain V1 rules above).
+.cache/
+data/cache/
+data/caches/
+data/collection-cache/
+research/private/
+data/private/
+private/
+
+# Temporary outputs and run logs.
+.tmp/
+tmp/
+*.tmp
+*.temp
+*.log
+logs/
