@@ -15,7 +15,9 @@
     "benchmark:qld-geocoder": "node scripts/benchmark-qld-geocoder.mjs",
     "benchmark:qld-geocoder:compare": "node scripts/compare-qld-geocoder.mjs",
     "prepare:training-venues": "node --experimental-strip-types scripts/prepare-training-venues.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pipeline:swm": "python3 scripts/v2/run_pipeline.py --association swm-pirates",
+    "test:v2": "python3 -m unittest discover -s tests/v2 -v && node --experimental-strip-types --test tests/pilot.test.mjs"
   },
   "dependencies": {
     "maplibre-gl": "^6.9.0",

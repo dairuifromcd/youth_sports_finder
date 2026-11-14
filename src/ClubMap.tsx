@@ -3,54 +3,72 @@ import { Map, Marker, NavigationControl, Popup, setWorkerUrl } from 'maplibre-gl
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
 import { initialZoom, mapStyle, pilotBounds } from './config'
 import { keepProviderPopupInView } from './providerPopup'
-import type { ProviderLocation } from './playOnProviders'
+import type { TrainingLocation } from './pilot'
+import { safeSourceUrl } from './pilot'
 import type { ViewportBounds } from './types'
 
 setWorkerUrl(workerUrl)
 
-function providerPopup(group: ProviderLocation, onSelect: (id: string) => void): HTMLElement {
+function providerPopup(group: TrainingLocation, onSelect: (id: string) => void): HTMLElement {
   const content = document.createElement('div')
   content.className = 'provider-popup-body'
-  const heading = document.createElement('h2')
-  heading.textContent = group.providers.length === 1 ? group.providers[0].name : `${group.providers.length} providers at this address`
-  content.append(heading)
-  const meaning = document.createElement('p')
-  meaning.textContent = 'Listed provider address · property centroid. Not a verified training or game venue.'
-  content.append(meaning)
+  const addText = (tag: string, text: string) => {
+    const element = document.createElement(tag)
+    element.textContent = text
+    content.append(element)
+  }
+  const addLink = (text: string, url: string) => {
+    const href = safeSourceUrl(url)
+    if (!href) return
+    const link = document.createElement('a')
+    link.textContent = text
+    link.href = href
+    link.target = '_blank'
+    link.rel = 'noopener noreferrer'
+    content.append(link)
+  }
+  for (const venue of group.venues) {
+    addText('h2', venue.name)
+    addText('p', venue.address)
+    addText('p', `${venue.coordinates?.precision.replaceAll('_', ' ')} · ${venue.coordinates?.source}. Approximate location; not a hall entrance.`)
+    if (venue.coordinates) addLink('Coordinate source', venue.coordinates.sourceUrl)
+  }
+  addText('p', 'Confirmed regular training for:')
   const list = document.createElement('ul')
-  for (const provider of group.providers) {
+  for (const club of group.clubs) {
     const entry = document.createElement('li')
     const button = document.createElement('button')
     button.type = 'button'
-    button.textContent = provider.name
-    button.addEventListener('click', () => onSelect(provider.id))
+    button.textContent = club.name
+    button.addEventListener('click', () => onSelect(club.id))
     entry.append(button)
-    if (provider.address) {
-      const address = document.createElement('p')
-      address.textContent = provider.address
-      entry.append(address)
+    if (club.eligibilityNote) {
+      const note = document.createElement('p')
+      note.textContent = club.eligibilityNote
+      entry.append(note)
     }
     list.append(entry)
   }
   content.append(list)
+  for (const relation of group.relationships) addLink('Training source', relation.sourceUrl)
   return content
 }
 
 interface ClubMapProps {
   /** Initial center only; subsequent renders preserve the user's viewport. */
   center: [number, number]
-  groups: ProviderLocation[]
+  groups: TrainingLocation[]
   onViewportChange?: (bounds: ViewportBounds) => void
-  onSelectProvider: (id: string) => void
-  focusRequest?: { providerId: string }
+  onSelectClub: (id: string) => void
+  focusRequest?: { venueId: string }
 }
 
-export default function ClubMap({ center, groups, onViewportChange, onSelectProvider, focusRequest }: ClubMapProps) {
+export default function ClubMap({ center, groups, onViewportChange, onSelectClub, focusRequest }: ClubMapProps) {
   const container = useRef<HTMLDivElement>(null)
   const mapRef = useRef<Map | null>(null)
   const initialCenter = useRef(center)
   const viewportCallback = useRef(onViewportChange)
-  const selectionCallback = useRef(onSelectProvider)
+  const selectionCallback = useRef(onSelectClub)
   const providerMarkers = useRef<globalThis.Map<string, Marker>>(new globalThis.Map())
   const [status, setStatus] = useState('Loading map…')
 
@@ -59,8 +77,8 @@ export default function ClubMap({ center, groups, onViewportChange, onSelectProv
   }, [onViewportChange])
 
   useEffect(() => {
-    selectionCallback.current = onSelectProvider
-  }, [onSelectProvider])
+    selectionCallback.current = onSelectClub
+  }, [onSelectClub])
 
   useEffect(() => {
     if (!container.current) return
@@ -113,10 +131,8 @@ export default function ClubMap({ center, groups, onViewportChange, onSelectProv
       const button = document.createElement('button')
       button.type = 'button'
       button.className = 'club-marker'
-      button.setAttribute('aria-label', group.providers.length === 1
-        ? `View provider address: ${group.providers[0].name}`
-        : `View ${group.providers.length} providers at ${group.providers[0].address}`)
-      button.textContent = group.providers.length === 1 ? '●' : String(group.providers.length)
+      button.setAttribute('aria-label', `View training venue: ${group.venues.map(venue => venue.name).join(', ')}; ${group.clubs.length} clubs`)
+      button.textContent = group.clubs.length === 1 ? '●' : String(group.clubs.length)
       const popup = new Popup({ anchor: 'bottom', offset: 18, maxWidth: '320px',
         className: 'provider-popup', focusAfterOpen: false })
         .setDOMContent(providerPopup(group, id => selectionCallback.current(id)))
@@ -132,7 +148,7 @@ export default function ClubMap({ center, groups, onViewportChange, onSelectProv
         marker.togglePopup()
       })
       keepProviderPopupInView(map, popup, button)
-      group.providers.forEach(provider => providerMarkers.current.set(provider.id, marker))
+      group.venues.forEach(venue => providerMarkers.current.set(venue.id, marker))
       return marker
     })
     const registry = providerMarkers.current
@@ -145,7 +161,7 @@ export default function ClubMap({ center, groups, onViewportChange, onSelectProv
   useEffect(() => {
     if (!focusRequest) return
     const map = mapRef.current
-    const marker = providerMarkers.current.get(focusRequest.providerId)
+    const marker = providerMarkers.current.get(focusRequest.venueId)
     if (!map || !marker) return
     const { lng, lat } = marker.getLngLat()
     // Focus the nearest world copy if the user has panned across the dateline.
@@ -156,9 +172,9 @@ export default function ClubMap({ center, groups, onViewportChange, onSelectProv
   }, [focusRequest])
 
   return (
-    <section className="map-area" aria-label="Basketball provider address map">
+    <section className="map-area" aria-label="SWM regular training venue map">
       <div className="map-toolbar">
-        <button type="button" className="pilot-area-button" onClick={() => mapRef.current?.fitBounds(pilotBounds, { padding: 35 })}>View 4115 pilot area</button>
+        <button type="button" className="pilot-area-button" onClick={() => mapRef.current?.fitBounds(pilotBounds, { padding: 35 })}>View SWM pilot area</button>
       </div>
       <div className="map-surface">
         <div className="map" ref={container} />

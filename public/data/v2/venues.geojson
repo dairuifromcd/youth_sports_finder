@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "venue-4d10b61f5f39f829",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.07801601298289,
+          -27.592679444474147
+        ]
+      },
+      "properties": {
+        "venueId": "venue-4d10b61f5f39f829",
+        "name": "Runcorn State High School",
+        "address": "132 Hill Road, Runcorn QLD 4113",
+        "clubIds": [
+          "club-735a3cf4a1a90684"
+        ],
+        "coordinateSource": "Queensland Department of Education school location (campus fallback)",
+        "precision": "school_campus",
+        "sourceUrl": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Society/SchoolsAndSchoolCatchments/MapServer/5/query?where=centre_code%3D%272167%27&outFields=centre_name%2Ccentre_code%2Csource%2Cdata_currency%2Cdisclaimer&outSR=4326&f=pjson",
+        "attribution": "© State of Queensland (Department of Education; Non-State Schools Accreditation Board) 2026. CC BY 4.0. School locations have not been independently verified by the data publisher; campus fallback, not hall or entrance."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "venue-8a096bd48a00fe53",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.05624601801367,
+          -27.595187445304926
+        ]
+      },
+      "properties": {
+        "venueId": "venue-8a096bd48a00fe53",
+        "name": "Sunnybank Hills State School",
+        "address": "77 Symons Road, Sunnybank Hills QLD 4109",
+        "clubIds": [
+          "club-af34fe7e39854aaf"
+        ],
+        "coordinateSource": "Queensland Department of Education school location (campus fallback)",
+        "precision": "school_campus",
+        "sourceUrl": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Society/SchoolsAndSchoolCatchments/MapServer/4/query?where=centre_code%3D%271889%27&outFields=centre_name%2Ccentre_code%2Csource%2Cdata_currency%2Cdisclaimer&outSR=4326&f=pjson",
+        "attribution": "© State of Queensland (Department of Education; Non-State Schools Accreditation Board) 2026. CC BY 4.0. School locations have not been independently verified by the data publisher; campus fallback, not hall or entrance."
+      }
+    }
+  ]
+}

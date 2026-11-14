@@ -1,68 +1,84 @@
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { SourceLink } from './SourceLink'
 import ClubMap from './ClubMap'
-import ProviderList from './ProviderList'
-import { playOnPilot } from './data/playOn'
-import { filterProviders, groupProviderLocations, searchProviders } from './playOnProviders'
-import type { ViewportBounds } from './types'
-import { useLocation } from './useLocation'
-
-const providers = playOnPilot.dataset?.providers ?? []
-const mappedProviders = providers.filter(provider => provider.mapPoint).length
-const mappedLocations = groupProviderLocations(providers).length
+import { confirmedVenues, parsePilot, searchPilot, trainingLocations } from './pilot'
+import type { Pilot } from './pilot'
 
 export default function App() {
-  const location = useLocation()
+  const [pilot, setPilot] = useState<Pilot>()
+  const [error, setError] = useState('')
   const [query, setQuery] = useState('')
-  const [bounds, setBounds] = useState<ViewportBounds>()
-  const [onlyInView, setOnlyInView] = useState(false)
-  const [selectedProvider, setSelectedProvider] = useState<{ providerId: string }>()
-  const [focusRequest, setFocusRequest] = useState<{ providerId: string }>()
-  const groups = useMemo(() => groupProviderLocations(searchProviders(providers, query)), [query])
-  const results = filterProviders(providers, query, onlyInView, bounds)
-  const selectProvider = useCallback((id: string) => {
-    setOnlyInView(false)
-    setSelectedProvider({ providerId: id })
+  const [selectedClub, setSelectedClub] = useState<string>()
+  const [focusRequest, setFocusRequest] = useState<{ venueId: string }>()
+  useEffect(() => {
+    const controller = new AbortController()
+    fetch(`${import.meta.env.BASE_URL}data/v2/pilot.json`, { signal: controller.signal })
+      .then(async response => {
+        if (!response.ok || !response.headers.get('content-type')?.includes('application/json')) {
+          throw new Error('SWM pilot data is unavailable. Run npm run pipeline:swm, then reload.')
+        }
+        return response.json()
+      })
+      .then(data => setPilot(parsePilot(data)))
+      .catch((reason: Error) => { if (reason.name !== 'AbortError') setError(reason.message) })
+    return () => controller.abort()
   }, [])
-  const clearFilters = () => { setQuery(''); setOnlyInView(false) }
+  const results = useMemo(() => pilot ? searchPilot(pilot, query) : [], [pilot, query])
+  // Shared-venue popups retain all associated clubs during a club-name search.
+  const allLocations = useMemo(() => pilot ? trainingLocations(pilot) : [], [pilot])
+  const groups = useMemo(() => allLocations.filter(group => group.clubs.some(club => results.some(result => result.id === club.id))), [allLocations, results])
+  const selectClub = useCallback((id: string) => { setQuery(''); setSelectedClub(id) }, [])
+  useEffect(() => {
+    if (!selectedClub) return
+    const entry = document.getElementById(selectedClub)
+    entry?.scrollIntoView({ block: 'nearest' })
+    entry?.focus({ preventScroll: true })
+  }, [selectedClub])
+  const mappedClubs = new Set(allLocations.flatMap(group => group.clubs.map(club => club.id))).size
 
-  return (
-    <main className="app">
-      <header>
-        <h1>Youth Sports Finder</h1>
-        <label>Sport <select defaultValue="Basketball"><option value="Basketball">Basketball</option></select></label>
-      </header>
-      <div className="information">
-        <p role="status">{location.message}</p>
-        <p>Fixed Queensland Play On Basketball sample: Algester / postcode 4115, directory search radius 25 km. This is not live discovery or a complete directory of clubs.</p>
-        <p>Pins show listed provider addresses (property centroids), <strong>not verified training or game venues</strong>. Junior programs and availability are not verified.</p>
-        {playOnPilot.dataset && <p className="source-note">{playOnPilot.dataset.attribution}. Address validation: {playOnPilot.dataset.validatedOn}; government check date unknown.</p>}
-      </div>
+  return <main className="app">
+    <header><div><p className="eyebrow">BASKETBALL · GREATER BRISBANE</p><h1>Youth Sports Finder</h1></div><span className="pilot-badge">SWM Pirates Pilot</span></header>
+    <div className="information">
+      <p>Find affiliated junior clubs and their <strong>confirmed regular training venues</strong>.</p>
+      <p>Checked: {pilot?.summary.checkedAt.slice(0, 10) ?? 'Loading…'}. School/campus and property points are approximate, not hall entrances. Confirm arrangements with the club.</p>
+      <p className="source-note">Coverage is incomplete. Clubs without verified locations stay in the list. {pilot?.summary.gnafStatus && `G-NAF: ${pilot.summary.gnafStatus}. `}<SourceLink url={pilot?.associations[0]?.sourceUrl}>Official junior club directory</SourceLink></p>
+      {pilot?.summary.coordinateAttribution && <p className="source-note">{pilot.summary.coordinateAttribution}</p>}
+    </div>
+    {error ? <p role="alert" className="data-error">{error}</p> : !pilot ? <p role="status" className="location-loading">Loading SWM club directory…</p> :
       <div className="map-results">
-        {location.pending
-          ? <div className="location-loading" aria-label="Waiting for location">Preparing your map…</div>
-          : <ClubMap center={location.center} groups={groups} onViewportChange={setBounds}
-            onSelectProvider={selectProvider} focusRequest={focusRequest} />}
-        <section className="provider-panel" aria-label="Provider directory">
-          <h2>Play On providers</h2>
-          {playOnPilot.error ? <p role="alert">{playOnPilot.error}</p> : <>
-            <p>{providers.length} providers in the pilot sample. {mappedProviders} providers have accepted address points at {mappedLocations} mapped locations; {providers.length - mappedProviders} are list-only.</p>
-            <label htmlFor="provider-search">Search name, suburb or postcode</label>
-            <input id="provider-search" type="search" value={query} onChange={event => setQuery(event.target.value)} />
-            <label className="viewport-option"><input type="checkbox" checked={onlyInView} disabled={!bounds}
-              onChange={event => setOnlyInView(event.target.checked)} />Only in current map view</label>
-            {!bounds && <p>Map-view filtering is available when map bounds are ready.</p>}
-            {onlyInView
-              ? <p>Filtering this fixed sample by map bounds. Unverified map locations are excluded from this view only. <button type="button" onClick={() => setOnlyInView(false)}>All providers</button></p>
-              : <p>The complete list stays available as you pan and zoom.</p>}
-            <p role="status">{results.length} matching providers</p>
-            {(query || onlyInView) && <button type="button" onClick={clearFilters}>Clear filters</button>}
-            {!results.length && <p>{onlyInView
-              ? 'No providers match in the current map view. Turn off the map filter to include list-only and out-of-view providers.'
-              : 'No providers match this text search. Clear filters to see the complete list.'}</p>}
-            <ProviderList providers={results} selectedProvider={selectedProvider} onShowAddress={providerId => setFocusRequest({ providerId })} />
-          </>}
+        <ClubMap center={[153.065, -27.595]} groups={groups} onSelectClub={selectClub} focusRequest={focusRequest} />
+        <section className="provider-panel" aria-label="SWM affiliated junior clubs">
+          <h2>Affiliated junior clubs</h2>
+          <p>{pilot.clubs.length} clubs · {allLocations.length} training locations · {pilot.clubs.length - mappedClubs} clubs awaiting verified locations</p>
+          <label htmlFor="club-search">Search club, venue or suburb</label>
+          <input id="club-search" type="search" placeholder="Try Rockets or Runcorn" value={query} onChange={event => setQuery(event.target.value)} />
+          <p role="status">{results.length} matching clubs</p>
+          {query && <button className="text-button" type="button" onClick={() => setQuery('')}>Clear search</button>}
+          {!allLocations.length && <p className="empty-state">No reliably located training venues yet. The club directory remains available.</p>}
+          {!results.length && <p>No clubs match. Clear search to see all affiliated clubs.</p>}
+          <ul className="provider-list" aria-label="Junior clubs">
+            {results.map(club => {
+              const venues = confirmedVenues(pilot, club.id)
+              return <li key={club.id} id={club.id} tabIndex={-1} className={`provider-entry${selectedClub === club.id ? ' selected' : ''}`}>
+                <h3>{club.name}</h3>
+                {club.eligibilityNote && <p className="eligibility-note">{club.eligibilityNote}</p>}
+                {!venues.length && <p className="mapping-state">Regular training venue not yet verified. Contact the club for current arrangements.</p>}
+                {venues.map(venue => {
+                  const mapped = allLocations.some(group => group.venues.some(item => item.id === venue.id))
+                  const relation = pilot.clubVenues.find(item => item.clubId === club.id && item.venueId === venue.id && item.evidenceStatus === 'confirmed_regular')
+                  return <div className="training-venue" key={venue.id}>
+                    <p><strong>{venue.name}</strong></p><p>{venue.address || 'Address awaiting verification'}</p>
+                    <p className="mapping-state">{mapped ? `${venue.coordinates?.precision.replaceAll('_', ' ')} · ${venue.coordinates?.source}` : 'Confirmed training · location awaiting verification'}</p>
+                    {mapped && <button className="show-venue" type="button" onClick={() => setFocusRequest({ venueId: venue.id })}>Show training venue on map</button>}
+                    <SourceLink url={relation?.sourceUrl}>Training source</SourceLink>
+                    {venue.coordinates && <SourceLink url={venue.coordinates.sourceUrl}>Coordinate source</SourceLink>}
+                  </div>
+                })}
+                <div className="provider-links"><SourceLink url={club.website}>Club information</SourceLink><SourceLink url={club.sourceUrl}>Association affiliation</SourceLink></div>
+              </li>
+            })}
+          </ul>
         </section>
-      </div>
-    </main>
-  )
+      </div>}
+  </main>
 }

@@ -57,3 +57,8 @@ tmp/
 *.temp
 *.log
 logs/
+
+# V2 source pages and local geocoder indexes are private inputs.
+data/v2/private/
+scripts/v2/__pycache__/
+tests/v2/__pycache__/

@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-14T09:28:21+00:00",
+  "runAt": "2026-11-14T09:47:50+00:00",
+  "pipelineVersion": "swm-v2-1",
+  "coordinateAttribution": "© State of Queensland (Department of Education; Non-State Schools Accreditation Board) 2026. CC BY 4.0. School locations have not been independently verified by the data publisher; campus fallback, not hall or entrance.",
+  "associationCount": 1,
+  "clubCount": 8,
+  "clubsAttempted": 8,
+  "clubsWithConfirmedTraining": 3,
+  "uniqueTrainingVenues": 8,
+  "gnafMatchedVenues": 0,
+  "verifiedFallbackCoordinates": 2,
+  "mappedVenues": 2,
+  "reviewQueueItems": 22,
+  "gnafStatus": "Not Verified — no usable real G-NAF match",
+  "baselineMissing": [],
+  "baselineAdditional": [],
+  "offline": true,
+  "limitations": [
+    "Only confirmed current regular team training is mapped.",
+    "Campus/property coordinates do not identify a basketball hall entrance.",
+    "Some official pages are undated or inaccessible; confirm arrangements with clubs.",
+    "G-NAF raw data not bundled. No paid geocoding."
+  ]
+}

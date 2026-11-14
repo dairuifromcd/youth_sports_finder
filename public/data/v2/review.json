@@ -1,0 +1,200 @@
+[
+  {
+    "id": "review-054373485b331adc",
+    "clubId": "club-1d7fc48713f3b32c",
+    "venueId": "venue-4d10b61f5f39f829",
+    "sourceUrl": "https://dunkstar.com.au/pages/contact",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "candidate",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-069f216845ae4634",
+    "clubId": "club-738946751486ae10",
+    "venueId": null,
+    "sourceUrl": "https://www.cannonsbasketball.com/",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-070358060a6281fe",
+    "clubId": "club-1558b9149e28871f",
+    "venueId": "venue-668a6062295571cb",
+    "sourceUrl": "https://www.rivercityhornets.com.au/menu5.php?id=942411",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Location awaiting verification"
+  },
+  {
+    "id": "review-0cb5c71dd06d64b1",
+    "clubId": "club-735a3cf4a1a90684",
+    "venueId": "venue-fd51c00fd22806a2",
+    "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Location awaiting verification"
+  },
+  {
+    "id": "review-10193b37b96ae127",
+    "clubId": "club-ae06666c394909cc",
+    "venueId": null,
+    "sourceUrl": "https://stphilomena.qld.edu.au/sport/",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-233bcf39b900cd0f",
+    "clubId": "club-1d7fc48713f3b32c",
+    "venueId": null,
+    "sourceUrl": "https://dunkstar.com.au/pages/2026-term3-training",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-2c8bd42f9d784e0f",
+    "clubId": "club-1d7fc48713f3b32c",
+    "venueId": null,
+    "sourceUrl": "https://dunkstar.com.au/pages/2026-term3-training",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "historical",
+    "reason": "Historical training information"
+  },
+  {
+    "id": "review-34ac80dbcef7d3e7",
+    "clubId": "club-1d7fc48713f3b32c",
+    "venueId": "venue-4d5f0f1001e063fd",
+    "sourceUrl": "https://dunkstar.com.au/pages/contact",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "candidate",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-4a54aa86fc443a24",
+    "clubId": "club-1d7fc48713f3b32c",
+    "venueId": "venue-668a6062295571cb",
+    "sourceUrl": "https://dunkstar.com.au/pages/contact",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "candidate",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-56b676e6e805c23a",
+    "clubId": "club-a905c6238fa75c01",
+    "venueId": "venue-f9581a5ff5dd2f87",
+    "sourceUrl": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Sport/Indoor_Sports/10847/110496/Algester_Hawks_Basketball_Club_Inc_",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "candidate",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-5787f43847f597bc",
+    "clubId": "club-735a3cf4a1a90684",
+    "venueId": "venue-668a6062295571cb",
+    "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Location awaiting verification"
+  },
+  {
+    "id": "review-7340c0f28fea3486",
+    "clubId": "club-9aa679826dae07cb",
+    "venueId": null,
+    "sourceUrl": "https://rochedaleshs.eq.edu.au/SupportAndResources/FormsAndDocuments/Documents/RAS/ras-prospectus.pdf",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Source unavailable or requires review"
+  },
+  {
+    "id": "review-906c0ace3c520745",
+    "clubId": "club-735a3cf4a1a90684",
+    "venueId": "venue-62406adbf51afb65",
+    "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Location awaiting verification"
+  },
+  {
+    "id": "review-a4efd2256c65ef4b",
+    "clubId": "club-a905c6238fa75c01",
+    "venueId": null,
+    "sourceUrl": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Sport/Indoor_Sports/10847/110496/Algester_Hawks_Basketball_Club_Inc_",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-b535f57d029bbe19",
+    "clubId": "club-735a3cf4a1a90684",
+    "venueId": "venue-dcb51501f9d9cf7d",
+    "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Location awaiting verification"
+  },
+  {
+    "id": "review-d5fc9e25dfed6522",
+    "clubId": "club-735a3cf4a1a90684",
+    "venueId": "venue-6eddd3cb5691096f",
+    "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Location awaiting verification"
+  },
+  {
+    "id": "review-dad53499dd8c2fbb",
+    "clubId": "club-9aa679826dae07cb",
+    "venueId": null,
+    "sourceUrl": "https://rochedaleshs.eq.edu.au/SupportAndResources/FormsAndDocuments/Documents/RAS/ras-prospectus.pdf",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-e3b4ec4d4af75ca5",
+    "clubId": "club-1558b9149e28871f",
+    "venueId": "venue-d96fded6daf0bc6b",
+    "sourceUrl": "https://www.rivercityhornets.com.au/menu5.php?id=942411",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "unresolved",
+    "reason": "Location awaiting verification"
+  },
+  {
+    "id": "review-e5cff77a211d2a70",
+    "clubId": "club-a905c6238fa75c01",
+    "venueId": "venue-62406adbf51afb65",
+    "sourceUrl": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Sport/Indoor_Sports/10847/110496/Algester_Hawks_Basketball_Club_Inc_",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "candidate",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-e63cfa132afcdb51",
+    "clubId": "club-1d7fc48713f3b32c",
+    "venueId": "venue-62406adbf51afb65",
+    "sourceUrl": "https://dunkstar.com.au/pages/contact",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "candidate",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-e7aa20d705aedc67",
+    "clubId": "club-738946751486ae10",
+    "venueId": "venue-62406adbf51afb65",
+    "sourceUrl": "https://www.cannonsbasketball.com/",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "candidate",
+    "reason": "Current regular training requires verification"
+  },
+  {
+    "id": "review-f38868789e63a0fe",
+    "clubId": "club-1d7fc48713f3b32c",
+    "venueId": "venue-d96fded6daf0bc6b",
+    "sourceUrl": "https://dunkstar.com.au/pages/contact",
+    "checkedAt": "2026-11-14T09:22:13+00:00",
+    "status": "candidate",
+    "reason": "Current regular training requires verification"
+  }
+]

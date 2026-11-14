@@ -1,0 +1,864 @@
+{
+  "associations": [
+    {
+      "id": "association-swm-pirates",
+      "name": "South West Metro Pirates Basketball Association",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    }
+  ],
+  "clubs": [
+    {
+      "id": "club-a905c6238fa75c01",
+      "name": "Algester Hawks",
+      "associationId": "association-swm-pirates",
+      "website": null,
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "eligibilityNote": null
+    },
+    {
+      "id": "club-738946751486ae10",
+      "name": "Cannons Southside (Calamvale area)",
+      "associationId": "association-swm-pirates",
+      "website": "https://www.cannonsbasketball.com/",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "eligibilityNote": null
+    },
+    {
+      "id": "club-1558b9149e28871f",
+      "name": "River City Hornets (Mt Gravatt area)",
+      "associationId": "association-swm-pirates",
+      "website": "https://www.rivercityhornets.com.au/",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "eligibilityNote": null
+    },
+    {
+      "id": "club-9aa679826dae07cb",
+      "name": "Rochedale Wildcats",
+      "associationId": "association-swm-pirates",
+      "website": null,
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "eligibilityNote": null
+    },
+    {
+      "id": "club-735a3cf4a1a90684",
+      "name": "Runcorn Rockets",
+      "associationId": "association-swm-pirates",
+      "website": "https://www.rocketsbasketball.com.au/",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "eligibilityNote": null
+    },
+    {
+      "id": "club-af34fe7e39854aaf",
+      "name": "Sunnybank Hills Hurricanes",
+      "associationId": "association-swm-pirates",
+      "website": "https://www.sunnybankhillshurricanes.com.au/menu5.php?id=946399",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "eligibilityNote": null
+    },
+    {
+      "id": "club-ae06666c394909cc",
+      "name": "St. Philomena Seawolves",
+      "associationId": "association-swm-pirates",
+      "website": "https://stphilomena.qld.edu.au/sport/",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "eligibilityNote": "St. Philomena students only"
+    },
+    {
+      "id": "club-1d7fc48713f3b32c",
+      "name": "Dunk Star Basketball Club",
+      "associationId": "association-swm-pirates",
+      "website": "https://dunkstar.com.au/pages/contact",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "eligibilityNote": null
+    }
+  ],
+  "venues": [
+    {
+      "id": "venue-4d10b61f5f39f829",
+      "name": "Runcorn State High School",
+      "address": "132 Hill Road, Runcorn QLD 4113",
+      "suburb": "Runcorn",
+      "coordinates": {
+        "longitude": 153.07801601298289,
+        "latitude": -27.592679444474147,
+        "source": "Queensland Department of Education school location (campus fallback)",
+        "sourceUrl": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Society/SchoolsAndSchoolCatchments/MapServer/5/query?where=centre_code%3D%272167%27&outFields=centre_name%2Ccentre_code%2Csource%2Cdata_currency%2Cdisclaimer&outSR=4326&f=pjson",
+        "precision": "school_campus",
+        "matchedAddress": "132 Hill Road, Runcorn QLD 4113",
+        "centreCode": "2167",
+        "dataCurrency": "22/07/2026",
+        "attribution": "© State of Queensland (Department of Education; Non-State Schools Accreditation Board) 2026. CC BY 4.0. School locations have not been independently verified by the data publisher; campus fallback, not hall or entrance."
+      },
+      "addressSourceUrl": "https://runcornshs.eq.edu.au/our-school/contact-us",
+      "geocodingStatus": "unmatched"
+    },
+    {
+      "id": "venue-4d5f0f1001e063fd",
+      "name": "Rochedale State High School",
+      "address": "School name only",
+      "suburb": "Rochedale",
+      "coordinates": null
+    },
+    {
+      "id": "venue-62406adbf51afb65",
+      "name": "Calamvale Community College",
+      "address": "School Access Rd, off Hamish St, Calamvale QLD 4116",
+      "suburb": "Calamvale",
+      "coordinates": null,
+      "geocodingStatus": "address_unresolved"
+    },
+    {
+      "id": "venue-668a6062295571cb",
+      "name": "Hibiscus Stadium",
+      "address": "90 Klumpp Road, Upper Mt Gravatt QLD 4122",
+      "suburb": "Upper Mt Gravatt",
+      "coordinates": null,
+      "geocodingStatus": "unmatched"
+    },
+    {
+      "id": "venue-6eddd3cb5691096f",
+      "name": "Stretton State College Junior Campus",
+      "address": "966 Gowan Road, Stretton QLD 4116",
+      "suburb": "Stretton",
+      "coordinates": null,
+      "geocodingStatus": "address_unresolved"
+    },
+    {
+      "id": "venue-8a096bd48a00fe53",
+      "name": "Sunnybank Hills State School",
+      "address": "77 Symons Road, Sunnybank Hills QLD 4109",
+      "suburb": "Sunnybank Hills",
+      "coordinates": {
+        "longitude": 153.05624601801367,
+        "latitude": -27.595187445304926,
+        "source": "Queensland Department of Education school location (campus fallback)",
+        "sourceUrl": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Society/SchoolsAndSchoolCatchments/MapServer/4/query?where=centre_code%3D%271889%27&outFields=centre_name%2Ccentre_code%2Csource%2Cdata_currency%2Cdisclaimer&outSR=4326&f=pjson",
+        "precision": "school_campus",
+        "matchedAddress": "77 Symons Road, Sunnybank Hills QLD 4109",
+        "centreCode": "1889",
+        "dataCurrency": "22/07/2026",
+        "attribution": "© State of Queensland (Department of Education; Non-State Schools Accreditation Board) 2026. CC BY 4.0. School locations have not been independently verified by the data publisher; campus fallback, not hall or entrance."
+      },
+      "addressSourceUrl": "https://sunnybankhillsss.eq.edu.au/our-school/contact-us",
+      "geocodingStatus": "unmatched"
+    },
+    {
+      "id": "venue-d96fded6daf0bc6b",
+      "name": "Eagles Sports Complex",
+      "address": "Eagles Sports Complex, Mansfield (full address unresolved)",
+      "suburb": "Mansfield",
+      "coordinates": null,
+      "geocodingStatus": "unmatched"
+    },
+    {
+      "id": "venue-dcb51501f9d9cf7d",
+      "name": "Warrigal Road State School",
+      "address": "312 Warrigal Road, Eight Mile Plains QLD 4113",
+      "suburb": "Eight Mile Plains",
+      "coordinates": null,
+      "geocodingStatus": "address_unresolved"
+    },
+    {
+      "id": "venue-f9581a5ff5dd2f87",
+      "name": "Yugumbir State School",
+      "address": "School name only; full address not resolved",
+      "suburb": "Regents Park",
+      "coordinates": null
+    },
+    {
+      "id": "venue-fd51c00fd22806a2",
+      "name": "Nissan Arena",
+      "address": "590 Mains Road, Nathan QLD 4111",
+      "suburb": "Nathan",
+      "coordinates": null,
+      "geocodingStatus": "unmatched"
+    }
+  ],
+  "clubVenues": [
+    {
+      "id": "club-venue-13c750efda995c6e",
+      "clubId": "club-1558b9149e28871f",
+      "venueId": "venue-d96fded6daf0bc6b",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.rivercityhornets.com.au/menu5.php?id=942411",
+      "sourceDate": "2026-11-08",
+      "checkedAt": "2026-11-14T09:22:19+00:00",
+      "evidenceStatus": "confirmed_regular",
+      "evidenceId": "evidence-d6bb872061e3eee8"
+    },
+    {
+      "id": "club-venue-1c44ba06c5debf92",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-668a6062295571cb",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "evidenceStatus": "confirmed_regular",
+      "evidenceId": "evidence-bd2306ceb7242f48"
+    },
+    {
+      "id": "club-venue-1c75bfb381cdbdfc",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": "venue-62406adbf51afb65",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:29+00:00",
+      "evidenceStatus": "candidate",
+      "evidenceId": "evidence-c275ae3bebcced6e"
+    },
+    {
+      "id": "club-venue-354de7d91d74c7df",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-4d10b61f5f39f829",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "evidenceStatus": "confirmed_regular",
+      "evidenceId": "evidence-519801a3396d9071"
+    },
+    {
+      "id": "club-venue-39ce97a3360d017e",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": "venue-4d10b61f5f39f829",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:29+00:00",
+      "evidenceStatus": "candidate",
+      "evidenceId": "evidence-6b58940ea3989729"
+    },
+    {
+      "id": "club-venue-4e1daf76ef963399",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-62406adbf51afb65",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "evidenceStatus": "confirmed_regular",
+      "evidenceId": "evidence-d1d4e5459e62e105"
+    },
+    {
+      "id": "club-venue-5ab6f50207a90618",
+      "clubId": "club-a905c6238fa75c01",
+      "venueId": "venue-f9581a5ff5dd2f87",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Sport/Indoor_Sports/10847/110496/Algester_Hawks_Basketball_Club_Inc_",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:24:20+00:00",
+      "evidenceStatus": "candidate",
+      "evidenceId": "evidence-0c32e671a3217461"
+    },
+    {
+      "id": "club-venue-692c44b30251f0f2",
+      "clubId": "club-af34fe7e39854aaf",
+      "venueId": "venue-8a096bd48a00fe53",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.sunnybankhillshurricanes.com.au/menu5.php?id=946399",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:25+00:00",
+      "evidenceStatus": "confirmed_regular",
+      "evidenceId": "evidence-6b32b20464852eef"
+    },
+    {
+      "id": "club-venue-6b8487f14e4a94a1",
+      "clubId": "club-1558b9149e28871f",
+      "venueId": "venue-668a6062295571cb",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.rivercityhornets.com.au/menu5.php?id=942411",
+      "sourceDate": "2026-11-08",
+      "checkedAt": "2026-11-14T09:22:19+00:00",
+      "evidenceStatus": "confirmed_regular",
+      "evidenceId": "evidence-04d36bbb77911fc4"
+    },
+    {
+      "id": "club-venue-6be5bd9decc94dfe",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-6eddd3cb5691096f",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "evidenceStatus": "confirmed_regular",
+      "evidenceId": "evidence-9753d0101f7e7a39"
+    },
+    {
+      "id": "club-venue-74285973f490df3d",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": "venue-668a6062295571cb",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:29+00:00",
+      "evidenceStatus": "candidate",
+      "evidenceId": "evidence-fb5c21ffe9648b08"
+    },
+    {
+      "id": "club-venue-781988a33296af57",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": "venue-4d5f0f1001e063fd",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:29+00:00",
+      "evidenceStatus": "candidate",
+      "evidenceId": "evidence-7543236a44f588da"
+    },
+    {
+      "id": "club-venue-80d42766015a7818",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": "venue-d96fded6daf0bc6b",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:29+00:00",
+      "evidenceStatus": "candidate",
+      "evidenceId": "evidence-9d08835d665a1d52"
+    },
+    {
+      "id": "club-venue-9125ae2992a3dfdd",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-dcb51501f9d9cf7d",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "evidenceStatus": "confirmed_regular",
+      "evidenceId": "evidence-dc695a93746fdd7a"
+    },
+    {
+      "id": "club-venue-c12d1200041091f0",
+      "clubId": "club-a905c6238fa75c01",
+      "venueId": "venue-62406adbf51afb65",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Sport/Indoor_Sports/10847/110496/Algester_Hawks_Basketball_Club_Inc_",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:24:20+00:00",
+      "evidenceStatus": "candidate",
+      "evidenceId": "evidence-cd1ebee9c0595e61"
+    },
+    {
+      "id": "club-venue-f23e400587e32e39",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-fd51c00fd22806a2",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "evidenceStatus": "confirmed_regular",
+      "evidenceId": "evidence-a8fb4d5aa474bfed"
+    },
+    {
+      "id": "club-venue-f3b73a801ea5d858",
+      "clubId": "club-738946751486ae10",
+      "venueId": "venue-62406adbf51afb65",
+      "activityType": "regular_team_training",
+      "sourceUrl": "https://www.cannonsbasketball.com/",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:16+00:00",
+      "evidenceStatus": "candidate",
+      "evidenceId": "evidence-ba7ba83143f01b7d"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence-04d36bbb77911fc4",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.rivercityhornets.com.au/menu5.php?id=942411",
+      "sourceDate": "2026-11-08",
+      "checkedAt": "2026-11-14T09:22:19+00:00",
+      "status": "confirmed_regular"
+    },
+    {
+      "id": "evidence-0ba5bf626f2080fe",
+      "kind": "association_affiliation",
+      "clubId": "club-738946751486ae10",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-0c32e671a3217461",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Sport/Indoor_Sports/10847/110496/Algester_Hawks_Basketball_Club_Inc_",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:24:20+00:00",
+      "status": "candidate"
+    },
+    {
+      "id": "evidence-143107dca18b1fe2",
+      "kind": "junior_eligibility",
+      "clubId": "club-9aa679826dae07cb",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-21c6795aa763aabb",
+      "kind": "junior_eligibility",
+      "clubId": "club-1558b9149e28871f",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-519801a3396d9071",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "status": "confirmed_regular"
+    },
+    {
+      "id": "evidence-6b32b20464852eef",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.sunnybankhillshurricanes.com.au/menu5.php?id=946399",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:25+00:00",
+      "status": "confirmed_regular"
+    },
+    {
+      "id": "evidence-6b58940ea3989729",
+      "kind": "training_relationship",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:29+00:00",
+      "status": "candidate"
+    },
+    {
+      "id": "evidence-6e20a0facf5f8645",
+      "kind": "association_affiliation",
+      "clubId": "club-ae06666c394909cc",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-740ee4cfc69c2fab",
+      "kind": "junior_eligibility",
+      "clubId": "club-738946751486ae10",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-7543236a44f588da",
+      "kind": "training_relationship",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:29+00:00",
+      "status": "candidate"
+    },
+    {
+      "id": "evidence-9753d0101f7e7a39",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "status": "confirmed_regular"
+    },
+    {
+      "id": "evidence-98418b435e8aca83",
+      "kind": "junior_eligibility",
+      "clubId": "club-af34fe7e39854aaf",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-9d08835d665a1d52",
+      "kind": "training_relationship",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:29+00:00",
+      "status": "candidate"
+    },
+    {
+      "id": "evidence-9f3d62fad3f21edb",
+      "kind": "association_affiliation",
+      "clubId": "club-1558b9149e28871f",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-a67891fffaa3f122",
+      "kind": "junior_eligibility",
+      "clubId": "club-1d7fc48713f3b32c",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-a75a1272bf79d4c6",
+      "kind": "junior_eligibility",
+      "clubId": "club-ae06666c394909cc",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-a8fb4d5aa474bfed",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "status": "confirmed_regular"
+    },
+    {
+      "id": "evidence-ba7ba83143f01b7d",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.cannonsbasketball.com/",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:16+00:00",
+      "status": "candidate"
+    },
+    {
+      "id": "evidence-bd2306ceb7242f48",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "status": "confirmed_regular"
+    },
+    {
+      "id": "evidence-c275ae3bebcced6e",
+      "kind": "training_relationship",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:29+00:00",
+      "status": "candidate"
+    },
+    {
+      "id": "evidence-c415df6cffbe8d5d",
+      "kind": "association_affiliation",
+      "clubId": "club-af34fe7e39854aaf",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-c81b8b9bfef841aa",
+      "kind": "association_affiliation",
+      "clubId": "club-1d7fc48713f3b32c",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-caae28338d8d15c9",
+      "kind": "association_affiliation",
+      "clubId": "club-735a3cf4a1a90684",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-cd1ebee9c0595e61",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Sport/Indoor_Sports/10847/110496/Algester_Hawks_Basketball_Club_Inc_",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:24:20+00:00",
+      "status": "candidate"
+    },
+    {
+      "id": "evidence-ced100eda4be190b",
+      "kind": "address_resolution",
+      "venueId": "venue-8a096bd48a00fe53",
+      "sourceUrl": "https://sunnybankhillsss.eq.edu.au/our-school/contact-us",
+      "checkedAt": "2026-11-14T09:22:48+00:00"
+    },
+    {
+      "id": "evidence-d1d4e5459e62e105",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "status": "confirmed_regular"
+    },
+    {
+      "id": "evidence-d226c90cfe42b6f0",
+      "kind": "junior_eligibility",
+      "clubId": "club-a905c6238fa75c01",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-d6bb872061e3eee8",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.rivercityhornets.com.au/menu5.php?id=942411",
+      "sourceDate": "2026-11-08",
+      "checkedAt": "2026-11-14T09:22:19+00:00",
+      "status": "confirmed_regular"
+    },
+    {
+      "id": "evidence-dc695a93746fdd7a",
+      "kind": "training_relationship",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:23+00:00",
+      "status": "confirmed_regular"
+    },
+    {
+      "id": "evidence-dca3a31908af640a",
+      "kind": "address_resolution",
+      "venueId": "venue-4d10b61f5f39f829",
+      "sourceUrl": "https://runcornshs.eq.edu.au/our-school/contact-us",
+      "checkedAt": "2026-11-14T09:22:34+00:00"
+    },
+    {
+      "id": "evidence-e0f58ba6fba70b87",
+      "kind": "association_affiliation",
+      "clubId": "club-a905c6238fa75c01",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-f8a1dbf2a0caa935",
+      "kind": "junior_eligibility",
+      "clubId": "club-735a3cf4a1a90684",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-f99d56394ef4033c",
+      "kind": "association_affiliation",
+      "clubId": "club-9aa679826dae07cb",
+      "sourceUrl": "https://www.piratesbasketball.net.au/juniorclub",
+      "checkedAt": "2026-11-14T09:22:13+00:00"
+    },
+    {
+      "id": "evidence-fb5c21ffe9648b08",
+      "kind": "training_relationship",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "sourceDate": null,
+      "checkedAt": "2026-11-14T09:22:29+00:00",
+      "status": "candidate"
+    }
+  ],
+  "reviewItems": [
+    {
+      "id": "review-054373485b331adc",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": "venue-4d10b61f5f39f829",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "candidate",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-069f216845ae4634",
+      "clubId": "club-738946751486ae10",
+      "venueId": null,
+      "sourceUrl": "https://www.cannonsbasketball.com/",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-070358060a6281fe",
+      "clubId": "club-1558b9149e28871f",
+      "venueId": "venue-668a6062295571cb",
+      "sourceUrl": "https://www.rivercityhornets.com.au/menu5.php?id=942411",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Location awaiting verification"
+    },
+    {
+      "id": "review-0cb5c71dd06d64b1",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-fd51c00fd22806a2",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Location awaiting verification"
+    },
+    {
+      "id": "review-10193b37b96ae127",
+      "clubId": "club-ae06666c394909cc",
+      "venueId": null,
+      "sourceUrl": "https://stphilomena.qld.edu.au/sport/",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-233bcf39b900cd0f",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": null,
+      "sourceUrl": "https://dunkstar.com.au/pages/2026-term3-training",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-2c8bd42f9d784e0f",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": null,
+      "sourceUrl": "https://dunkstar.com.au/pages/2026-term3-training",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "historical",
+      "reason": "Historical training information"
+    },
+    {
+      "id": "review-34ac80dbcef7d3e7",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": "venue-4d5f0f1001e063fd",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "candidate",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-4a54aa86fc443a24",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": "venue-668a6062295571cb",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "candidate",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-56b676e6e805c23a",
+      "clubId": "club-a905c6238fa75c01",
+      "venueId": "venue-f9581a5ff5dd2f87",
+      "sourceUrl": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Sport/Indoor_Sports/10847/110496/Algester_Hawks_Basketball_Club_Inc_",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "candidate",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-5787f43847f597bc",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-668a6062295571cb",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Location awaiting verification"
+    },
+    {
+      "id": "review-7340c0f28fea3486",
+      "clubId": "club-9aa679826dae07cb",
+      "venueId": null,
+      "sourceUrl": "https://rochedaleshs.eq.edu.au/SupportAndResources/FormsAndDocuments/Documents/RAS/ras-prospectus.pdf",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Source unavailable or requires review"
+    },
+    {
+      "id": "review-906c0ace3c520745",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-62406adbf51afb65",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Location awaiting verification"
+    },
+    {
+      "id": "review-a4efd2256c65ef4b",
+      "clubId": "club-a905c6238fa75c01",
+      "venueId": null,
+      "sourceUrl": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Sport/Indoor_Sports/10847/110496/Algester_Hawks_Basketball_Club_Inc_",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-b535f57d029bbe19",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-dcb51501f9d9cf7d",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Location awaiting verification"
+    },
+    {
+      "id": "review-d5fc9e25dfed6522",
+      "clubId": "club-735a3cf4a1a90684",
+      "venueId": "venue-6eddd3cb5691096f",
+      "sourceUrl": "https://www.rocketsbasketball.com.au/menu5.php?id=946871",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Location awaiting verification"
+    },
+    {
+      "id": "review-dad53499dd8c2fbb",
+      "clubId": "club-9aa679826dae07cb",
+      "venueId": null,
+      "sourceUrl": "https://rochedaleshs.eq.edu.au/SupportAndResources/FormsAndDocuments/Documents/RAS/ras-prospectus.pdf",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-e3b4ec4d4af75ca5",
+      "clubId": "club-1558b9149e28871f",
+      "venueId": "venue-d96fded6daf0bc6b",
+      "sourceUrl": "https://www.rivercityhornets.com.au/menu5.php?id=942411",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "unresolved",
+      "reason": "Location awaiting verification"
+    },
+    {
+      "id": "review-e5cff77a211d2a70",
+      "clubId": "club-a905c6238fa75c01",
+      "venueId": "venue-62406adbf51afb65",
+      "sourceUrl": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Sport/Indoor_Sports/10847/110496/Algester_Hawks_Basketball_Club_Inc_",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "candidate",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-e63cfa132afcdb51",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": "venue-62406adbf51afb65",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "candidate",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-e7aa20d705aedc67",
+      "clubId": "club-738946751486ae10",
+      "venueId": "venue-62406adbf51afb65",
+      "sourceUrl": "https://www.cannonsbasketball.com/",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "candidate",
+      "reason": "Current regular training requires verification"
+    },
+    {
+      "id": "review-f38868789e63a0fe",
+      "clubId": "club-1d7fc48713f3b32c",
+      "venueId": "venue-d96fded6daf0bc6b",
+      "sourceUrl": "https://dunkstar.com.au/pages/contact",
+      "checkedAt": "2026-11-14T09:22:13+00:00",
+      "status": "candidate",
+      "reason": "Current regular training requires verification"
+    }
+  ],
+  "summary": {
+    "checkedAt": "2026-11-14T09:28:21+00:00",
+    "runAt": "2026-11-14T09:47:50+00:00",
+    "pipelineVersion": "swm-v2-1",
+    "coordinateAttribution": "© State of Queensland (Department of Education; Non-State Schools Accreditation Board) 2026. CC BY 4.0. School locations have not been independently verified by the data publisher; campus fallback, not hall or entrance.",
+    "associationCount": 1,
+    "clubCount": 8,
+    "clubsAttempted": 8,
+    "clubsWithConfirmedTraining": 3,
+    "uniqueTrainingVenues": 8,
+    "gnafMatchedVenues": 0,
+    "verifiedFallbackCoordinates": 2,
+    "mappedVenues": 2,
+    "reviewQueueItems": 22,
+    "gnafStatus": "Not Verified — no usable real G-NAF match",
+    "baselineMissing": [],
+    "baselineAdditional": [],
+    "offline": true,
+    "limitations": [
+      "Only confirmed current regular team training is mapped.",
+      "Campus/property coordinates do not identify a basketball hall entrance.",
+      "Some official pages are undated or inaccessible; confirm arrangements with clubs.",
+      "G-NAF raw data not bundled. No paid geocoding."
+    ]
+  }
+}

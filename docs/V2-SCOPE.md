@@ -48,6 +48,7 @@
 
 ## Current Status
 
-本次 Bootstrap 仅更新 V2 范围与开发指令；新 Association-first Pipeline 尚未实现。
-现有代码与数据继承 V1，Provider Address Marker 不代表已确认的日常训练场地。
-后续 MVP 须单独批准；本范围文档不授权抓取、数据下载、安装或部署。
+已在 Owner 批准的 SWM Pirates MVP 任务中实现首条 Association-first Pipeline，并接入现有 React/MapLibre。
+2026-11-14 实测发现 8 家 Clubs、3 家具有确认训练关系、8 个独立训练场地；2 个官方校园 fallback 点上图。
+本地没有可用真实 G-NAF 数据，G-NAF 实测仍为 Not Verified；当前交付为 Partial Pass。
+详情见 [SWM MVP Result](SWM-PIRATES-MVP-RESULT.md)。本范围文档不授权后续 Association 扩展、数据下载或部署。
