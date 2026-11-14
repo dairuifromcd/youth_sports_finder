@@ -5,7 +5,8 @@ import { createVenueResultValidator, validateVenueResult, normalizedVenueName, n
 import { createAliasVerifier, footprintMembership, verifiedAliasBindings } from '../scripts/training-venues/aliases.mjs'
 import { resultHeader, reconcileResults, parseCsv } from '../scripts/qld-geocoder/compare.mjs'
 import { sha256 } from '../scripts/qld-geocoder/export.mjs'
-import { json } from '../scripts/training-venues/prepare.mjs'
+import { json, candidatesFor } from '../scripts/training-venues/prepare.mjs'
+import { loadHistoricalBaseline } from '../scripts/training-venues/historical-baseline.mjs'
 
 const inputAddress = { streetAddress: '25 Peel Street', suburb: 'Manly', postcode: '4179' }
 const aliasAddress = { streetAddress: '77 Buderim Street', suburb: 'Wynnum', postcode: '4178' }
@@ -394,10 +395,11 @@ test('training-only AV/Avenue and terminal W/West formatting preserves street na
   assert.equal(validateVenueResult(school, { ...row, 'Complex-Building Name': '(WYNNUM STATE HIGH SCHOOL)' }, actualContext).status, 'Rejected')
 })
 
-test('formal result projection retains all 58 sites, exact government records and 30 untouched held records with accepted-only coordinates', {
+test('historical formal projection retains all 58 sites, exact government records and 30 untouched held records with accepted-only coordinates', {
   skip: existsSync(genuineResultPath) ? false : 'Private genuine export is not present.',
 }, () => {
-  const actualResults = JSON.parse(readFileSync(new URL('../data/benchmarks/training-venue-geocoding/venue-geocoding-results.json', import.meta.url)))
+  const historical = loadHistoricalBaseline(path => readFileSync(new URL(`../${path}`, import.meta.url)))
+  const actualResults = historical.geocoding
   assert.deepEqual(actualResults.summary, { Accepted: 16, Ambiguous: 11, Rejected: 1, Pending: 30 })
   assert.equal(actualResults.governmentResultProvenance.obtainedOn, '2026-11-06')
   assert.equal(actualResults.governmentResultProvenance.resultCsvSha256, 'af93783481c4b2917abe63b98355776631bffd7d2beb376e11847983b481a8af')
@@ -415,7 +417,7 @@ test('formal result projection retains all 58 sites, exact government records an
       assert.deepEqual(actualResults.sites.find(s => s.physicalSiteId === held.physicalSiteId), before.sites.find(s => s.physicalSiteId === held.physicalSiteId))
     }
   }
-  const slimBytes = readFileSync(new URL('../data/benchmarks/training-venue-geocoding/training-venue-candidates.json', import.meta.url), 'utf8')
+  const slimBytes = json(candidatesFor(historical.prepared, actualResults))
   const slim = JSON.parse(slimBytes)
   assert.equal(slim.providers.length, 54)
   assert.equal(slim.associations.length, 70)

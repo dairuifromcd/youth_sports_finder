@@ -87,6 +87,9 @@ export function generate(options = {}) {
   const inputDirectory = projectPath(options['input-dir'] ?? `${evidenceDirectory}/inputs`)
   const plan = resolveOutputPlan(options['output-dir'])
   const outputDirectory = plan.directory
+  if (outputDirectory === resolve(projectRoot, 'data/benchmarks/training-venue-geocoding')) {
+    throw new Error('Single-batch production generation is disabled. Use node --experimental-strip-types scripts/merge-training-venue-production.mjs [--check]; historical replay: --historical-check. Isolated historical generated-tests outputs remain supported.')
+  }
   const inputBytes = inputFiles.map(([name, expectedHash]) => {
     const bytes = readFileSync(projectPath(resolve(inputDirectory, name)))
     if (sha256(bytes) !== expectedHash) throw new Error(`Input SHA-256 drift: ${name}; no output written`)

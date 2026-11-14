@@ -1,5 +1,47 @@
 # Training venue batch — internal, publication not approved
 
+## Phase 2C dual-batch generation
+
+**Phase 2C Production Merge Pass — Internal Data Updated, Publication Not Approved.**
+Current formal status: **25 Accepted / 18 Ambiguous / 2 Rejected / 13 Pending**.
+Independent QA passed 249 tests and full preservation/safety audits. Nine new
+Accepted points are internal only; eight queried nonaccepted sites retain their
+strict limitations. Coverage is 21 Providers / 32 existing eligible associations.
+The original 16 Accepted and other 41 full Site records are unchanged. Website,
+Provider Address and public maps are unchanged. No commit/push/PR/deploy occurred.
+
+The approved Phase 2C implementation and final verification are recorded in
+`docs/tasks/TRAINING-VENUE-GEOCODING-COVERAGE-PHASE2C.md`. The current workflow
+revalidates the independent 28-row historical and 17-row coverage batches; their
+InputIndex values are local to each batch. Neither CSV nor mapping is concatenated
+or renumbered. Historical provenance remains in its original field, and
+`dualBatchSources` retains both receipts and exact row/source hash bindings.
+This is internal data only; `publicDisplayApproved` remains false.
+
+```sh
+node --experimental-strip-types scripts/merge-training-venue-production.mjs
+node --experimental-strip-types scripts/merge-training-venue-production.mjs --check
+node --experimental-strip-types scripts/merge-training-venue-production.mjs --historical-check
+node scripts/prepare-training-venue-coverage.mjs --check
+node --experimental-strip-types scripts/reconcile-training-venue-coverage.mjs --validated-on 2026-11-13 --check
+```
+
+Retain all private source snapshots, both genuine result CSVs and receipts,
+reviewed Phase 2A registry/manifest and seven batch artifacts, and the seven
+approved Phase 2B reports. Historical reconstruction must reproduce all seven
+pre-merge hashes, including the unchanged original geocoding trust anchor.
+The plain-Node Phase 2A replay uses the hash-verified read-only snapshot at
+`output/workflow/2026-11-13/training-venue-coverage-phase2c/baseline/venue-geocoding-results.json`
+for its frozen historical reference. Phase 2B and production independently rebuild
+that historical state from original inputs. Do not delete that snapshot.
+
+The older single-batch production commands shown in the historical sections below
+are retained as execution history. They cannot overwrite canonical production
+outputs; use the dual-batch command above. Historical replay remains a read-only
+verification, and isolated historical test outputs stay separate from production.
+All detailed evidence, government rows and accepted coordinates remain Git-ignored.
+No frontend integration, publication or Git submission is approved by this task.
+
 Stage A completed on 2026-11-06; its historical record is preserved in
 `docs/tasks/TRAINING-VENUE-DATA-GEOCODING.md`. The authorised Stage B/C supplement
 has imported the genuine 28-row government return downloaded on 2026-11-06

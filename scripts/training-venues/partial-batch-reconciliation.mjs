@@ -4,6 +4,7 @@ import { parseCsv, resultHeader } from '../qld-geocoder/compare.mjs'
 import { inputFiles, prepareDataset, parseVenueAddress, json } from './prepare.mjs'
 import { validateResultProvenance, validateVenueResult, normalizedTrainingStreet } from './validate.mjs'
 import { prepareCoverageBatch, batchFiles, targetSiteIds } from './coverage-batch.mjs'
+import { loadHistoricalBaseline, historicalEvidenceReader } from './historical-baseline.mjs'
 
 export const phase2aDirectory = 'output/workflow/2026-11-13/training-venue-coverage-phase2a'
 export const phase2bDirectory = 'output/workflow/2026-11-13/training-venue-coverage-phase2b'
@@ -29,7 +30,7 @@ export function loadReviewedPartialBatch(read) {
   const registryBytes = read(`${phase2aDirectory}/reviewed/registry.json`)
   const manifestBytes = read(`${phase2aDirectory}/reviewed/manifest.json`)
   if (sha256(registryBytes) !== partialBatchPins.registrySha256 || sha256(manifestBytes) !== partialBatchPins.manifestSha256) fail('Reviewed registry/manifest SHA-256 drift')
-  const coverage = prepareCoverageBatch(registryBytes, manifestBytes, read)
+  const coverage = prepareCoverageBatch(registryBytes, manifestBytes, historicalEvidenceReader(read))
   for (const name of batchFiles) {
     if (!Buffer.from(coverage.outputs[name]).equals(read(`${phase2aDirectory}/batch/${name}`))) fail(`Phase 2A artifact drift: ${name}`)
   }
@@ -43,7 +44,9 @@ export function loadReviewedPartialBatch(read) {
   })
   const prepared = prepareDataset(JSON.parse(originalInputs[0]), JSON.parse(originalInputs[1]),
     JSON.parse(read('data/playon/4115-basketball.json')), inputFiles.map(([file, hash], i) => ({ file, sha256: hash, bytes: originalInputs[i].length })))
-  const productionBytes = read('data/benchmarks/training-venue-geocoding/venue-geocoding-results.json')
+  // Phase 2B's immutable historical trust anchor is rebuilt independently of
+  // current production. The exact original hash remains mandatory after merging.
+  const productionBytes = Buffer.from(loadHistoricalBaseline(read).outputs['venue-geocoding-results.json'])
   if (sha256(productionBytes) !== partialBatchPins.productionSha256) fail('Production baseline drift; requires explicit new review')
   const production = JSON.parse(productionBytes)
   if (production.sites.length !== 58 || !isDeepStrictEqual(statusSummary(production.sites), { Accepted: 16, Ambiguous: 11, Rejected: 1, Pending: 30 })) fail('Protected production baseline mismatch')

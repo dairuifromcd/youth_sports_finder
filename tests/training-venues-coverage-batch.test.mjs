@@ -8,12 +8,14 @@ import { prepareCoverageBatch, targetSiteIds, batchFiles } from '../scripts/trai
 import { coverageDirectory, coverageOutputPlan, safeCoveragePath } from '../scripts/prepare-training-venue-coverage.mjs'
 import { addressPriorityRecordHash, addressRoles } from '../scripts/training-venues/address-priority.mjs'
 import { sha256 } from '../scripts/qld-geocoder/export.mjs'
+import { frozenHistoricalReader } from '../scripts/training-venues/historical-reference.mjs'
+import { loadHistoricalBaseline } from '../scripts/training-venues/historical-baseline.mjs'
 
 const root = fileURLToPath(new URL('..', import.meta.url))
 const privatePath = `${coverageDirectory}/reviewed`
 const present = existsSync(resolve(root, privatePath, 'registry.json')) && existsSync(resolve(root, privatePath, 'manifest.json'))
 const privateTest = (name, fn) => test(name, { skip: present ? false : 'Not Verified: private independently reviewed Phase 2A registry/manifest absent.' }, fn)
-const reader = path => readFileSync(resolve(root, path))
+const reader = frozenHistoricalReader(path => readFileSync(resolve(root, path)))
 const originalRegistryBytes = present ? reader(`${privatePath}/registry.json`) : null
 const originalManifestBytes = present ? reader(`${privatePath}/manifest.json`) : null
 const registry = present ? JSON.parse(originalRegistryBytes) : null
@@ -270,7 +272,9 @@ privateTest('running preparation and deterministic check preserve all seven old 
     assert.equal(process.status, 0, process.stderr)
   }
   assert.deepEqual(names.map(name => sha256(readFileSync(resolve(directory, name)))), before)
-  const rows = JSON.parse(readFileSync(resolve(directory, 'venue-geocoding-results.json'))).sites
+  // Phase 2A remains a historical replay, even after approved later merges.
+  // The preceding byte comparison separately protects current production.
+  const rows = loadHistoricalBaseline(path => readFileSync(resolve(root, path))).geocoding.sites
   assert.equal(rows.filter(r => r.status === 'Accepted').length, 16)
   assert.equal(rows.filter(r => r.status === 'Pending').length, 30)
 })

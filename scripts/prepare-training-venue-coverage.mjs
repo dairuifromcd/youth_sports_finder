@@ -4,6 +4,7 @@ import { resolve, relative, isAbsolute } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { parseArgs } from 'node:util'
 import { prepareCoverageBatch, batchFiles } from './training-venues/coverage-batch.mjs'
+import { frozenHistoricalReader } from './training-venues/historical-reference.mjs'
 
 export const coverageDirectory = 'output/workflow/2026-11-13/training-venue-coverage-phase2a'
 const root = realpathSync(fileURLToPath(new URL('..', import.meta.url)))
@@ -40,7 +41,8 @@ function read(projectRoot, path) {
   const destination = safeCoveragePath(projectRoot, path)
   const fd = openSync(destination, constants.O_RDONLY | constants.O_NOFOLLOW)
   try {
-    if (!fstatSync(fd).isFile()) throw new Error('Input is not a regular file')
+    const info = fstatSync(fd)
+    if (!info.isFile() || info.nlink !== 1) throw new Error('Input is not a direct unshared regular file')
     return readFileSync(fd)
   } finally { closeSync(fd) }
 }
@@ -48,7 +50,7 @@ export function generateCoverage({ check = false } = {}) {
   const plan = coverageOutputPlan(root)
   const registry = read(root, `${coverageDirectory}/reviewed/registry.json`)
   const manifest = read(root, `${coverageDirectory}/reviewed/manifest.json`)
-  const result = prepareCoverageBatch(registry, manifest, path => read(root, path))
+  const result = prepareCoverageBatch(registry, manifest, frozenHistoricalReader(path => read(root, path)))
   if (Object.keys(result.outputs).join('\n') !== batchFiles.join('\n')) throw new Error('Incomplete output set')
   plan.assertSafe()
   if (check) {
